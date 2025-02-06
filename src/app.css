@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 :root {
-	--font-primary: 'Sarabun', system-ui, -apple-system, sans-serif;
+	--font-primary: 'Archivo Black', system-ui, -apple-system, sans-serif;
 	--font-mono: 'Red Hat Mono', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
 
 	text-size-adjust: 100%;
@@ -17,7 +17,8 @@
 
 /* Body */
 body {
-	background: #000000;
+	background: #020202;
+	color: #ffffff;
 	font-family: var(--font-primary);
 	line-height: 1.5;
 	font-weight: 400;
@@ -36,7 +37,6 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--action-text-color);
 	font-weight: 700;
 	margin: 24px 0 16px 0;
 }
