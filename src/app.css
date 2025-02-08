@@ -6,7 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 :root {
-	--font-primary: 'Archivo Black', system-ui, -apple-system, sans-serif;
+	--color-base: #020202;
+	--font-primary: 'Archivo Black', systrem-ui, -apple-systrem, sans-serif;
 	--font-mono: 'Red Hat Mono', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
 
 	text-size-adjust: 100%;
@@ -17,13 +18,13 @@
 
 /* Body */
 body {
-	background: #020202;
 	color: #ffffff;
-	font-family: var(--font-primary);
+	font-size: 0.75rem;
 	line-height: 1.5;
 	font-weight: 400;
+	font-family: var(--font-primary);
+	background: var(--color-base);
 
-	place-content: center;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
@@ -39,28 +40,34 @@ h5,
 h6 {
 	font-weight: 700;
 	margin: 24px 0 16px 0;
+	text-wrap: nowrap;
 }
 
 h1 {
-	font-size: 2em; /* 32px */
+	font-size: 1.5rem; /* 24px */
 }
 
 h2 {
-	font-size: 1.75em; /* 28px */
+	font-size: 1.25rem; /* 20px */
 }
 
 h3 {
-	font-size: 1.5em; /* 24px */
+	font-size: 1.125rem; /* 18px */
 }
 
 h4 {
-	font-size: 1.25em; /* 20px */
+	font-size: 1rem; /* 16px */
 }
 
 h5 {
-	font-size: 1.125em; /* 18px */
+	font-size: 0.875rem; /* 14px */
 }
 
 h6 {
-	font-size: 1em; /* 16px */
+	font-size: 0.75rem; /* 12px */
+}
+
+p,
+span {
+	font-size: 0.625rem; /* 12px */
 }

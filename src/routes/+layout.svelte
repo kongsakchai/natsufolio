@@ -6,4 +6,6 @@
 
 <Navbar />
 
-{@render children()}
+<main class="w-full overflow-hidden px-12 py-6">
+	{@render children()}
+</main>
