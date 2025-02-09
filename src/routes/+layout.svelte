@@ -1,7 +1,11 @@
 <script lang="ts">
 	import Menu from '$lib/components/Menu.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	import '../app.css';
+
+	injectSpeedInsights();
+
 	let { children } = $props();
 </script>
 
