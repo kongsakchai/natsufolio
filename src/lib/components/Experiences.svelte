@@ -1,21 +1,25 @@
+<script lang="ts">
+	import type { Experience } from '$lib/types';
+
+	interface Props {
+		list?: Experience[];
+	}
+
+	let { list = [] }: Props = $props();
+</script>
+
 <section class="exp relative grid grid-cols-3 gap-y-2">
-	<span> 2019 </span>
-	<p class=" col-span-2 col-start-2">
-		TUTV [THAMMASAT CHANNEL] <br />
-		<span class="text-secondary"># Graphic Design</span>
-	</p>
+	{#snippet exp(years: number, title: string, details: string)}
+		<span> {years} </span>
+		<p class=" col-span-2 col-start-2">
+			{title} <br />
+			<span class="text-secondary">{details}</span>
+		</p>
+	{/snippet}
 
-	<span>2022</span>
-	<p class=" col-span-2 col-start-2">
-		DIN Animation Studio <br />
-		<span class="text-secondary">intern # Comic Colorist</span>
-	</p>
-
-	<span>2023</span>
-	<p class=" col-span-2 col-start-2">
-		GM Generates Co.,Ltd <br />
-		<span class="text-secondary"># Creative & Graphic Design</span>
-	</p>
+	{#each list as { year, title, details }, i}
+		{@render exp(year, title, details)}
+	{/each}
 
 	<span>PRESENT</span>
 </section>
