@@ -3,6 +3,7 @@
 	import ChipList from '$lib/components/ChipList.svelte';
 	import Experiences from '$lib/components/Experiences.svelte';
 	import HardSkill from '$lib/components/HardSkill.svelte';
+	import { fadeWhenScroll } from '$lib/use/fadeWhenScroll';
 </script>
 
 <h1>ABOUT (ME)</h1>
@@ -23,12 +24,12 @@
 		<p>Thai (Native) <br />English (Advance)</p>
 	</article>
 
-	<article class="col-span-3">
+	<article class="col-span-3" use:fadeWhenScroll>
 		<h5 class="font-normal">/ EXPERIENCES</h5>
 		<Experiences />
 	</article>
 
-	<article class="col-span-3">
+	<article class="col-span-3" use:fadeWhenScroll>
 		<h5 class="font-normal">/ CREATIVE FIELDS</h5>
 		<ChipList
 			list={[
@@ -42,7 +43,7 @@
 		/>
 	</article>
 
-	<article class="col-span-3">
+	<article class="col-span-3" use:fadeWhenScroll>
 		<h5 class="font-normal">/ SOFT SKILLS</h5>
 		<ChipList
 			list={[
@@ -57,7 +58,7 @@
 		/>
 	</article>
 
-	<article class="col-span-3">
+	<article class="col-span-3" use:fadeWhenScroll>
 		<h5 class="font-normal">/ HARD SKILLS</h5>
 		<HardSkill />
 	</article>
