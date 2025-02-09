@@ -8,7 +8,7 @@
 <section class="grid w-full grid-cols-2 gap-6 text-nowrap">
 	{#snippet skill(icon: string, name: string, level: string)}
 		<div class="flex gap-4">
-			<img src={icon} alt="Adobe Photoshop" class="h-7 w-7" />
+			<img src={icon} alt="Adobe Photoshop" class="w-7" />
 			<p>{name} <br /># {level}</p>
 		</div>
 	{/snippet}
