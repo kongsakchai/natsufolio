@@ -7,7 +7,7 @@
 
 <Navbar />
 
-<main class="w-full overflow-hidden px-12 py-6 pb-24">
+<main class="w-full overflow-hidden px-9 py-6 pb-24">
 	{@render children()}
 </main>
 
