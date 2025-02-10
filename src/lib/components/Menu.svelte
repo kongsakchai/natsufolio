@@ -12,7 +12,7 @@
 
 	let scroll = $state(false);
 	let currentMenu = $derived.by(() => {
-		return list.filter(({ link }) => link !== page.url.pathname);
+		return list.filter(({ link }) => page.url.pathname.startsWith(link));
 	});
 
 	onMount(() => {
