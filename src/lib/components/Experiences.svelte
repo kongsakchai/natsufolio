@@ -13,7 +13,7 @@
 		<span> {years} </span>
 		<p class=" col-span-2 col-start-2">
 			{title} <br />
-			<span class="text-secondary">{details}</span>
+			<span class="text-[#D7D1BF]">{details}</span>
 		</p>
 	{/snippet}
 

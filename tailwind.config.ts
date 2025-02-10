@@ -6,9 +6,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				base: 'var(--color-base)',
-				secondary: '#D7D1BF',
-				chip: '#3C3533'
+				base: 'var(--color-base)'
 			}
 		},
 		fontFamily: {

@@ -1,15 +1,17 @@
 <script lang="ts">
-	import CardId from '$lib/components/CardId.svelte';
-	import ChipList from '$lib/components/ChipList.svelte';
-	import Experiences from '$lib/components/Experiences.svelte';
-	import HardSkill from '$lib/components/HardSkill.svelte';
-	import type { Experience, Skill } from '$lib/types';
-	import { fadeInScroll } from '$lib/use/fadeInScroll';
-
 	import AiIcon from '$lib/assets/icons/adobe-illustrator.svg';
 	import LrIcon from '$lib/assets/icons/adobe-lightroom.svg';
 	import PsIcon from '$lib/assets/icons/adobe-photoshop.svg';
 	import FigmaIcon from '$lib/assets/icons/figma.svg';
+
+	import CardId from '$lib/components/CardId.svelte';
+	import ChipList from '$lib/components/ChipList.svelte';
+	import Experiences from '$lib/components/Experiences.svelte';
+	import HardSkill from '$lib/components/HardSkill.svelte';
+
+	import { fadeInScroll } from '$lib/use/fadeInScroll';
+
+	import type { Experience, Skill } from '$lib/types';
 
 	const creativeFields = [
 		'ILLUSTRATION',

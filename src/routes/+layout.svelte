@@ -1,8 +1,9 @@
 <script lang="ts">
+	import '../app.css';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+
 	import Menu from '$lib/components/Menu.svelte';
 	import Navbar from '$lib/components/Navbar.svelte';
-	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
-	import '../app.css';
 
 	injectSpeedInsights();
 
