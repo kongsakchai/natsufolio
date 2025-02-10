@@ -11,7 +11,9 @@
 		"^\\$lib/data/(.*)$",
 		"^\\$lib/use/(.*)$",
 		"^\\$lib/utils/(.*)$",
-		"^\\$lib/types$"
+		"^\\$lib/transitions/(.*)$",
+		"^\\$lib/types$",
+		"^[./]"
 	],
 	"importOrderSeparation": true,
 	"importOrderSortSpecifiers": true,

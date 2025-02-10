@@ -23,6 +23,7 @@ export interface Project {
 	date: string;
 	details?: string;
 	cover?: string;
+	coverAlign?: string;
 	hastags?: string[];
 	skill?: Skill[];
 	moreImages?: string[];

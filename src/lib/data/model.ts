@@ -1,4 +1,10 @@
-export interface ProjectCoverOfYear {
+export interface ProjectYearDetail {
+	id: string;
+	image: string;
+	coverAlign: string;
+}
+
+export interface ProjectYear {
 	year: number;
-	covers: string[];
+	projects: ProjectYearDetail[];
 }

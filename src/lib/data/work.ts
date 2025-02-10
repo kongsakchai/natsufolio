@@ -1,11 +1,15 @@
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+
 import TwinFlowerCover from '$lib/assets/works/2-flower-cover.jpg';
 import HappyBambyDay from '$lib/assets/works/happy-bamby-day.png';
 import NamYejun from '$lib/assets/works/nam-yejun.png';
 import PlaveDebut100 from '$lib/assets/works/plave-debut-100.png';
+
 import type { Project } from '$lib/types';
-import dayjs from 'dayjs';
-import customParseFormat from 'dayjs/plugin/customParseFormat';
-import type { ProjectCoverOfYear } from './model';
+
+import type { ProjectYear, ProjectYearDetail } from './model';
+
 dayjs.extend(customParseFormat);
 
 const data: Project[] = [
@@ -29,6 +33,7 @@ const data: Project[] = [
 		id: '0003',
 		name: 'TWIN FLOWER',
 		date: '30-05-2023',
+		coverAlign: 'object-top',
 		details:
 			'"Twin Flower" is a character design inspired by flowers, using a combination of pink and blue paired with yellow to create an intriguing and captivating color scheme. This design was created to teach how to create flower petals using Adobe Illustrator.',
 		image: '',
@@ -39,6 +44,7 @@ const data: Project[] = [
 		name: 'PLAVE : YEJUN THAILAND',
 		date: '14-07-2023',
 		image: HappyBambyDay,
+		coverAlign: 'object-top',
 		hastags: [
 			'핑크빛여름_밤비야_생일축하해',
 			'HappyBongbyDay',
@@ -54,25 +60,30 @@ const getByYear = (year: number): Project[] => {
 	return data.filter((project) => dayjs(project.date, 'DD-MM-YYYY').year() === year);
 };
 
-const getProjectCoverOfYear = (): ProjectCoverOfYear[] => {
+const getProjectCoverOfYear = (): ProjectYear[] => {
 	const projectCoverOfYear = data.reduce(
 		(acc, project) => {
 			const year = dayjs(project.date, 'DD-MM-YYYY').year();
 			if (!acc[year]) {
 				acc[year] = [];
 			}
-			acc[year].push(project.cover ?? project.image);
+			acc[year].push({
+				id: project.id,
+				image: project.cover ?? project.image,
+				coverAlign: project.coverAlign ?? 'object-center'
+			});
 			return acc;
 		},
-		{} as Record<number, string[]>
+		{} as Record<number, ProjectYearDetail[]>
 	);
 
-	return Object.entries(projectCoverOfYear)
-		.map(([year, covers]) => ({
-			year: Number(year),
-			covers
-		}))
-		.sort((a, b) => b.year - a.year);
+	const convert = ([year, projects]: [string, ProjectYearDetail[]]): ProjectYear => {
+		return { year: Number(year), projects };
+	};
+
+	const sorted = (a: ProjectYear, b: ProjectYear) => b.year - a.year;
+
+	return Object.entries(projectCoverOfYear).map(convert).sort(sorted);
 };
 
 export default { get, getByYear, getProjectCoverOfYear };
