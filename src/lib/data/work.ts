@@ -60,7 +60,7 @@ const getByYear = (year: number): Project[] => {
 	return data.filter((project) => dayjs(project.date, 'DD-MM-YYYY').year() === year);
 };
 
-const getProjectCoverOfYear = (): ProjectYear[] => {
+const getProjectYears = (): ProjectYear[] => {
 	const projectCoverOfYear = data.reduce(
 		(acc, project) => {
 			const year = dayjs(project.date, 'DD-MM-YYYY').year();
@@ -86,4 +86,4 @@ const getProjectCoverOfYear = (): ProjectYear[] => {
 	return Object.entries(projectCoverOfYear).map(convert).sort(sorted);
 };
 
-export default { get, getByYear, getProjectCoverOfYear };
+export default { get, getByYear, getProjectYears };

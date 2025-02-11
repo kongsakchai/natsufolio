@@ -1,6 +1,6 @@
 import { clamp } from '$lib/utils/math';
 
-export const fadeInScroll = (element: HTMLElement) => {
+export const fadeInView = (element: HTMLElement) => {
 	const fade = () => {
 		const { scrollHeight, clientHeight } = window.document.documentElement;
 		if (scrollHeight === clientHeight) return;

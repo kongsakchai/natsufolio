@@ -4,12 +4,12 @@
 	import PsIcon from '$lib/assets/icons/adobe-photoshop.svg';
 	import FigmaIcon from '$lib/assets/icons/figma.svg';
 
-	import CardId from '$lib/components/CardId.svelte';
-	import ChipList from '$lib/components/ChipList.svelte';
-	import Experiences from '$lib/components/Experiences.svelte';
-	import HardSkill from '$lib/components/HardSkill.svelte';
+	import CardId from '$lib/components/card-id.svelte';
+	import ChipList from '$lib/components/chip-list.svelte';
+	import Experiences from '$lib/components/experiences.svelte';
+	import HardSkill from '$lib/components/hard-skill.svelte';
 
-	import { fadeInScroll } from '$lib/use/fadeInScroll';
+	import { fadeInView } from '$lib/use/fade-in-view';
 
 	import type { Experience, Skill } from '$lib/types';
 
@@ -92,22 +92,22 @@
 		<p>Thai (Native) <br />English (Advance)</p>
 	</article>
 
-	<article class="col-span-3" use:fadeInScroll>
+	<article class="col-span-3" use:fadeInView>
 		<h5 class="font-normal">/ EXPERIENCES</h5>
 		<Experiences list={experiences} />
 	</article>
 
-	<article class="col-span-3" use:fadeInScroll>
+	<article class="col-span-3" use:fadeInView>
 		<h5 class="font-normal">/ CREATIVE FIELDS</h5>
 		<ChipList list={creativeFields} />
 	</article>
 
-	<article class="col-span-3" use:fadeInScroll>
+	<article class="col-span-3" use:fadeInView>
 		<h5 class="font-normal">/ SOFT SKILLS</h5>
 		<ChipList list={softSkills} />
 	</article>
 
-	<article class="col-span-3" use:fadeInScroll>
+	<article class="col-span-3" use:fadeInView>
 		<h5 class="font-normal">/ HARD SKILLS</h5>
 		<HardSkill list={skills} />
 	</article>

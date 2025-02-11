@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ScrollImage from '$lib/components/ScrollImage.svelte';
+	import ScrollImage from '$lib/components/scroll-image.svelte';
 
 	let { data } = $props();
 </script>

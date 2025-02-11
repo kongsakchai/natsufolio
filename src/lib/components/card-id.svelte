@@ -1,6 +1,6 @@
 <script lang="ts">
-	import CardBack from '$lib/assets/card_back.png';
-	import CardFront from '$lib/assets/card_front.png';
+	import CardBack from '$lib/assets/card-back.png';
+	import CardFront from '$lib/assets/card-front.png';
 
 	let flip = $state(false);
 </script>

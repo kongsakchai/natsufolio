@@ -1,7 +1,7 @@
 import work from '$lib/data/work';
 
 export const load = async () => {
-	const data = work.getProjectCoverOfYear();
+	const data = work.getProjectYears();
 
 	return { data };
 };

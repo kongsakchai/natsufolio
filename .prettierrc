@@ -4,8 +4,7 @@
 	"trailingComma": "none",
 	"printWidth": 100,
 	"importOrder": [
-		"^svelte",
-		"^\\$app/(.*)$",
+		"^(svelte)|(\\$app)",
 		"^\\$lib/assets/(.*)$",
 		"^\\$lib/components/(.*)$",
 		"^\\$lib/data/(.*)$",

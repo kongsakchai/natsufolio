@@ -1,10 +1,13 @@
 <script lang="ts">
-	import Emoji from '$lib/components/Emoji.svelte';
+	import Emoji from '$lib/components/emoji.svelte';
+	import PageTransition from '$lib/components/page-transition.svelte';
 </script>
 
-<h1 class="tracking-wider">Natthamon Pienrakkarn, <br /> Natsu</h1>
-<p class=" font-mono text-sm">Graphic Designer</p>
+<PageTransition>
+	<h1 class="tracking-wider">Natthamon Pienrakkarn, <br /> Natsu</h1>
+	<p class=" font-mono text-sm">Graphic Designer</p>
 
-<section class="mx-auto mt-10 max-w-[414px]">
-	<Emoji />
-</section>
+	<section class="mx-auto mt-10 max-w-[414px]">
+		<Emoji />
+	</section>
+</PageTransition>
