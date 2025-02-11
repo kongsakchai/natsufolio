@@ -21,11 +21,15 @@
 				selected = val;
 			}
 		}}
-		class="scroll flex flex-col aspect-video overflow-x-hidden overflow-y-scroll rounded-3xl w-full"
+		class="scroll flex flex-col aspect-video w-full gap-4"
 		href="/work/year/{year}"
 	>
 		{#each projects as { coverAlign, image, id }, index}
-			<img src={image} alt={id} class="w-full aspect-video object-cover {coverAlign} select-none" />
+			<img
+				src={image}
+				alt={id}
+				class="w-full aspect-video object-cover {coverAlign} select-none rounded-3xl"
+			/>
 		{/each}
 	</a>
 
@@ -49,6 +53,7 @@
 			scroll-snap-align: center;
 		}
 
+		overflow-x: hidden;
 		overflow-y: scroll;
 		scroll-snap-type: y mandatory;
 	}
