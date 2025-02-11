@@ -3,6 +3,8 @@
 
 	import { scrollImage } from '$lib/use/scroll-image';
 
+	import { receive, send } from '$lib/transitions/crossfade';
+
 	let { projects, year }: ProjectYear = $props();
 
 	const count = projects.length;
@@ -26,6 +28,8 @@
 	>
 		{#each projects as { coverAlign, image, id }, index}
 			<img
+				out:send|global={{ key: id }}
+				in:receive|global={{ key: id, delay: 300 }}
 				src={image}
 				alt={id}
 				class="w-full aspect-video object-cover {coverAlign} select-none rounded-3xl"

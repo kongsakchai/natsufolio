@@ -67,8 +67,7 @@ body {
 		font-size: 0.75rem; /* 12px */
 	}
 
-	p,
-	span {
+	p {
 		font-size: 0.625rem; /* 10px */
 	}
 }
