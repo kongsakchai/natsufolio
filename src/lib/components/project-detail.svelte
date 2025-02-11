@@ -12,6 +12,7 @@
 			src={project.cover ?? project.image}
 			alt={project.id}
 			class="w-full aspect-square object-cover rounded-3xl"
+			loading="lazy"
 		/>
 
 		<section>

@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 
-import TwinFlowerCover from '$lib/assets/works/2-flower-cover.jpg';
+import TwinFlowerCover from '$lib/assets/works/2-flower-cover.jpeg';
 import HappyBambyDay from '$lib/assets/works/happy-bamby-day.png';
 import NamYejun from '$lib/assets/works/nam-yejun.png';
 import PlaveDebut100 from '$lib/assets/works/plave-debut-100.png';

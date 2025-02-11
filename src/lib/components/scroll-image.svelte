@@ -29,6 +29,7 @@
 				src={image}
 				alt={id}
 				class="w-full aspect-video object-cover {coverAlign} select-none rounded-3xl"
+				loading="lazy"
 			/>
 		{/each}
 	</a>
