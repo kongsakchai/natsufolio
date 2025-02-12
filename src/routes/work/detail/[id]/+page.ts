@@ -3,12 +3,11 @@ import { error } from '@sveltejs/kit';
 import project from '$lib/services/project.js';
 
 export const load = async ({ params }) => {
-	const year = parseInt(params.year);
-	const data = project.getByYear(year);
+	const data = project.get(params.id);
 
-	if (data.length === 0) {
+	if (!data) {
 		error(404, 'Not found');
 	}
 
-	return { year, data };
+	return { data };
 };

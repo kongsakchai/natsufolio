@@ -3,12 +3,13 @@
 
 	interface Props {
 		list?: Skill[];
+		multiple?: boolean;
 	}
 
-	let { list = [] }: Props = $props();
+	let { list = [], multiple = true }: Props = $props();
 </script>
 
-<section class="grid w-full grid-cols-2 gap-6 text-nowrap">
+<section class="grid w-full {multiple ? 'grid-cols-2' : ''} gap-6 text-nowrap font-mono">
 	{#snippet skill(icon: string, name: string, level: string)}
 		<div class="flex gap-4">
 			<img src={icon} alt="Adobe Photoshop" class="w-7" />

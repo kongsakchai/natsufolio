@@ -1,13 +1,18 @@
 <script lang="ts">
-	import CardBack from '$lib/assets/card-back.png';
-	import CardFront from '$lib/assets/card-front.png';
+	import { CardBack, CardFront } from '$lib/assets';
 
 	let flip = $state(false);
 </script>
 
 <button onclick={() => (flip = !flip)}>
-	<img src={CardFront} alt="Card Front" class="card w-[330px]" class:flip />
-	<img src={CardBack} alt="Card Front" class="card absolute top-0 w-[330px]" class:flip={!flip} />
+	<img src={CardFront} alt="Card Front" class="card w-[330px]" class:flip loading="lazy" />
+	<img
+		src={CardBack}
+		alt="Card Front"
+		class="card absolute top-0 w-[330px]"
+		class:flip={!flip}
+		loading="lazy"
+	/>
 	<p class="caption my-4 font-mono opacity-70">Tap to Flip ID Card</p>
 </button>
 

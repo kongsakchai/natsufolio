@@ -1,18 +1,21 @@
 <script lang="ts">
-	import type { ProjectYear } from '$lib/data/model';
+	import { ArrowDown } from '$lib/assets/icons';
 
-	import { scrollImage } from '$lib/use/scroll-image';
+	import type { CoverByYear } from '$lib/services/project';
+	import { scrollImage } from '$lib/services/use/scroll-image';
 
 	import { receive, send } from '$lib/transitions/crossfade';
 
-	let { projects, year }: ProjectYear = $props();
+	let { cover, year }: CoverByYear = $props();
 
-	const count = projects.length;
+	const count = cover.length;
 
 	let selected = $state(0);
 </script>
 
-<h1>{year}</h1>
+<h1 class="opacity-70">
+	<spna>{year}</spna> <img src={ArrowDown} alt="Arrow Down" class="w-4 h-4 inline-block" />
+</h1>
 
 <div class="flex w-full gap-8">
 	<a
@@ -26,20 +29,20 @@
 		class="scroll flex flex-col aspect-video w-full gap-4"
 		href="/work/year/{year}"
 	>
-		{#each projects as { coverAlign, image, id }, index}
+		{#each cover as { align, image, id }, index}
 			<img
 				out:send|global={{ key: id }}
 				in:receive|global={{ key: id, delay: 300 }}
 				src={image}
 				alt={id}
-				class="w-full aspect-video object-cover {coverAlign} select-none rounded-3xl"
+				class="w-full aspect-video object-cover {align} select-none rounded-3xl"
 				loading="lazy"
 			/>
 		{/each}
 	</a>
 
 	<div class="my-auto flex flex-col items-center justify-center gap-3">
-		{#each projects as _, index}
+		{#each Array(count) as _, index}
 			<div
 				class="size-1 rounded-full bg-[#3A3A3A] transition-all duration-300"
 				class:selected={selected === index}

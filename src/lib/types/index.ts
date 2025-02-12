@@ -25,9 +25,8 @@ export interface Project {
 	cover?: string;
 	coverAlign?: string;
 	hastags?: string[];
-	skill?: Skill[];
+	skills?: Skill[];
 	moreImages?: string[];
-	label?: string;
-	xLink?: string;
+	remark?: string;
 	links?: Link[];
 }

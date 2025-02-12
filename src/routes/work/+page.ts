@@ -1,7 +1,7 @@
-import work from '$lib/data/work';
+import project from '$lib/services/project';
 
 export const load = async () => {
-	const data = work.getProjectYears();
+	const data = project.getCoverByYear();
 
 	return { data };
 };

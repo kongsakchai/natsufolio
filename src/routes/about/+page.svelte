@@ -1,77 +1,12 @@
 <script lang="ts">
-	import AiIcon from '$lib/assets/icons/adobe-illustrator.svg';
-	import LrIcon from '$lib/assets/icons/adobe-lightroom.svg';
-	import PsIcon from '$lib/assets/icons/adobe-photoshop.svg';
-	import FigmaIcon from '$lib/assets/icons/figma.svg';
+	import { creativeFields, experiences, skills, softSkills } from '$lib/data';
 
 	import CardId from '$lib/components/card-id.svelte';
 	import ChipList from '$lib/components/chip-list.svelte';
 	import Experiences from '$lib/components/experiences.svelte';
 	import HardSkill from '$lib/components/hard-skill.svelte';
 
-	import { fadeInView } from '$lib/use/fade-in-view';
-
-	import type { Experience, Skill } from '$lib/types';
-
-	const creativeFields = [
-		'ILLUSTRATION',
-		'LOGO DESIGN',
-		'CHARACTER DESIGN',
-		'UI DESIGN',
-		'PACKAGE DESIGN',
-		'BRANDING'
-	];
-
-	const softSkills = [
-		'COMMUNICATION',
-		'ORGANIZATION',
-		'CHARACTER DESIGN',
-		'TIME MANAGEMENT',
-		'TEAM WORK',
-		'FLEXIBILITY',
-		'CREATIVITY'
-	];
-
-	const experiences: Experience[] = [
-		{
-			year: 2019,
-			title: 'TUTV [THAMMASAT CHANNEL]',
-			details: '# Graphic Design'
-		},
-		{
-			year: 2022,
-			title: 'DIN Animation Studio',
-			details: 'intern # Comic Colorist'
-		},
-		{
-			year: 2023,
-			title: 'GM Generates Co.,Ltd',
-			details: '# Creative & Graphic Design'
-		}
-	];
-
-	const skills: Skill[] = [
-		{
-			icon: PsIcon,
-			name: 'Adobe Photoshop',
-			level: 'Advance'
-		},
-		{
-			icon: LrIcon,
-			name: 'Adobe Lightroom',
-			level: 'Advance'
-		},
-		{
-			icon: AiIcon,
-			name: 'Adobe Illustrator',
-			level: 'Advance'
-		},
-		{
-			icon: FigmaIcon,
-			name: 'Figma',
-			level: 'Basic'
-		}
-	];
+	import { fadeInView } from '$lib/services/use/fade-in-view';
 </script>
 
 <h1>ABOUT (ME)</h1>
