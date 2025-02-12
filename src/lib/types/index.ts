@@ -11,8 +11,8 @@ export interface Skill {
 }
 
 export interface Link {
-	name: string;
-	icon: string;
+	label?: string;
+	icon?: string;
 	url: string;
 }
 
@@ -21,12 +21,13 @@ export interface Project {
 	image: string;
 	name: string;
 	date: string;
+	link?: Link;
 	details?: string;
 	cover?: string;
 	coverAlign?: string;
 	hastags?: string[];
 	skills?: Skill[];
-	moreImages?: string[];
 	remark?: string;
-	links?: Link[];
+	moreImages?: string[];
+	moreLinks?: Link[];
 }

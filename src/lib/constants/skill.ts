@@ -1,27 +1,27 @@
-import { AdobeIllustrator, AdobeLightroom, AdobePhotoshop, Figma } from '$lib/assets/icons';
+import { AiIcon, FigmaIcon, LrIcon, PsIcon } from '$lib/assets/icons';
 
 import type { Skill } from '$lib/types';
 
-export const AISkill: Skill = {
-	icon: AdobeIllustrator,
+export const AI_SKILL: Skill = {
+	icon: AiIcon,
 	name: 'Adobe Illustrator',
 	level: 'Advance'
 };
 
-export const LRSkill: Skill = {
-	icon: AdobeLightroom,
+export const LR_SKILL: Skill = {
+	icon: LrIcon,
 	name: 'Adobe Lightroom',
 	level: 'Advance'
 };
 
-export const PSSkill: Skill = {
-	icon: AdobePhotoshop,
+export const PS_SKILL: Skill = {
+	icon: PsIcon,
 	name: 'Adobe Photoshop',
 	level: 'Advance'
 };
 
-export const FigmaSkill: Skill = {
-	icon: Figma,
+export const FIGMA_SKILL: Skill = {
+	icon: FigmaIcon,
 	name: 'Figma',
 	level: 'Advance'
 };

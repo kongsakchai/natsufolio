@@ -29,11 +29,17 @@
 		out:send|global={{ key: project.id, delay: 300 }}
 	/>
 
-	<section class="flex" class:justify-between={project.links}>
+	<section class="flex items-center" class:justify-between={project.link}>
 		<section>
 			<h5 class="text-wrap mb-0">{project.name}</h5>
 			<p class=" font-mono">{showFormattedDate(date)}</p>
 		</section>
+
+		{#if project.link}
+			<a href={project.link.url} target="_blank" class="mt-6">
+				<img src={project.link.icon} alt={project.link.label} class="w-6 h-6" loading="lazy" />
+			</a>
+		{/if}
 	</section>
 
 	{#if project.details}
@@ -57,9 +63,25 @@
 		</section>
 	{/if}
 
-	<section class="my-10 flex flex-col gap-6">
-		{#each project.moreImages ?? [] as image}
-			<img src={image} alt={project.name} class="w-full" loading="lazy" />
-		{/each}
-	</section>
+	{#if project.moreImages}
+		<section class="my-10 flex flex-col gap-6">
+			{#each project.moreImages ?? [] as image}
+				<img src={image} alt={project.name} class="w-full" loading="lazy" />
+			{/each}
+		</section>
+	{/if}
+
+	{#if project.moreLinks || project.remark}
+		<section class="my-6 flex gap-6 items-center justify-end">
+			{#if project.remark}
+				<p class=" font-mono mr-auto">{project.remark}</p>
+			{/if}
+
+			{#each project.moreLinks ?? [] as link}
+				<a href={link.url} target="_blank">
+					<img src={link.icon} alt={link.label} class="w-6 h-6" loading="lazy" />
+				</a>
+			{/each}
+		</section>
+	{/if}
 </section>
