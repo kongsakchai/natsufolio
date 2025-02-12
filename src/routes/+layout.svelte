@@ -11,6 +11,10 @@
 	let { children } = $props();
 </script>
 
+<svelte:head>
+	<title>NATSU</title>
+</svelte:head>
+
 <Navbar />
 
 {@render children()}
