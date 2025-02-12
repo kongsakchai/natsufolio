@@ -8,7 +8,7 @@ import {
 	TwinFlowerStepByStep
 } from '$lib/assets/works';
 
-import { IG_PLATFORMS, TIKTOK_PLATFORM, X_Platforms } from '$lib/constants/Platforms';
+import { IG_PLATFORMS, TIKTOK_PLATFORM, X_Platforms } from '$lib/constants/platforms';
 import { AI_SKILL, FIGMA_SKILL, LR_SKILL, PS_SKILL } from '$lib/constants/skill';
 
 import type { Experience, Project } from '$lib/types';
