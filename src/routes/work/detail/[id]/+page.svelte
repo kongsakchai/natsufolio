@@ -5,41 +5,61 @@
 
 	import { convertToDate, showFormattedDate } from '$lib/utils/date.js';
 
+	import { receive, send } from '$lib/transitions/crossfade';
+
 	let { data } = $props();
 
 	const date = convertToDate(data.data.date);
+	const project = data.data;
 </script>
 
 <section class="flex items-center justify-between">
 	<a href="/work/year/{date.year()}" class="mt-6 mb-4">
-		<img src={ArrowDown} alt="Arrow Down" class="w-4 h-4 rotate-90" />
+		<img src={ArrowDown} alt="Arrow Down" class="w-4 h-4 rotate-90" loading="lazy" />
 	</a>
 	<h1>{date.year()}</h1>
 </section>
 
-<section class="mx-auto max-w-[414px] text-nowrap">
-	<img src={data.data.image} alt={data.data.name} class="w-full" />
-</section>
+<section class="mx-auto max-w-[414px] text-nowrap mb-10">
+	<img
+		src={project.image}
+		alt={project.name}
+		class="w-full"
+		in:receive|global={{ key: project.id }}
+		out:send|global={{ key: project.id, delay: 300 }}
+	/>
 
-<section class="mx-auto max-w-[414px] text-nowrap">
-	<section>
-		<h5 class="text-wrap mb-0">{data.data.name}</h5>
-		<p class=" font-mono">{showFormattedDate(date)}</p>
+	<section class="flex" class:justify-between={project.links}>
+		<section>
+			<h5 class="text-wrap mb-0">{project.name}</h5>
+			<p class=" font-mono">{showFormattedDate(date)}</p>
+		</section>
+	</section>
+
+	{#if project.details}
+		<p class=" font-mono text-wrap my-10 line-clamp-3">{project.details}</p>
+	{/if}
+
+	{#if project.hastags}
+		<section class=" font-mono text-[0.625rem] underline my-10">
+			{#each project.hastags ?? [] as hastag}
+				<a href="https://x.com/hashtag/{hastag}?src=hashtag_click" class="block">
+					#{hastag}
+				</a>
+			{/each}
+		</section>
+	{/if}
+
+	{#if project.skills}
+		<section class="my-10">
+			<h5 class="font-normal font-mono">/ Programs Used</h5>
+			<HardSkill list={project.skills} multiple={false} />
+		</section>
+	{/if}
+
+	<section class="my-10 flex flex-col gap-6">
+		{#each project.moreImages ?? [] as image}
+			<img src={image} alt={project.name} class="w-full" loading="lazy" />
+		{/each}
 	</section>
 </section>
-
-<p class=" font-mono text-wrap my-4 line-clamp-3">{data.data.details}</p>
-
-{#each data.data.hastags ?? [] as hastag}
-	<a
-		href="https://x.com/hashtag/{hastag}?src=hashtag_click"
-		class=" font-mono block text-[0.625rem] underline"
-	>
-		#{hastag}
-	</a>
-{/each}
-
-<article>
-	<h5 class="font-normal font-mono">/ Programs Used</h5>
-	<HardSkill list={data.data.skills} multiple={false} />
-</article>

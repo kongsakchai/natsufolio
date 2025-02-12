@@ -1,4 +1,12 @@
-import { HappyBambyDay, NamYejun, PlaveDebut100, TwinFlowerCover } from '$lib/assets/works';
+import {
+	HappyBambyDay,
+	NamYejun,
+	PlaveDebut100,
+	TwinFlower,
+	TwinFlower3Styles,
+	TwinFlowerCover,
+	TwinFlowerStepByStep
+} from '$lib/assets/works';
 
 import { AISkill, FigmaSkill, LRSkill, PSSkill } from '$lib/constants/skill';
 
@@ -69,9 +77,10 @@ export const projects: Project[] = [
 		coverAlign: 'object-top',
 		details:
 			'"Twin Flower" is a character design inspired by flowers, using a combination of pink and blue paired with yellow to create an intriguing and captivating color scheme. This design was created to teach how to create flower petals using Adobe Illustrator.',
-		image: '',
+		image: TwinFlower,
 		cover: TwinFlowerCover,
-		skills: [AISkill]
+		skills: [AISkill],
+		moreImages: [TwinFlower3Styles, TwinFlowerStepByStep]
 	},
 	{
 		id: '0004',

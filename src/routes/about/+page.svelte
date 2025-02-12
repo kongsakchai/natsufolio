@@ -11,11 +11,11 @@
 
 <h1>ABOUT (ME)</h1>
 
-<section class="relative mb-8 mt-16 flex flex-col items-center">
+<section class="relative mt-16 flex flex-col items-center">
 	<CardId />
 </section>
 
-<section class="mx-auto my-8 grid max-w-[414px] grid-cols-3 gap-y-8 text-nowrap font-mono">
+<section class="mx-auto mt-8 mb-10 grid max-w-[414px] grid-cols-3 gap-y-8 text-nowrap font-mono">
 	<article>
 		<h5 class="font-normal">/ EDUCATION</h5>
 		<p>Fine and Applied Arts<br />(Fashion Design)</p>
