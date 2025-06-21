@@ -41,7 +41,7 @@
 	{/snippet}
 
 	{#each projects as project}
-		<a href="/work/detail/{project.id}" class="contents">
+		<a href="/work/legacy/detail/{project.id}" class="contents">
 			{@render detail(project)}
 		</a>
 	{/each}

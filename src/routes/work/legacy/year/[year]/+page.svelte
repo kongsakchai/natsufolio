@@ -7,7 +7,7 @@
 </script>
 
 <section class="flex items-center gap-4">
-	<a href="/work" class="mt-6 mb-4">
+	<a href="/work/legacy" class="mt-6 mb-4">
 		<img src={ArrowDown} alt="Arrow Down" class="w-4 h-4 rotate-90" />
 	</a>
 	<h1>{data.year}</h1>

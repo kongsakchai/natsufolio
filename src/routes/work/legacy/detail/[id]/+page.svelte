@@ -14,7 +14,7 @@
 </script>
 
 <section class="flex items-center justify-between">
-	<a href="/work/year/{date.year()}" class="mt-6 mb-4">
+	<a href="/work/legacy/year/{date.year()}" class="mt-6 mb-4">
 		<img src={ArrowDown} alt="Arrow Down" class="w-4 h-4 rotate-90" loading="lazy" />
 	</a>
 	<h1>{date.year()}</h1>

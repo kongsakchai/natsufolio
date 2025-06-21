@@ -4,7 +4,7 @@
 
 	const list = [
 		{ name: 'HOME', link: '/' },
-		{ name: 'WORK', link: '/work' },
+		{ name: 'WORK', link: '/work/legacy' },
 		{ name: 'ABOUT ME', link: '/about' },
 		{ name: 'CONTACT', link: '/contact' }
 	];

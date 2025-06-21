@@ -27,7 +27,7 @@
 			}
 		}}
 		class="scroll flex flex-col aspect-video w-full gap-4"
-		href="/work/year/{year}"
+		href="/work/legacy/year/{year}"
 	>
 		{#each cover as { align, image, id }, index}
 			<img
