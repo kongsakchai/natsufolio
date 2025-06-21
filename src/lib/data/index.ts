@@ -125,3 +125,5 @@ export const projects: Project[] = [
 		}
 	}
 ];
+
+export const workType = ['Graphic design', 'Illustration', 'Product design', '3D', 'ux/ui'];

@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { fade } from 'svelte/transition';
 
-	let { children } = $props();
+	let { children, class: className = '' } = $props();
 </script>
 
 <main
-	class="w-full overflow-hidden px-9 py-6 pb-24 absolute"
+	class="w-full overflow-hidden px-9 py-6 pb-24 absolute {className}"
 	in:fade={{ duration: 300 }}
 	out:fade={{ duration: 300 }}
 >
