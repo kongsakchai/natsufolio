@@ -30,4 +30,5 @@ export interface Project {
 	remark?: string;
 	moreImages?: string[];
 	moreLinks?: Link[];
+	types?: string[];
 }

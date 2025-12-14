@@ -20,7 +20,7 @@
 </script>
 
 <button
-	class="w-full text-left border-y px-9 py-4 flex justify-between items-center"
+	class="w-full text-left border-y px-9 py-4 flex justify-between items-center hover:bg-white hover:bg-opacity-15"
 	onclick={onClick}
 >
 	<h2 class="font-mono font-normal m-0">{title}</h2>
