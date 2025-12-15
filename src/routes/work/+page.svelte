@@ -30,8 +30,8 @@
 				curAccordion = state ? workType : '';
 			}}
 		/> -->
-		<h2>
-			{workType.toUpperCase()}
+		<h2 class="uppercase">
+			{workType}
 			<span class="font-mono font-normal text-xs">({workTypeCount[workType]})</span>
 		</h2>
 	{/each}

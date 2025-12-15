@@ -4,6 +4,6 @@
 	let { children } = $props();
 </script>
 
-<PageTransition class="!px-0">
+<PageTransition class="px-0!">
 	{@render children()}
 </PageTransition>

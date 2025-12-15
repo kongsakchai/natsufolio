@@ -13,7 +13,7 @@
 	.icon {
 		@apply relative h-4 w-4;
 		> * {
-			@apply absolute left-1/2 top-1/2 h-[1px] w-4 bg-white;
+			@apply absolute left-1/2 top-1/2 h-px w-4 bg-white;
 			transform-origin: 50% 50%;
 			transition: all 300ms ease-in-out;
 		}

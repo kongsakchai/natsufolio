@@ -17,7 +17,7 @@
 		</p>
 	{/snippet}
 
-	{#each list as { year, title, details }, i}
+	{#each list as { year, title, details }}
 		{@render exp(year, title, details)}
 	{/each}
 
@@ -38,7 +38,7 @@
 		top: 50%;
 		left: 50%;
 		width: 1px;
-		height: 100%;
+		height: 80%;
 		background-color: #fff;
 	}
 </style>

@@ -8,6 +8,6 @@
 
 <div class="flex flex-wrap gap-2">
 	{#each list as item}
-		<span class="rounded-full bg-[#3C3533] px-1">{item}</span>
+		<span class="rounded-full bg-white/20 px-2 py-0.5">{item}</span>
 	{/each}
 </div>

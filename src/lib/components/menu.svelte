@@ -38,19 +38,28 @@
 </script>
 
 <nav
-	class="menu flex w-4/5 justify-between gap-6 rounded-full bg-[#E2E6EA] bg-opacity-10 px-8 py-4"
+	class="menu flex justify-between gap-6 rounded-3xl bg-[#E2E6EA]/30 px-8 py-4"
 	class:opacity-0={scroll}
 >
 	{#each currentMenu as { name, link }}
-		<a href={link} class="text-xs text-center uppercase text-white font-mono text-nowrap">
+		<a
+			href={link}
+			class="text-sm text-center uppercase text-white text-shadow-md font-mono text-nowrap"
+		>
 			{name}
 		</a>
 	{/each}
 </nav>
 
-<svg style="display:none;">
+<!-- <svg style="display:none;">
 	<filter id="displacementFilter">
-		<feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="2" result="turbulence" />
+		<feTurbulence
+			type="fractalNoise"
+			seed="5"
+			baseFrequency="0.01"
+			numOctaves="1"
+			result="turbulence"
+		/>
 
 		<feDisplacementMap
 			in="SourceGraphic"
@@ -60,7 +69,7 @@
 			yChannelSelector="G"
 		/>
 	</filter>
-</svg>
+</svg> -->
 
 <style lang="postcss">
 	.menu {
@@ -69,9 +78,6 @@
 		left: 50%;
 		transform: translateX(-50%);
 		transition: all 0.5s ease-in-out;
-		box-shadow:
-			inset -2px -2px 5px #ffffff,
-			2px 2px 5px #24242410;
-		backdrop-filter: blur(4px) url(#displacementFilter);
+		backdrop-filter: blur(2px);
 	}
 </style>

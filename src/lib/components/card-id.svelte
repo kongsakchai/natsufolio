@@ -1,10 +1,18 @@
 <script lang="ts">
-	import { CardBack, CardFront } from '$lib/assets';
+	import { CardBack, CardFront, Face } from '$lib/assets';
 
 	let flip = $state(false);
 </script>
 
-<button onclick={() => (flip = !flip)}>
+<img
+	src={Face}
+	alt="Card Front"
+	class="card w-[330px] relative -top-10"
+	class:flip
+	loading="lazy"
+/>
+
+<button class="hidden" onclick={() => (flip = !flip)}>
 	<img src={CardFront} alt="Card Front" class="card w-[330px]" class:flip loading="lazy" />
 	<img
 		src={CardBack}

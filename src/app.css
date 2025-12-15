@@ -1,16 +1,15 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import 'tailwindcss';
+
+@theme {
+	--color-primary: #020202;
+	--color-primary-foreground: #ffffff;
+	--font-primary: 'Archivo Black', systrem-ui, -apple-systrem, sans-serif;
+	--font-mono: 'Almarai', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
+}
 
 :root {
-	--color-primary: #e9ecfb;
-	--color-primary-foreground: #0b1215;
-	--font-primary: 'Archivo Black', systrem-ui, -apple-systrem, sans-serif;
-	--font-mono: 'Red Hat Mono', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
-
 	text-size-adjust: 100%;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -24,11 +23,12 @@ body {
 	line-height: 1.5;
 	font-weight: 400;
 	font-family: var(--font-primary);
-	background: var(--color-primary);
+	background-color: var(--color-primary);
 
-	background: linear-gradient(137deg, rgba(233, 236, 251, 1) 0%, rgba(243, 232, 249, 1) 100%);
+	/*background: #c7d1ff;
+	background: linear-gradient(137deg, rgba(199, 209, 255, 1) 0%, rgba(245, 219, 255, 1) 100%);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-attachment: fixed;*/
 
 	height: 100dvh;
 	margin: 0;
