@@ -21,7 +21,7 @@
 		class:flip={!flip}
 		loading="lazy"
 	/>
-	<p class="caption my-4 font-mono opacity-70">Tap to Flip ID Card</p>
+	<p class="caption my-4 font-almarai opacity-70">Tap to Flip ID Card</p>
 </button>
 
 <style lang="postcss">

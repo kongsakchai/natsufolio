@@ -26,13 +26,13 @@
 			out:fly|global={{ x: 20, duration: 300 }}
 		>
 			<h6 class="my-0 text-wrap">{project.name}</h6>
-			<p class=" font-mono">{showFormattedDate(project.date)}</p>
-			<p class=" font-mono text-wrap my-4 line-clamp-3">{project.details}</p>
+			<p class=" font-almarai">{showFormattedDate(project.date)}</p>
+			<p class=" font-almarai text-wrap my-4 line-clamp-3">{project.details}</p>
 
 			{#each project.hastags ?? [] as hastag}
 				<a
 					href="https://x.com/hashtag/{hastag}?src=hashtag_click"
-					class=" font-mono block text-[0.625rem] underline"
+					class=" font-almarai block text-[0.625rem] underline"
 				>
 					#{hastag}
 				</a>

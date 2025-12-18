@@ -15,7 +15,7 @@
 	<CardId />
 </section>
 
-<section class="mx-auto -mt-8 mb-10 grid max-w-[414px] grid-cols-3 gap-y-8 text-nowrap font-mono">
+<section class="mx-auto -mt-8 mb-10 grid max-w-103.5 grid-cols-3 gap-y-8 text-nowrap font-almarai">
 	<article>
 		<h5 class="font-normal">/ EDUCATION</h5>
 		<p>Fine and Applied Arts<br />(Fashion Design)</p>

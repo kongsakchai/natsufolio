@@ -11,7 +11,7 @@ import {
 import { IG_PLATFORMS, TIKTOK_PLATFORM, X_Platforms } from '$lib/constants/platforms';
 import { AI_SKILL, FIGMA_SKILL, LR_SKILL, PS_SKILL } from '$lib/constants/skill';
 
-import type { Experience, Project } from '$lib/types';
+import { type Experience, type Project, Tags } from '$lib/types';
 
 export const creativeFields = [
 	'ILLUSTRATION',
@@ -58,26 +58,32 @@ export const projects: Project[] = [
 		name: 'PLAVE : YEJUN THAILAND',
 		date: '18-01-2023',
 		details: '100th Day Debut Anniversary Celebration',
+		category: 'Poster Design',
 		image: PlaveDebut100,
 		hastags: ['플레이브_100일_800하자', 'PLAVE_WITH_100DAYS'],
 		skills: [PS_SKILL, AI_SKILL],
 		link: {
 			...X_Platforms,
 			url: 'https://x.com/ONLYYEJUN_TH/status/1670438719860662272'
-		}
+		},
+		tags: [Tags.GraphicDesign],
+		subTags: [Tags.SocialMediaDesign]
 	},
 	{
 		id: '0002',
 		name: 'PLAVE : YEJUN THAILAND',
 		date: '18-01-2023',
 		details: 'Num Yejun : 100th Day Debut Anniversary Celebration',
+		category: 'Poster Design',
 		image: NamYejun,
 		hastags: ['플레이브_100일_800하자', 'PLAVE_WITH_100DAYS'],
 		skills: [PS_SKILL, AI_SKILL],
 		link: {
 			...X_Platforms,
 			url: 'https://x.com/ONLYYEJUN_TH/status/1670446272648732672'
-		}
+		},
+		tags: [Tags.GraphicDesign],
+		subTags: [Tags.SocialMediaDesign]
 	},
 	{
 		id: '0003',
@@ -110,6 +116,7 @@ export const projects: Project[] = [
 		id: '0004',
 		name: 'PLAVE : YEJUN THAILAND',
 		date: '14-07-2023',
+		category: 'Poster Design',
 		image: HappyBambyDay,
 		coverAlign: 'object-top',
 		hastags: [
@@ -122,8 +129,23 @@ export const projects: Project[] = [
 		link: {
 			...X_Platforms,
 			url: 'https://x.com/ONLYYEJUN_TH/status/1679884413373661187'
-		}
+		},
+		tags: [Tags.GraphicDesign],
+		subTags: [Tags.SocialMediaDesign]
 	}
 ];
 
-export const workTypes = ['Graphic design', 'Illustration', 'Product design', '3D', 'ux/ui'];
+export const workTypes = [
+	Tags.GraphicDesign,
+	Tags.ProjectCoordinator,
+	Tags.CreativeProducer,
+	Tags.AssistantProducer,
+	Tags.Thesis
+];
+
+export const graphicTypes = [
+	Tags.ProductDesign,
+	Tags.SocialMediaDesign,
+	Tags.PhotoRetouch,
+	Tags.Illustration
+];

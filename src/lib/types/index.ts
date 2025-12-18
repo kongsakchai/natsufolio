@@ -1,3 +1,16 @@
+export enum Tags {
+	GraphicDesign = 'Graphic Design',
+	ProjectCoordinator = 'Project Coordinator',
+	CreativeProducer = 'Creative Producer',
+	AssistantProducer = 'Assistant Producer',
+	Thesis = 'Thesis',
+
+	ProductDesign = 'Product Design',
+	SocialMediaDesign = 'Social Media Design',
+	PhotoRetouch = 'Photo Retouch',
+	Illustration = 'Illustration'
+}
+
 export interface Experience {
 	year: number;
 	title: string;
@@ -21,6 +34,7 @@ export interface Project {
 	image: string;
 	name: string;
 	date: string;
+	category?: string;
 	link?: Link;
 	details?: string;
 	cover?: string;
@@ -30,5 +44,6 @@ export interface Project {
 	remark?: string;
 	moreImages?: string[];
 	moreLinks?: Link[];
-	types?: string[];
+	tags?: Tags[];
+	subTags?: Tags[];
 }

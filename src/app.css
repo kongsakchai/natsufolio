@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 
 @theme {
 	--color-primary: #020202;
 	--color-primary-foreground: #ffffff;
 	--font-primary: 'Archivo Black', systrem-ui, -apple-systrem, sans-serif;
-	--font-mono: 'Almarai', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
+	--font-almarai: 'Almarai', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
+	--font-roboto: 'Roboto', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
 }
 
 :root {
@@ -14,29 +16,25 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
 
-/* Body */
-body {
-	color: var(--color-primary-foreground);
-	font-size: 0.75rem;
+	font-size: 1rem;
 	line-height: 1.5;
 	font-weight: 400;
-	font-family: var(--font-primary);
-	background-color: var(--color-primary);
-
-	/*background: #c7d1ff;
-	background: linear-gradient(137deg, rgba(199, 209, 255, 1) 0%, rgba(245, 219, 255, 1) 100%);
-	background-repeat: no-repeat;
-	background-attachment: fixed;*/
-
-	height: 100dvh;
-	margin: 0;
-	padding: 0;
 }
 
 /* Header */
 @layer base {
+	/* Body */
+	body {
+		color: var(--color-primary-foreground);
+		font-family: var(--font-primary);
+		background-color: var(--color-primary);
+
+		height: 100dvh;
+		margin: 0;
+		padding: 0;
+	}
+
 	h1,
 	h2,
 	h3,

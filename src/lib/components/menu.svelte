@@ -44,7 +44,7 @@
 	{#each currentMenu as { name, link }}
 		<a
 			href={link}
-			class="text-sm text-center uppercase text-white text-shadow-md font-mono text-nowrap"
+			class="text-sm text-center uppercase text-white text-shadow-md font-almarai text-nowrap"
 		>
 			{name}
 		</a>
