@@ -4,10 +4,10 @@
 </script>
 
 <PageTransition>
-	<h1 class="tracking-wider">Natthamon Pienrakkarn, <br /> Natsu</h1>
-	<p class=" font-almarai text-sm">Graphic Designer</p>
+	<h1 class="header tracking-wider">Natthamon Pienrakkarn, <br /> Natsu</h1>
+	<h4 class="font-almarai font-normal">Graphic Designer</h4>
 
-	<section class="mx-auto my-1 max-w-[414px] h-full">
+	<section class="mx-auto my-1 max-w-103.5 h-full">
 		<Emoji />
 	</section>
 </PageTransition>

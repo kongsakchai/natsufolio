@@ -6,7 +6,7 @@
 @theme {
 	--color-primary: #020202;
 	--color-primary-foreground: #ffffff;
-	--font-primary: 'Archivo Black', systrem-ui, -apple-systrem, sans-serif;
+	--font-archivo: 'Archivo Black', systrem-ui, -apple-systrem, sans-serif;
 	--font-almarai: 'Almarai', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
 	--font-roboto: 'Roboto', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
 }
@@ -27,7 +27,7 @@
 	/* Body */
 	body {
 		color: var(--color-primary-foreground);
-		font-family: var(--font-primary);
+		font-family: var(--font-almarai);
 		background-color: var(--color-primary);
 
 		height: 100dvh;
@@ -42,8 +42,7 @@
 	h5,
 	h6 {
 		font-weight: 700;
-		margin: 24px 0 16px 0;
-		text-wrap: nowrap;
+		font-family: var(--font-archivo);
 	}
 
 	h1 {
@@ -59,18 +58,25 @@
 	}
 
 	h4 {
-		font-size: 1rem; /* 16px */
+		@apply text-sm sm:text-base;
 	}
 
 	h5 {
-		font-size: 0.875rem; /* 14px */
+		@apply text-sm;
 	}
 
 	h6 {
-		font-size: 0.75rem; /* 12px */
+		@apply text-xs;
 	}
 
 	p {
-		font-size: 0.625rem; /* 10px */
+		@apply text-xs;
+	}
+}
+
+@layer components {
+	.header {
+		margin: 24px 0 16px 0;
+		text-wrap: nowrap;
 	}
 }

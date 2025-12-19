@@ -1,3 +1,4 @@
+import { DigitalMarketing, SecureOnlineMarketig, SocialCommerce } from '$lib/assets/certificates';
 import {
 	HappyBambyDay,
 	NamYejun,
@@ -11,7 +12,13 @@ import {
 import { IG_PLATFORMS, TIKTOK_PLATFORM, X_Platforms } from '$lib/constants/platforms';
 import { AI_SKILL, FIGMA_SKILL, LR_SKILL, PS_SKILL } from '$lib/constants/skill';
 
-import { type Experience, type Project, Tags } from '$lib/types';
+import {
+	CertificateType,
+	type Certificates,
+	type Experience,
+	type Project,
+	Tags
+} from '$lib/types';
 
 export const creativeFields = [
 	'ILLUSTRATION',
@@ -148,4 +155,24 @@ export const graphicTypes = [
 	Tags.SocialMediaDesign,
 	Tags.PhotoRetouch,
 	Tags.Illustration
+];
+
+export const certificates: Certificates[] = [
+	{
+		type: CertificateType.BusinessAndMarketing,
+		list: [
+			{
+				name: 'Social Commerce for Business โดยกรมพัฒนาฝีมือแรงาน ร่วมกับ ETDA',
+				img: SocialCommerce
+			},
+			{
+				name: 'ก้าวสู่การเป็นนักการตลาดดิจิทัล <br/> โดยกรมพัฒนาฝีมือแรงาน ร่วมกับ ETDA',
+				img: DigitalMarketing
+			},
+			{
+				name: 'การสร้างความมั่นคงปลอดภัยให้ธุรกิจออนไลน์ <br/> โดยกรมพัฒนาฝีมือแรงาน ร่วมกับ ETDA',
+				img: SecureOnlineMarketig
+			}
+		]
+	}
 ];

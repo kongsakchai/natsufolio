@@ -1,4 +1,4 @@
-import { clamp } from '$lib/utils/math';
+import { clamp } from '$lib/utils';
 
 export const fadeInView = (element: HTMLElement) => {
 	const fade = () => {

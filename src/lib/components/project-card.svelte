@@ -4,6 +4,8 @@
 
 	import { ClockIcon } from '$lib/assets/icons';
 
+	import { showFormattedDate } from '$lib/utils';
+
 	import type { Project } from '$lib/types';
 
 	dayjs.extend(customParseFormat);
@@ -15,24 +17,24 @@
 	class="max-w-60 w-full aspect-2/3 bg-cover rounded-3xl flex flex-col justify-between overflow-hidden"
 	style="background-image: url({project.image});background-position: center;"
 >
-	<span
+	<p
 		class="font-almarai text-[10px] flex gap-1 items-center bg-black/45 w-fit px-1 rounded-3xl mt-2 ml-auto mr-2"
 	>
 		<img src={ClockIcon} alt={'clock-icon'} class="w-3 h-3 rounded-full img-shadow" />
-		{dayjs(project.date, 'DD-MM-YYYY').format('DD MMM YYYY')}
-	</span>
+		{showFormattedDate(project.date)}
+	</p>
 	<div class="w-full relative">
 		<div class="absolute top-0 card-shadow"></div>
 
 		<div class="w-full h-full z-1 flex flex-col relative px-2 pt-8 py-2 text-shadow">
-			<span class=" text-xs font-roboto font-bold">{project.name}</span>
-			<span class="text-xs font-almarai">{project.category}</span>
+			<h6 class="font-roboto font-bold">{project.name}</h6>
+			<p>{project.category}</p>
 
 			<a
 				href="/more-details"
-				class="more-detail-btn w-4/5 mx-auto font-almarai text-xs p-2 rounded-4xl flex justify-center items-center mt-4"
+				class="more-detail-btn w-4/5 mx-auto p-2 rounded-4xl flex justify-center items-center mt-4"
 			>
-				More Details
+				<p>More Details</p>
 			</a>
 		</div>
 	</div>

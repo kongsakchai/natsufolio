@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 
-	import { showFormattedDate } from '$lib/utils/date';
+	import { showFormattedDate } from '$lib/utils';
 
 	import { receive, send } from '$lib/transitions/crossfade';
 

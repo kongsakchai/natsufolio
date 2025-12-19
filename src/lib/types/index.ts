@@ -47,3 +47,17 @@ export interface Project {
 	tags?: Tags[];
 	subTags?: Tags[];
 }
+
+export enum CertificateType {
+	Desing = 'DESIGN',
+	BusinessAndMarketing = 'BUSINESS AND <br/>MARKETING',
+	AgileAndScrum = 'AGILE/SCRUM'
+}
+
+export interface Certificates {
+	type: CertificateType;
+	list: {
+		name: string;
+		img: string;
+	}[];
+}

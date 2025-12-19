@@ -4,20 +4,14 @@
 	let flip = $state(false);
 </script>
 
-<img
-	src={Face}
-	alt="Card Front"
-	class="card w-[330px] relative -top-10"
-	class:flip
-	loading="lazy"
-/>
+<img src={Face} alt="Card Front" class="card w-82.5 relative -top-10" class:flip loading="lazy" />
 
 <button class="hidden" onclick={() => (flip = !flip)}>
-	<img src={CardFront} alt="Card Front" class="card w-[330px]" class:flip loading="lazy" />
+	<img src={CardFront} alt="Card Front" class="card w-82.5" class:flip loading="lazy" />
 	<img
 		src={CardBack}
 		alt="Card Front"
-		class="card absolute top-0 w-[330px]"
+		class="card absolute top-0 w-82.5"
 		class:flip={!flip}
 		loading="lazy"
 	/>
