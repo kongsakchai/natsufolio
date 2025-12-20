@@ -1,4 +1,5 @@
-import type { SvelteComponent } from 'svelte';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import type { Component } from 'svelte';
 
 export type Tag = string;
 
@@ -21,8 +22,8 @@ export interface Link {
 }
 
 export interface Content {
-	Component: SvelteComponent;
-	params: unknown;
+	Component: Component<any>;
+	params: Record<string, any>;
 }
 
 export interface Project {

@@ -15,11 +15,11 @@
 
 <h1 class="header">WORK</h1>
 
-<section class="mt-10 max-w-full text-nowrap mb-10">
+<section class="mt-10 w-full text-nowrap mb-10">
 	{#each workTypes as workType}
 		{@const url = workType.toLowerCase().replaceAll(' ', '-')}
 		<a href="/work/{url}">
-			<h3 class="header uppercase flex items-center gap-3">
+			<h3 class="header uppercase flex items-center gap-3 font-almarai">
 				<img src={ArrowRight} alt="arrow right" class="inline-block w-4" />
 				{workType}
 				<span class="font-almarai font-normal text-xs ml-1">({workTypeCount[workType]})</span>

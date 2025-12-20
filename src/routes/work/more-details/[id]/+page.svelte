@@ -11,9 +11,8 @@
 	{@html data.project.name}
 </h1>
 
-<section class="mt-10 w-full mb-10 flex flex-col">
-	<section class="grid grid-cols-2 gap-4">
-		<img src={data.project.image} alt="cover" />
-		<p>{@html data.project.details}</p>
-	</section>
+<section class="mt-10 w-full mb-10 flex flex-col max-w-110 mx-auto gap-6">
+	{#each data.project.contents as { Component, params }}
+		<Component {...params} />
+	{/each}
 </section>

@@ -1,5 +1,19 @@
 import { DigitalMarketing, SecureOnlineMarketig, SocialCommerce } from '$lib/assets/certificates';
-import { HappyBambyDay, NamYejun, PlaveDebut100, Uranus2324 } from '$lib/assets/works';
+import {
+	HappyBambyDay,
+	NamYejun,
+	Netflix,
+	PlaveDebut100,
+	Uranus2324,
+	UranusBox,
+	UranusCamera,
+	UranusCard,
+	UranusCredit
+} from '$lib/assets/works';
+
+import ImageDetail from '$lib/components/project/image-detail.svelte';
+import Image from '$lib/components/project/image.svelte';
+import SubProject from '$lib/components/project/sub-project.svelte';
 
 import { AISkill, FigmaSkill, LRSkill, PSSkill } from '$lib/constants/skill';
 import { certificateTypes, tags } from '$lib/constants/tags';
@@ -42,6 +56,32 @@ export const experiences: Experience[] = [
 		year: 2023,
 		title: 'GM Generates Co.,Ltd',
 		details: '# Creative & Graphic Design'
+	}
+];
+
+export const uranusSubProject: Project[] = [
+	{
+		id: 'uranus-001',
+		name: 'กล่องพัสดุ URANUS 2324<br/><span class="text-[0.75em]">WORLDWIDE SHIPPING BOX</span>',
+		date: '',
+		image: UranusBox,
+		details: 'Design a shipping package/parcel box for merchandise from the movie Uranus2324.'
+	},
+	{
+		id: 'uranus-002',
+		name: 'Film Camera URANUS 2324',
+		date: '',
+		image: UranusCamera,
+		details:
+			'TIME FREEZER<br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.'
+	},
+	{
+		id: 'uranus-003',
+		name: 'Random Photo Card Pack',
+		date: '',
+		image: UranusCard,
+		details:
+			'A random photo card pack featuring characters from URANUS 2324.<br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
 	}
 ];
 
@@ -135,9 +175,42 @@ export const projects: Project[] = [
 		image: Uranus2324,
 		tags: [tags.GraphicDesign],
 		subTags: [tags.ProductDesign],
-		details:
-			'โปรเจคหนัง  ยูเรนัส 2324 เป็นภาพยนตร์ไซไฟ–โรแมนติกที่เล่าเรื่องความรัก การเวลา และจักรวาล ผ่านมุมมองอารมณ์และความสัมพันธ์ของตัวละคร<br/><br/>The film project Uranus 2324 is a sci-fi romantic movie that explores love, time, and the universe through the emotional perspectives and relationships of its characters.'
-		// moreImages: [UranusCredit]
+		contents: [
+			{
+				Component: ImageDetail,
+				params: {
+					class: 'grid grid-cols-2 gap-4',
+					img: Uranus2324,
+					detail:
+						'โปรเจคหนัง  ยูเรนัส 2324 เป็นภาพยนตร์ไซไฟ–โรแมนติกที่เล่าเรื่องความรัก การเวลา และจักรวาล ผ่านมุมมองอารมณ์และความสัมพันธ์ของตัวละคร<br/><br/>The film project Uranus 2324 is a sci-fi romantic movie that explores love, time, and the universe through the emotional perspectives and relationships of its characters.'
+				}
+			},
+			{
+				Component: ImageDetail,
+				params: {
+					class: 'flex gap-4',
+					classImg: 'w-[150px]',
+					img: Netflix,
+					detail:
+						'The end credits of the movie Uranus 2324.<br/><span class="text-[#FFCC22]">I was assigned the role of creative designer<br/>on this project.</span>'
+				}
+			},
+			{
+				Component: Image,
+				params: {
+					class: 'flex gap-4',
+					img: UranusCredit
+				}
+			},
+			{
+				Component: SubProject,
+				params: {
+					class: 'mt-6',
+					title: 'Project Design Contributions',
+					projects: uranusSubProject
+				}
+			}
+		]
 	}
 ];
 
