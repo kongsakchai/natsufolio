@@ -3,12 +3,16 @@
 
 	import { twoDigit } from '$lib/utils';
 
+	import { receive, send } from '$lib/transitions/crossfade';
+
 	import type { Certificates } from '$lib/types';
 
-	const getImageDimen = (node: HTMLImageElement) => {
-		const width = node.naturalWidth;
-		const height = node.naturalHeight;
-		node.width = (node.height * width) / height;
+	const imgSetting = (node: HTMLImageElement) => {
+		node.onload = () => {
+			const width = node.naturalWidth;
+			const height = node.naturalHeight;
+			node.width = (node.height * width) / height;
+		};
 	};
 </script>
 
@@ -21,33 +25,37 @@
 </svg>
 
 {#snippet folder(certs: Certificates)}
-	<div
+	<a
+		href="/certificate/{certs.type}"
 		class="bg-folder w-full min-w-87.5 aspect-video max-w-103.5 flex rounded-2xl overflow-hidden relative p-4 z-1"
 	>
 		{#each certs.list as cert, i}
 			<img
-				use:getImageDimen
+				in:receive|global={{ key: cert.name }}
+				out:send|global={{ key: cert.name }}
+				use:imgSetting
 				src={cert.img}
 				alt={cert.name}
 				class="relative cert-shadow object-contain"
 				style="left: {i > 0 ? -20 * i : '0'}%;z-index:{-i};"
+				loading="lazy"
 			/>
 		{/each}
 		<div
 			class="category-banner w-full h-full flex justify-between items-end px-4 pb-4 absolute top-0 left-0"
 		>
-			<h1>{@html certs.type}</h1>
+			<h1>{@html certs.title}</h1>
 			<p class="text-2xl sm:text-3xl text-center flex flex-col items-center">
 				<span>{twoDigit(certs.list.length)}</span>
 				<span class="text-xs">certificates</span>
 			</p>
 		</div>
-	</div>
+	</a>
 {/snippet}
 
 <h1 class="header">CERTIFICATE</h1>
 
-<section class="mt-10 mx-auto max-w-103.5 flex flex-col">
+<section class="mt-10 mb-10 mx-auto max-w-103.5 flex flex-col">
 	{#each certificates as cert}
 		{@render folder(cert)}
 	{/each}

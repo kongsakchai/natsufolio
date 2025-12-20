@@ -13,14 +13,14 @@
 	);
 </script>
 
-<h1 class="header mx-6 uppercase flex items-center gap-3">
+<h1 class="header uppercase flex items-center gap-3">
 	<button onclick={() => window.history.back()}>
 		<img src={ArrowLeft} alt="arrow right" class=" w-4" />
 	</button>
 	Graphic Design
 </h1>
 
-<section class="mt-10 mx-9 max-w-full text-nowrap flex flex-col gap-4">
+<section class="mt-10 max-w-full text-nowrap flex flex-col gap-4 mb-10">
 	{#each graphicTypes as graphicType}
 		<a href="/work/graphic-design/{graphicType}">
 			<h3

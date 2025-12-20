@@ -13,9 +13,9 @@
 	);
 </script>
 
-<h1 class="header mx-6">WORK</h1>
+<h1 class="header">WORK</h1>
 
-<section class="mt-10 mx-9 max-w-full text-nowrap">
+<section class="mt-10 max-w-full text-nowrap mb-10">
 	{#each workTypes as workType}
 		{@const url = workType.toLowerCase().replaceAll(' ', '-')}
 		<a href="/work/{url}">

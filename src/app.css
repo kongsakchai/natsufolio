@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
 @import 'tailwindcss';
 
 @theme {
 	--color-primary: #020202;
 	--color-primary-foreground: #ffffff;
 	--font-archivo: 'Archivo Black', systrem-ui, -apple-systrem, sans-serif;
-	--font-almarai: 'Almarai', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
+	--font-almarai: 'Almarai', 'Noto Sans Thai', ui-monospace, 'Menlo', 'Monaco', 'Courier New',
+		monospace;
 	--font-roboto: 'Roboto', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
 }
 
@@ -71,6 +72,10 @@
 
 	p {
 		@apply text-xs;
+	}
+
+	img {
+		@apply pointer-events-none;
 	}
 }
 

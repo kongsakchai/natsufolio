@@ -1,15 +1,6 @@
-export enum Tags {
-	GraphicDesign = 'Graphic Design',
-	ProjectCoordinator = 'Project Coordinator',
-	CreativeProducer = 'Creative Producer',
-	AssistantProducer = 'Assistant Producer',
-	Thesis = 'Thesis',
+import type { SvelteComponent } from 'svelte';
 
-	ProductDesign = 'Product Design',
-	SocialMediaDesign = 'Social Media Design',
-	PhotoRetouch = 'Photo Retouch',
-	Illustration = 'Illustration'
-}
+export type Tag = string;
 
 export interface Experience {
 	year: number;
@@ -29,33 +20,39 @@ export interface Link {
 	url: string;
 }
 
+export interface Content {
+	Component: SvelteComponent;
+	params: unknown;
+}
+
 export interface Project {
 	id: string;
 	image: string;
 	name: string;
 	date: string;
+	endDate?: string;
 	category?: string;
-	link?: Link;
+	// link?: Link;
 	details?: string;
-	cover?: string;
-	coverAlign?: string;
+	// cover?: string;
+	// coverAlign?: string;
 	hastags?: string[];
-	skills?: Skill[];
-	remark?: string;
-	moreImages?: string[];
-	moreLinks?: Link[];
-	tags?: Tags[];
-	subTags?: Tags[];
+	// skills?: Skill[];
+	// remark?: string;
+	// moreImages?: string[];
+	// moreLinks?: Link[];
+	tags?: Tag[];
+	subTags?: Tag[];
+	subProjectTitle?: string;
+	subProject?: Project[];
+	contents?: Content[];
 }
 
-export enum CertificateType {
-	Desing = 'DESIGN',
-	BusinessAndMarketing = 'BUSINESS AND <br/>MARKETING',
-	AgileAndScrum = 'AGILE/SCRUM'
-}
+export type CertificateType = string;
 
 export interface Certificates {
 	type: CertificateType;
+	title: string;
 	list: {
 		name: string;
 		img: string;

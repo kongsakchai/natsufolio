@@ -1,7 +1,9 @@
-export { default as HappyBambyDay } from '$lib/assets/works/happy-bamby-day.png';
-export { default as NamYejun } from '$lib/assets/works/nam-yejun.png';
-export { default as PlaveDebut100 } from '$lib/assets/works/plave-debut-100.png';
-export { default as TwinFlower3Styles } from '$lib/assets/works/TwinFlower-3-styles.png';
-export { default as TwinFlowerCover } from '$lib/assets/works/TwinFlower-cover.jpeg';
-export { default as TwinFlowerStepByStep } from '$lib/assets/works/TwinFlower-step-by-step.png';
-export { default as TwinFlower } from '$lib/assets/works/TwinFlower.png';
+export { default as HappyBambyDay } from './happy-bamby-day.png';
+export { default as NamYejun } from './nam-yejun.png';
+export { default as PlaveDebut100 } from './plave-debut-100.png';
+export { default as TwinFlower3Styles } from './TwinFlower-3-styles.png';
+export { default as TwinFlowerCover } from './TwinFlower-cover.jpeg';
+export { default as TwinFlowerStepByStep } from './TwinFlower-step-by-step.png';
+export { default as TwinFlower } from './TwinFlower.png';
+export { default as Uranus2324 } from './uranus-2324.png';
+export { default as UranusCredit } from './uranus-creadit.png';
