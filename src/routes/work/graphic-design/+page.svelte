@@ -20,7 +20,7 @@
 	Graphic Design
 </h1>
 
-<section class="mt-10 max-w-full text-nowrap flex flex-col gap-4 mb-10">
+<section class="mt-10 w-full text-nowrap flex flex-col gap-4 mb-10">
 	{#each graphicTypes as graphicType}
 		<a href="/work/graphic-design/{graphicType}">
 			<h3

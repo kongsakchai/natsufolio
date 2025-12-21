@@ -8,7 +8,12 @@ import {
 	UranusBox,
 	UranusCamera,
 	UranusCard,
-	UranusCredit
+	UranusCardHolder,
+	UranusCredit,
+	UranusHoodie,
+	UranusHoodie2,
+	UranusShirt,
+	UranusShirt2
 } from '$lib/assets/works';
 
 import ImageDetail from '$lib/components/project/image-detail.svelte';
@@ -73,7 +78,7 @@ export const uranusSubProject: Project[] = [
 		date: '',
 		image: UranusCamera,
 		details:
-			'TIME FREEZER<br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.'
+			'<span class="leading-4.5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.'
 	},
 	{
 		id: 'uranus-003',
@@ -81,7 +86,42 @@ export const uranusSubProject: Project[] = [
 		date: '',
 		image: UranusCard,
 		details:
-			'A random photo card pack featuring characters from URANUS 2324.<br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+			'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+	},
+	{
+		id: 'uranus-004',
+		name: 'Card Holder ',
+		date: '',
+		image: UranusCardHolder,
+		details: 'A card holder inspired by URANUS 2324.'
+	},
+	{
+		id: 'uranus-005',
+		name: 'URANUS2324 T-SHIRT<br/>HOW WOULD IT BE IF…',
+		date: '',
+		image: UranusShirt,
+		details: 'A T-shirt inspired by a key scene from the movie URANUS 2324.'
+	},
+	{
+		id: 'uranus-006',
+		name: 'URANUS2324 T-SHIRT<br/>I’M LIKE URANUS',
+		date: '',
+		image: UranusShirt2,
+		details: 'A T-shirt inspired by a key scene from the movie URANUS 2324.'
+	},
+	{
+		id: 'uranus-007',
+		name: 'URANUS2324 LIN&KATH<br/>HOODIE',
+		date: '',
+		image: UranusHoodie,
+		details: 'A Hoodie inspired by a key scene from the movie URANUS 2324.'
+	},
+	{
+		id: 'uranus-008',
+		name: 'URANUS2324 LOVE&PAIN<br/>HOODIE',
+		date: '',
+		image: UranusHoodie2,
+		details: 'A Hoodie inspired by a key scene from the movie URANUS 2324.'
 	}
 ];
 
@@ -192,7 +232,7 @@ export const projects: Project[] = [
 					classImg: 'w-[150px]',
 					img: Netflix,
 					detail:
-						'The end credits of the movie Uranus 2324.<br/><span class="text-[#FFCC22]">I was assigned the role of creative designer<br/>on this project.</span>'
+						'The end credits of the movie Uranus 2324.<br/><span class="text-[#FFCC22]">I was assigned the role of creative designer on this project.</span>'
 				}
 			},
 			{

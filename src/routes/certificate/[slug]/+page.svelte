@@ -13,7 +13,7 @@
 	{@html data.certificates.title}
 </h1>
 
-<section class="mt-10 mb-10 mx-auto max-w-103.5 flex flex-col items-center gap-4">
+<section class="mt-10 mb-10 mx-auto max-w-110 flex flex-col items-center gap-4">
 	{#each data.certificates.list as cert}
 		<figure class="max-w-62.5">
 			<img

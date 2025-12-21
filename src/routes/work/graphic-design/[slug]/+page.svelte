@@ -21,7 +21,7 @@
 </h1>
 
 <section
-	class="mx-auto mt-10 w-full max-w-200 text-nowrap grid grid-cols-2 gap-4 justify-items-center mb-10"
+	class="mx-auto mt-10 w-full min-w-110 max-w-200 text-nowrap grid grid-cols-2 gap-4 justify-items-center mb-10"
 >
 	{#each data.projects as project}
 		<ProjectCard {project} />

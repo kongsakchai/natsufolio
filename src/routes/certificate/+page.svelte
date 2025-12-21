@@ -27,7 +27,7 @@
 {#snippet folder(certs: Certificates)}
 	<a
 		href="/certificate/{certs.type}"
-		class="bg-folder w-full min-w-87.5 aspect-video max-w-103.5 flex rounded-2xl overflow-hidden relative p-4 z-1"
+		class="bg-folder w-full min-w-87.5 aspect-video max-w-110 flex rounded-2xl overflow-hidden relative p-4 z-1"
 	>
 		{#each certs.list as cert, i}
 			<img
@@ -55,7 +55,7 @@
 
 <h1 class="header">CERTIFICATE</h1>
 
-<section class="mt-10 mb-10 mx-auto max-w-103.5 flex flex-col">
+<section class="mt-10 mb-10 mx-auto max-w-110 flex flex-col">
 	{#each certificates as cert}
 		{@render folder(cert)}
 	{/each}

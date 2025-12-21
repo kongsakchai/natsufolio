@@ -7,7 +7,7 @@
 	<h1 class="header tracking-wider">Natthamon Pienrakkarn, <br /> Natsu</h1>
 	<h4 class="font-almarai font-normal">Graphic Designer</h4>
 
-	<section class="mx-auto my-1 max-w-103.5 h-full">
+	<section class="mx-auto my-1 max-w-110 h-full">
 		<Emoji />
 	</section>
 </PageTransition>

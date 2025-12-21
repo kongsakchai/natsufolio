@@ -11,7 +11,7 @@
 	{@html data.project.name}
 </h1>
 
-<section class="mt-10 w-full mb-10 flex flex-col max-w-110 mx-auto gap-6">
+<section class="mt-10 mb-10 flex flex-col max-w-110 mx-auto gap-6">
 	{#each data.project.contents as { Component, params }}
 		<Component {...params} />
 	{/each}
