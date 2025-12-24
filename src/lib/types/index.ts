@@ -43,7 +43,6 @@ export interface Project {
 	// moreImages?: string[];
 	// moreLinks?: Link[];
 	tags?: Tag[];
-	subTags?: Tag[];
 	subProjectTitle?: string;
 	subProject?: Project[];
 	contents?: Content[];
@@ -58,4 +57,9 @@ export interface Certificates {
 		name: string;
 		img: string;
 	}[];
+}
+
+export interface Menu {
+	name: string;
+	submenu?: Menu[];
 }

@@ -23,7 +23,7 @@ import SubProject from '$lib/components/project/sub-project.svelte';
 import { AISkill, FigmaSkill, LRSkill, PSSkill } from '$lib/constants/skill';
 import { certificateTypes, tags } from '$lib/constants/tags';
 
-import { type Certificates, type Experience, type Project } from '$lib/types';
+import { type Certificates, type Experience, type Menu, type Project, type Tag } from '$lib/types';
 
 export const creativeFields = [
 	'ILLUSTRATION',
@@ -139,8 +139,7 @@ export const projects: Project[] = [
 		// 	...XPlatform,
 		// 	url: 'https://x.com/ONLYYEJUN_TH/status/1670438719860662272'
 		// },
-		tags: [tags.GraphicDesign],
-		subTags: [tags.SocialMediaDesign]
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign]
 	},
 	{
 		id: '0002',
@@ -155,8 +154,7 @@ export const projects: Project[] = [
 		// 	...XPlatform,
 		// 	url: 'https://x.com/ONLYYEJUN_TH/status/1670446272648732672'
 		// },
-		tags: [tags.GraphicDesign],
-		subTags: [tags.SocialMediaDesign]
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign]
 	},
 	// {
 	// 	id: '0003',
@@ -203,8 +201,7 @@ export const projects: Project[] = [
 		// 	...XPlatform,
 		// 	url: 'https://x.com/ONLYYEJUN_TH/status/1679884413373661187'
 		// },
-		tags: [tags.GraphicDesign],
-		subTags: [tags.SocialMediaDesign]
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign]
 	},
 	{
 		id: '0005',
@@ -213,8 +210,7 @@ export const projects: Project[] = [
 		endDate: '04-07-2024',
 		category: 'Merchandise Design',
 		image: Uranus2324,
-		tags: [tags.GraphicDesign],
-		subTags: [tags.ProductDesign],
+		tags: [tags.GraphicDesign, tags.ProductDesign],
 		contents: [
 			{
 				Component: ImageDetail,
@@ -254,20 +250,48 @@ export const projects: Project[] = [
 	}
 ];
 
-export const workTypes = [
-	tags.GraphicDesign,
-	tags.ProjectCoordinator,
-	tags.CreativeProducer,
-	tags.AssistantProducer,
-	tags.Thesis
+export const workList: Menu[] = [
+	{
+		name: tags.GraphicDesign,
+		submenu: [
+			{
+				name: tags.ProductDesign
+			},
+			{
+				name: tags.SocialMediaDesign
+			},
+			{
+				name: tags.PhotoRetouch
+			},
+			{
+				name: tags.Illustration
+			}
+		]
+	},
+	{
+		name: tags.ProjectCoordinator
+	},
+	{
+		name: tags.CreativeProducer
+	},
+	{
+		name: tags.AssistantProducer
+	},
+	{
+		name: tags.Thesis
+	}
 ];
 
-export const graphicTypes = [
-	tags.ProductDesign,
-	tags.SocialMediaDesign,
-	tags.PhotoRetouch,
-	tags.Illustration
-];
+export const workCountByTags: Record<Tag, number> = projects.reduce(
+	(prev, cur) => {
+		cur.tags?.forEach((t) => {
+			prev[t] ||= 0;
+			prev[t]++;
+		});
+		return prev;
+	},
+	{} as Record<Tag, number>
+);
 
 export const certificates: Certificates[] = [
 	{

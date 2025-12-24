@@ -16,7 +16,7 @@ export const clamp = (value: number, min: number, max: number) => {
 };
 
 export const twoDigit = (n: number) => {
-	if (n == 0) return n.toString();
+	if (!n || n == 0) return '0';
 	const str = n.toString();
 	return str.length < 2 ? `0${str}` : str;
 };
