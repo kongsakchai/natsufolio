@@ -5,6 +5,7 @@ export { default as ArrowDown } from './arrow-down.svg';
 export { default as ArrowLeft } from './arrow-left.svg';
 export { default as ArrowRight } from './arrow-right.svg';
 export { default as ClockIcon } from './clock.svg';
+export { default as CloseIcon } from './close.svg';
 export { default as FigmaIcon } from './figma.svg';
 export { default as InstagramIcon } from './ig.svg';
 export { default as TiktokIcon } from './tiktok.svg';

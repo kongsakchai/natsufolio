@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { ArrowLeft } from '$lib/assets/icons';
 
-	import ProjectPopup from '$lib/components/project/project-popup.svelte';
-
 	let { data } = $props();
 </script>
 
@@ -18,5 +16,3 @@
 		<Component {...params} />
 	{/each}
 </section>
-
-<ProjectPopup />
