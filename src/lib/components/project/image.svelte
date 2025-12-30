@@ -3,10 +3,9 @@
 		class?: string;
 		classImg?: string;
 		img: string;
-		detail: string;
 	}
 
-	let { class: className, img, detail, classImg }: Props = $props();
+	let { class: className, img, classImg }: Props = $props();
 </script>
 
 <section class="w-full {className} ">

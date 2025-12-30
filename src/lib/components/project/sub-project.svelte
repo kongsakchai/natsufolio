@@ -35,7 +35,7 @@
 		};
 	};
 
-	const fadeDuration = 100;
+	const fadeDuration = 200;
 </script>
 
 <section class="flex flex-col gap-4 {className}">
@@ -49,14 +49,14 @@
 		>
 			{#if projectSelected?.id !== p.id}
 				<img
-					transition:fade={{ duration: fadeDuration }}
+					out:fade={{ duration: fadeDuration }}
 					src={p.image}
 					alt=""
 					class="my-auto h-full aspect-square rounded-2xl object-contain"
 				/>
 
 				<section
-					transition:fade={{ duration: fadeDuration }}
+					out:fade={{ duration: fadeDuration }}
 					class="flex flex-col flex-1 justify-between text-left"
 				>
 					<h5 class="font-almarai font-normal">
@@ -71,7 +71,7 @@
 				</section>
 
 				<img
-					transition:fade={{ duration: fadeDuration }}
+					out:fade={{ duration: fadeDuration }}
 					src={ArrowRight}
 					alt="arrow right"
 					class=" h-12 ml-auto"

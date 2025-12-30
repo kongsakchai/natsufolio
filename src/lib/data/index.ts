@@ -10,6 +10,7 @@ import {
 	UranusCard,
 	UranusCardHolder,
 	UranusCredit,
+	UranusDoubleBox,
 	UranusHoodie,
 	UranusHoodie2,
 	UranusShirt,
@@ -70,7 +71,16 @@ export const uranusSubProject: Project[] = [
 		name: 'กล่องพัสดุ URANUS 2324<br/><span class="text-[0.75em]">WORLDWIDE SHIPPING BOX</span>',
 		date: '',
 		image: UranusBox,
-		details: 'Design a shipping package/parcel box for merchandise from the movie Uranus2324.'
+		details: 'Design a shipping package/parcel box for merchandise from the movie Uranus2324.',
+		contents: [
+			{
+				Component: Image,
+				params: {
+					img: UranusDoubleBox,
+					detail: 'Design a shipping package/parcel box for merchandise from the movie Uranus2324.'
+				}
+			}
+		]
 	},
 	{
 		id: 'uranus-002',

@@ -4,12 +4,13 @@
 		classImg?: string;
 		img: string;
 		detail: string;
+		captionClass?: string;
 	}
 
-	let { class: className, img, detail, classImg }: Props = $props();
+	let { class: className, img, detail, classImg, captionClass }: Props = $props();
 </script>
 
-<section class="w-full {className} ">
+<figure class="w-full {className} ">
 	<img src={img} alt="cover" class="object-contain {classImg}" />
-	<p>{@html detail}</p>
-</section>
+	<figcaption class="mt-4 text-xs text-center {captionClass}">{@html detail}</figcaption>
+</figure>

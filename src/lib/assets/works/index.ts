@@ -12,6 +12,7 @@ export { default as UranusCamera } from './uranus-camera.png';
 export { default as UranusCardHolder } from './uranus-card-holder.png';
 export { default as UranusCard } from './uranus-card.png';
 export { default as UranusCredit } from './uranus-credit.png';
+export { default as UranusDoubleBox } from './uranus-double-box.png';
 export { default as UranusHoodie2 } from './uranus-hoodie-2.png';
 export { default as UranusHoodie } from './uranus-hoodie.png';
 export { default as UranusShirt2 } from './uranus-shirt-2.png';

@@ -33,15 +33,8 @@ export interface Project {
 	date: string;
 	endDate?: string;
 	category?: string;
-	// link?: Link;
 	details?: string;
-	// cover?: string;
-	// coverAlign?: string;
 	hastags?: string[];
-	// skills?: Skill[];
-	// remark?: string;
-	// moreImages?: string[];
-	// moreLinks?: Link[];
 	tags?: Tag[];
 	subProjectTitle?: string;
 	subProject?: Project[];
