@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import type { Component } from 'svelte';
+import type { Component, ComponentProps } from 'svelte';
 
 export type Tag = string;
 
@@ -21,9 +21,9 @@ export interface Link {
 	url: string;
 }
 
-export interface Content {
-	Component: Component<any>;
-	params: Record<string, any>;
+export interface Content<T extends Component> {
+	Component: T;
+	params: ComponentProps<T>;
 }
 
 export interface Project {
@@ -38,7 +38,7 @@ export interface Project {
 	tags?: Tag[];
 	subProjectTitle?: string;
 	subProject?: Project[];
-	contents?: Content[];
+	contents?: Content<any>[];
 }
 
 export type CertificateType = string;

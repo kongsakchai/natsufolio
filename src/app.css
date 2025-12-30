@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -10,6 +11,7 @@
 	--font-almarai: 'Almarai', 'Noto Sans Thai', ui-monospace, 'Menlo', 'Monaco', 'Courier New',
 		monospace;
 	--font-roboto: 'Roboto', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
+	--font-mono: 'Red Hat Mono', ui-monospace, 'Menlo', 'Monaco', 'Courier New', monospace;
 }
 
 :root {

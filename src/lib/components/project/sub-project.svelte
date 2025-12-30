@@ -1,10 +1,7 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
-
-	import { ArrowRight } from '$lib/assets/icons';
-
 	import type { Project } from '$lib/types';
 
+	import SubProjectItem from './sub-project-item.svelte';
 	import SubProjectPopup from './sub-project-popup.svelte';
 
 	interface Props {
@@ -47,36 +44,7 @@
 			class="project-bg bg-primary w-full h-37.5 rounded-4xl p-4 flex gap-3 overflow-hidden transition-all hover:scale-105"
 			class:scale-105={projectSelected?.id === p.id}
 		>
-			{#if projectSelected?.id !== p.id}
-				<img
-					out:fade={{ duration: fadeDuration }}
-					src={p.image}
-					alt=""
-					class="my-auto h-full aspect-square rounded-2xl object-contain"
-				/>
-
-				<section
-					out:fade={{ duration: fadeDuration }}
-					class="flex flex-col flex-1 justify-between text-left"
-				>
-					<h5 class="font-almarai font-normal">
-						{@html p.name}
-					</h5>
-
-					{#if p.details}
-						<p class="text-[10px] my-auto w-full overflow-hidden">
-							{@html p.details}
-						</p>
-					{/if}
-				</section>
-
-				<img
-					out:fade={{ duration: fadeDuration }}
-					src={ArrowRight}
-					alt="arrow right"
-					class=" h-12 ml-auto"
-				/>
-			{/if}
+			<SubProjectItem project={p} duration={fadeDuration} hide={projectSelected?.id === p.id} />
 		</button>
 	{/each}
 </section>

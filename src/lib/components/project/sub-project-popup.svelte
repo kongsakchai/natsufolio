@@ -23,38 +23,38 @@
 	let local = new Tween({ w: 0, h: 0, l: 0, t: 0 });
 
 	$effect(() => {
-		document.body.style.overflow = project ? 'hidden' : 'auto';
-		if (project) {
-			openPopup = false;
-			local.set(
+		document.body.style.overflow = project ? 'hidden' : '';
+		if (!project) return;
+
+		openPopup = false;
+		local.set(
+			{
+				w: width ?? 0,
+				h: height ?? 0,
+				l: left ?? 0,
+				t: top ?? 0
+			},
+			{
+				duration: 0
+			}
+		);
+
+		setTimeout(async () => {
+			openPopup = true;
+			await local.set(
 				{
-					w: width ?? 0,
-					h: height ?? 0,
-					l: left ?? 0,
-					t: top ?? 0
+					w: window.innerWidth * 0.9,
+					h: window.innerHeight * 0.9,
+					l: (window.innerWidth - window.innerWidth * 0.9) / 2,
+					t: (window.innerHeight - window.innerHeight * 0.9) / 2
 				},
 				{
-					duration: 0
+					duration: duration
 				}
 			);
 
-			setTimeout(async () => {
-				openPopup = true;
-				await local.set(
-					{
-						w: window.innerWidth * 0.9,
-						h: window.innerHeight * 0.9,
-						l: (window.innerWidth - window.innerWidth * 0.9) / 2,
-						t: (window.innerHeight - window.innerHeight * 0.9) / 2
-					},
-					{
-						duration: duration
-					}
-				);
-
-				openContent = true;
-			}, duration);
-		}
+			openContent = true;
+		}, duration);
 	});
 
 	const handleClose = async () => {
@@ -70,30 +70,32 @@
 				duration: duration
 			}
 		);
-		project = undefined;
 		openPopup = false;
+		setTimeout(() => {
+			project = undefined;
+		}, duration / 2);
 	};
 </script>
 
 {#if openPopup}
 	<div
-		transition:fade
+		in:fade={{ duration: duration }}
 		class="fixed w-screen h-screen bg-white/10 backdrop-blur-sm top-0 left-0 z-20"
 	></div>
 	<section
-		class="fixed project-bg rounded-4xl p-6 flex gap-3 bg-primary project-bg z-21 flex-col overflow-hidden"
+		class="fixed project-bg rounded-4xl p-6 flex gap-6 bg-primary project-bg z-21 flex-col overflow-scroll pb-20"
 		style="width:{local.current.w}px;height:{local.current.h}px;left:{local.current.l}px;top:{local
 			.current.t}px;"
 	>
 		{#if openContent}
-			<h1 class=" uppercase items-center gap-3 font-almarai font-normal flex">
+			<h2 class=" uppercase items-start gap-3 font-almarai font-normal flex">
 				<button onclick={handleClose}>
 					<img src={ArrowLeft} alt="arrow right" class=" w-4" />
 				</button>
 				<div>
 					{@html project?.name}
 				</div>
-			</h1>
+			</h2>
 
 			{#each project?.contents as { Component, params }, i}
 				<section

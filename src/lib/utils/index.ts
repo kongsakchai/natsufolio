@@ -1,6 +1,10 @@
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 
+import type { Component, ComponentProps } from 'svelte';
+
+import type { Content } from '$lib/types';
+
 dayjs.extend(customParseFormat);
 
 export const showFormattedDate = (date: string | dayjs.Dayjs) => {
@@ -20,3 +24,12 @@ export const twoDigit = (n: number) => {
 	const str = n.toString();
 	return str.length < 2 ? `0${str}` : str;
 };
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const defineContent = <T extends Component<any>>(
+	component: T,
+	params: ComponentProps<T>
+): Content<T> => ({
+	Component: component,
+	params: params
+});

@@ -9,7 +9,7 @@
 
 	import { type Menu } from '$lib/types';
 
-	import WorkButton from './work-button.svelte';
+	import WorkMenu from './work-menu.svelte';
 
 	let { work, isSub }: { work: Menu; isSub?: boolean } = $props();
 
@@ -35,7 +35,7 @@
 {#if show}
 	<div transition:slide|global class="w-full ml-6 flex flex-col gap-4">
 		{#each work.submenu as submenu}
-			<WorkButton work={submenu} isSub={true} />
+			<WorkMenu work={submenu} isSub={true} />
 		{/each}
 	</div>
 {/if}

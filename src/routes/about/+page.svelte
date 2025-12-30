@@ -1,10 +1,10 @@
 <script lang="ts">
 	import { creativeFields, experiences, skills, softSkills } from '$lib/data';
 
-	import CardId from '$lib/components/card-id.svelte';
-	import ChipList from '$lib/components/chip-list.svelte';
-	import Experiences from '$lib/components/experiences.svelte';
-	import HardSkill from '$lib/components/hard-skill.svelte';
+	import CardId from '$lib/components/about/card-id.svelte';
+	import ChipList from '$lib/components/about/chip-list.svelte';
+	import Experiences from '$lib/components/about/experiences.svelte';
+	import HardSkill from '$lib/components/about/hard-skill.svelte';
 
 	import { fadeInView } from '$lib/services/use/fade-in-view';
 </script>

@@ -7,6 +7,8 @@ export { default as TwinFlowerCover } from './TwinFlower-cover.jpeg';
 export { default as TwinFlowerStepByStep } from './TwinFlower-step-by-step.png';
 export { default as TwinFlower } from './TwinFlower.png';
 export { default as Uranus2324 } from './uranus-2324.png';
+export { default as UranusBox1 } from './uranus-box-1.png';
+export { default as UranusBox2 } from './uranus-box-2.png';
 export { default as UranusBox } from './uranus-box.png';
 export { default as UranusCamera } from './uranus-camera.png';
 export { default as UranusCardHolder } from './uranus-card-holder.png';
