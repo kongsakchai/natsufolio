@@ -21,7 +21,7 @@
 			loading="lazy"
 		/>
 		<p class="caption my-4 font-almarai opacity-70">
-			ปัดเพื่อพลิกซองใส่การ์ด<br />Swipe to turn the card sleeve.
+			กดเพื่อพลิกซองใส่การ์ด<br />Click to turn the card sleeve.
 		</p>
 	</button>
 </div>

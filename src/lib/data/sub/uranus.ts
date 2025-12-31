@@ -26,7 +26,12 @@ import {
 	UranusRadomCard2,
 	UranusRadomCard3,
 	UranusRadomCard4,
-	UranusShirt,
+	UranusShirt1,
+	UranusShirt1Black1,
+	UranusShirt1White1,
+	UranusShirt1_0,
+	UranusShirt1_1,
+	UranusShirt1_2,
 	UranusShirt2
 } from '$lib/assets/works';
 
@@ -36,9 +41,10 @@ import MultipleImage from '$lib/components/project/multiple-image.svelte';
 import Paragraph from '$lib/components/project/paragraph.svelte';
 import ProgramUse from '$lib/components/project/program-use.svelte';
 import ScrollImage from '$lib/components/project/scroll-image.svelte';
+import SubProject from '$lib/components/project/sub-project.svelte';
 import Title from '$lib/components/project/title.svelte';
 
-import { AISkill, PSSkill } from '$lib/constants/skill';
+import { AISkill, LRSkill, PSSkill } from '$lib/constants/skill';
 
 import { defineContent } from '$lib/utils';
 
@@ -168,8 +174,48 @@ export const uranus0005: Project[] = [
 		id: 'uranus-005',
 		name: 'URANUS2324 T-SHIRT<br/>HOW WOULD IT BE IF…',
 		date: '',
-		image: UranusShirt,
-		details: 'A T-shirt inspired by a key scene from the movie URANUS 2324.'
+		image: UranusShirt1,
+		details: 'A T-shirt inspired by a key scene from the movie URANUS 2324.',
+		contents: [
+			defineContent(ImageDetail, {
+				img: UranusShirt1,
+				classImg: 'w-[70%] mx-auto preview',
+				detail:
+					'A T-shirt inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (T-shirt pattern)</li><li>Photo Retouch</li><li>T-Shirt Design</li></ul>'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill, LRSkill],
+				class: 'mt-4 '
+			}),
+			defineContent(ScrollImage, {
+				initIndex: 1,
+				images: [UranusShirt1_0, UranusShirt1White1, UranusShirt1_1]
+			}),
+			defineContent(ScrollImage, {
+				initIndex: 1,
+				images: [UranusShirt1_0, UranusShirt1Black1, UranusShirt1_1]
+			}),
+			defineContent(MultipleImage, {
+				images: [UranusShirt1_2],
+				classImg: 'w-[80%] mx-auto preview',
+				class: 'flex flex-col w-full gap-1'
+			}),
+			defineContent(SubProject, {
+				class: 'mt-6',
+				title: 'Creative Producer',
+				disableClick: true,
+				projects: [
+					{
+						id: 'uranus-003',
+						name: 'Random Photo Card Pack',
+						date: '',
+						image: UranusRadomCard1,
+						details:
+							'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+					}
+				]
+			})
+		]
 	},
 	{
 		id: 'uranus-006',

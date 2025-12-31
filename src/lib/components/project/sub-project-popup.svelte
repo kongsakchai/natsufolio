@@ -88,7 +88,7 @@
 			.current.t}px;"
 	>
 		{#if openContent}
-			<h2 class="sticky top-0 uppercase items-start gap-3 font-almarai font-normal flex">
+			<h2 class="sticky top-0 uppercase items-start gap-3 font-almarai font-normal flex z-20">
 				<button onclick={handleClose}>
 					<img src={ArrowLeft} alt="arrow right" class=" w-4" />
 				</button>

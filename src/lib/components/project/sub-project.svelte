@@ -5,12 +5,13 @@
 	import SubProjectPopup from './sub-project-popup.svelte';
 
 	interface Props {
+		disableClick?: boolean;
 		class?: string;
 		title: string;
 		projects: Project[];
 	}
 
-	let { class: className, title, projects }: Props = $props();
+	let { class: className, title, projects, disableClick }: Props = $props();
 
 	let projectSelected = $state<Project>();
 	let rectSelected = $state<{
@@ -21,6 +22,8 @@
 	}>({});
 
 	const handleOpen = (e: Event, p: Project) => {
+		if (disableClick) return;
+
 		const el = e.currentTarget as HTMLElement;
 		const rect = el.getBoundingClientRect();
 		projectSelected = p;
