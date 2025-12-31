@@ -10,18 +10,30 @@ import {
 	UranusCameraEx4,
 	UranusCameraSheet,
 	UranusCameraSheet2,
-	UranusCard,
+	UranusCardBack,
+	UranusCardFront,
 	UranusCardHolder,
+	UranusCardHolder1,
+	UranusCardHolder2,
+	UranusCardHolder3,
+	UranusCardHolder4,
+	UranusCardHolder5,
 	UranusDoubleBox,
 	UranusDoubleCamera,
 	UranusHoodie,
 	UranusHoodie2,
+	UranusRadomCard1,
+	UranusRadomCard2,
+	UranusRadomCard3,
+	UranusRadomCard4,
 	UranusShirt,
 	UranusShirt2
 } from '$lib/assets/works';
 
+import CardFlip from '$lib/components/project/card-flip.svelte';
 import ImageDetail from '$lib/components/project/image-detail.svelte';
 import MultipleImage from '$lib/components/project/multiple-image.svelte';
+import Paragraph from '$lib/components/project/paragraph.svelte';
 import ProgramUse from '$lib/components/project/program-use.svelte';
 import ScrollImage from '$lib/components/project/scroll-image.svelte';
 import Title from '$lib/components/project/title.svelte';
@@ -68,7 +80,7 @@ export const uranus0005: Project[] = [
 				img: UranusDoubleCamera,
 				classImg: 'w-2/3 mx-auto preview',
 				detail:
-					'<span class="text-sm leading-5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging design</li><li>File Camera Sticker</li><li>Film Camera Filter</li><li>Design images for social media and sales platforms</li></ul>'
+					'<span class="text-sm leading-5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging design</li><li>Film Camera Sticker</li><li>Film Camera Filter</li><li>Design images for social media and sales platforms</li></ul>'
 			}),
 			defineContent(ProgramUse, {
 				list: [PSSkill, AISkill],
@@ -98,16 +110,59 @@ export const uranus0005: Project[] = [
 		id: 'uranus-003',
 		name: 'Random Photo Card Pack',
 		date: '',
-		image: UranusCard,
+		image: UranusRadomCard1,
 		details:
-			'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+			'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.',
+		contents: [
+			defineContent(CardFlip, {
+				front: UranusCardFront,
+				back: UranusCardBack,
+				class: 'w-[60%]'
+			}),
+			defineContent(Paragraph, {
+				str: 'A random photo card pack featuring characters from URANUS 2324.Each pack contains 4 random cards. There are a total of 13 different cards to collect.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging</li><li>Retouch Photo Card</li><li>Design images for social media and sales platforms</li></ul>'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			}),
+			defineContent(ScrollImage, {
+				images: [UranusRadomCard2, UranusRadomCard1, UranusRadomCard3]
+			}),
+			defineContent(MultipleImage, {
+				images: [UranusRadomCard4],
+				classImg: 'w-[80%] mx-auto preview',
+				class: 'flex flex-col w-full gap-1'
+			})
+		]
 	},
 	{
 		id: 'uranus-004',
 		name: 'Card Holder ',
 		date: '',
-		image: UranusCardHolder,
-		details: 'A card holder inspired by URANUS 2324.'
+		image: UranusCardHolder1,
+		details: 'A card holder inspired by URANUS 2324.',
+		contents: [
+			defineContent(ImageDetail, {
+				img: UranusCardHolder,
+				classImg: 'w-2/3 mx-auto preview',
+				detail:
+					'A card holder inspired by URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging</li><li>Card Holder</li><li>Acrylic</li><li>Cushion</li></ul>'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			}),
+			defineContent(ScrollImage, {
+				initIndex: 1,
+				images: [UranusCardHolder4, UranusCardHolder1, UranusCardHolder2, UranusCardHolder3]
+			}),
+			defineContent(MultipleImage, {
+				images: [UranusCardHolder5],
+				classImg: 'w-[80%] mx-auto preview',
+				class: 'flex flex-col w-full gap-1'
+			})
+		]
 	},
 	{
 		id: 'uranus-005',
