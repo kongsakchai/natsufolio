@@ -3,9 +3,17 @@ import {
 	UranusBox1,
 	UranusBox2,
 	UranusCamera,
+	UranusCameraEx0,
+	UranusCameraEx1,
+	UranusCameraEx2,
+	UranusCameraEx3,
+	UranusCameraEx4,
+	UranusCameraSheet,
+	UranusCameraSheet2,
 	UranusCard,
 	UranusCardHolder,
 	UranusDoubleBox,
+	UranusDoubleCamera,
 	UranusHoodie,
 	UranusHoodie2,
 	UranusShirt,
@@ -15,6 +23,8 @@ import {
 import ImageDetail from '$lib/components/project/image-detail.svelte';
 import MultipleImage from '$lib/components/project/multiple-image.svelte';
 import ProgramUse from '$lib/components/project/program-use.svelte';
+import ScrollImage from '$lib/components/project/scroll-image.svelte';
+import Title from '$lib/components/project/title.svelte';
 
 import { AISkill, PSSkill } from '$lib/constants/skill';
 
@@ -32,7 +42,7 @@ export const uranus0005: Project[] = [
 		contents: [
 			defineContent(ImageDetail, {
 				img: UranusDoubleBox,
-				classImg: 'w-2/3 mx-auto',
+				classImg: 'w-2/3 mx-auto preview',
 				detail: 'Design a shipping package/parcel box for merchandise from the movie Uranus2324.'
 			}),
 			defineContent(ProgramUse, {
@@ -42,7 +52,7 @@ export const uranus0005: Project[] = [
 			defineContent(MultipleImage, {
 				images: [UranusBox1, UranusBox2],
 				class: 'grid grid-cols-2 gap-4',
-				classImg: 'size-50 mx-auto'
+				classImg: 'size-50 mx-auto preview'
 			})
 		]
 	},
@@ -52,7 +62,37 @@ export const uranus0005: Project[] = [
 		date: '',
 		image: UranusCamera,
 		details:
-			'<span class="leading-4.5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.'
+			'<span class="leading-4.5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.',
+		contents: [
+			defineContent(ImageDetail, {
+				img: UranusDoubleCamera,
+				classImg: 'w-2/3 mx-auto preview',
+				detail:
+					'<span class="text-sm leading-5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging design</li><li>File Camera Sticker</li><li>Film Camera Filter</li><li>Design images for social media and sales platforms</li></ul>'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			}),
+			defineContent(Title, {
+				h: 2,
+				content: 'Design Sheet',
+				class: 'font-almarai font-normal text-center'
+			}),
+			defineContent(MultipleImage, {
+				images: [UranusCameraSheet, UranusCameraSheet2],
+				classImg: 'w-full preview',
+				class: 'flex flex-col w-full gap-1'
+			}),
+			defineContent(ScrollImage, {
+				images: [UranusCameraEx0, UranusCameraEx1, UranusCameraEx2]
+			}),
+			defineContent(MultipleImage, {
+				images: [UranusCameraEx3, UranusCameraEx4],
+				classImg: 'w-full preview',
+				class: 'flex flex-col w-full gap-1'
+			})
+		]
 	},
 	{
 		id: 'uranus-003',

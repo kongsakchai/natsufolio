@@ -80,6 +80,15 @@
 	img {
 		@apply pointer-events-none;
 	}
+
+	img.preview {
+		@apply pointer-events-auto;
+	}
+
+	ul {
+		list-style: disc;
+		@apply pl-2;
+	}
 }
 
 @layer components {

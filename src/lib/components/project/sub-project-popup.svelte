@@ -83,12 +83,12 @@
 		class="fixed w-screen h-screen bg-white/10 backdrop-blur-sm top-0 left-0 z-20"
 	></div>
 	<section
-		class="fixed project-bg rounded-4xl p-6 flex gap-6 bg-primary project-bg z-21 flex-col overflow-scroll pb-20"
+		class="fixed project-bg rounded-4xl p-6 flex gap-6 bg-primary project-bg z-21 flex-col overflow-x-hidden overflow-y-scroll pb-20"
 		style="width:{local.current.w}px;height:{local.current.h}px;left:{local.current.l}px;top:{local
 			.current.t}px;"
 	>
 		{#if openContent}
-			<h2 class=" uppercase items-start gap-3 font-almarai font-normal flex">
+			<h2 class="sticky top-0 uppercase items-start gap-3 font-almarai font-normal flex">
 				<button onclick={handleClose}>
 					<img src={ArrowLeft} alt="arrow right" class=" w-4" />
 				</button>

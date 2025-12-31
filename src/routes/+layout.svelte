@@ -1,24 +1,11 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	import Menu from '$lib/components/menu.svelte';
 	import Navbar from '$lib/components/navbar.svelte';
+	import PreviewImg from '$lib/components/preview-img.svelte';
 
 	import '../app.css';
 
 	let { children } = $props();
-
-	onMount(() => {
-		let allImages = document.querySelectorAll('img');
-		allImages.forEach((value) => {
-			value.oncontextmenu = (e) => {
-				e.preventDefault();
-			};
-			value.onpointerdown = (e) => {
-				e.preventDefault();
-			};
-		});
-	});
 </script>
 
 <svelte:head>
@@ -30,3 +17,5 @@
 {@render children()}
 
 <Menu />
+
+<PreviewImg />

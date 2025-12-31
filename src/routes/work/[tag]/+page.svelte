@@ -4,7 +4,7 @@
 
 	import { ArrowLeft } from '$lib/assets/icons';
 
-	import ProjectCard from '$lib/components/project-card.svelte';
+	import ProjectCard from '$lib/components/work/project-card.svelte';
 
 	import type { PageProps } from './$types';
 
