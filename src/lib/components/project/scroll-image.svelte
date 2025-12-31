@@ -56,7 +56,7 @@
 				style:left="{(i - index) * 75 + 50}%"
 				style:top="{i === index ? 50 : 60}%"
 				style:z-index={i === index ? 1 : 0}
-				style:opacity={i === index ? 1 : 0.7}
+				style:opacity={i === index ? 1 : 0.6}
 				onclick={() => (index = i)}
 			>
 				{#if typeof img === 'object'}
