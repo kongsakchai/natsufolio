@@ -13,15 +13,23 @@
 		let timeout = 0;
 
 		const pointerDownHandler = (e: PointerEvent) => {
-			hold = false;
-			timeout = setTimeout(() => {
-				hold = true;
-			}, 500);
+			const target = e.target as HTMLElement;
+			if (target.tagName === 'IMG') {
+				e.preventDefault();
+
+				hold = false;
+				timeout = setTimeout(() => {
+					hold = true;
+				}, 500);
+			}
 		};
 
 		const pointerUpHandler = (e: PointerEvent) => {
-			clearTimeout(timeout);
-			hold = false;
+			const target = e.target as HTMLElement;
+			if (target.tagName === 'IMG') {
+				clearTimeout(timeout);
+				hold = false;
+			}
 		};
 
 		const clickHandler = (e: PointerEvent) => {
@@ -43,18 +51,18 @@
 			}
 		};
 
-		window.addEventListener('click', clickHandler);
-		window.addEventListener('contextmenu', contextMenuHandler);
-		window.addEventListener('pointerup', pointerUpHandler);
-		window.addEventListener('pointercancel', pointerUpHandler);
-		window.addEventListener('pointerdown', pointerDownHandler);
+		document.addEventListener('click', clickHandler);
+		document.addEventListener('contextmenu', contextMenuHandler);
+		document.addEventListener('pointerup', pointerUpHandler);
+		document.addEventListener('pointercancel', pointerUpHandler);
+		document.addEventListener('pointerdown', pointerDownHandler);
 
 		return () => {
-			window.removeEventListener('click', clickHandler);
-			window.removeEventListener('contextmenu', contextMenuHandler);
-			window.removeEventListener('pointerup', pointerUpHandler);
-			window.removeEventListener('pointercancel', pointerUpHandler);
-			window.removeEventListener('pointerdown', pointerDownHandler);
+			document.removeEventListener('click', clickHandler);
+			document.removeEventListener('contextmenu', contextMenuHandler);
+			document.removeEventListener('pointerup', pointerUpHandler);
+			document.removeEventListener('pointercancel', pointerUpHandler);
+			document.removeEventListener('pointerdown', pointerDownHandler);
 		};
 	});
 </script>

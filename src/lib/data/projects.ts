@@ -1,11 +1,5 @@
-import {
-	HappyBambyDay,
-	NamYejun,
-	Netflix,
-	PlaveDebut100,
-	Uranus2324,
-	UranusCredit
-} from '$lib/assets/works';
+import { HappyBambyDay, NamYejun, PlaveDebut100 } from '$lib/assets/works';
+import * as uranusImg from '$lib/assets/works/uranus';
 
 import ImageDetail from '$lib/components/project/image-detail.svelte';
 import SubProject from '$lib/components/project/sub-project.svelte';
@@ -102,26 +96,27 @@ export const projects: Project[] = [
 		date: '05-09-2023',
 		endDate: '04-07-2024',
 		category: 'Merchandise Design',
-		image: Uranus2324,
+		image: uranusImg.UranusPosterThumbnail,
 		tags: [tags.GraphicDesign, tags.ProductDesign],
 		contents: [
 			defineContent(ImageDetail, {
 				class: 'grid grid-cols-2 gap-4',
-				img: Uranus2324,
+				img: uranusImg.UranusPoster,
+				classImg: 'preview',
 				detail:
 					'โปรเจคหนัง  ยูเรนัส 2324 เป็นภาพยนตร์ไซไฟ–โรแมนติกที่เล่าเรื่องความรัก การเวลา และจักรวาล ผ่านมุมมองอารมณ์และความสัมพันธ์ของตัวละคร<br/><br/>The film project Uranus 2324 is a sci-fi romantic movie that explores love, time, and the universe through the emotional perspectives and relationships of its characters.'
 			}),
 			defineContent(ImageDetail, {
 				class: 'flex gap-4',
 				classImg: 'w-[150px]',
-				img: Netflix,
+				img: uranusImg.NetflixLogo,
 				detailClass: 'text-center ',
 				detail:
 					'The end credits of the movie Uranus 2324.<br/><span class="text-[#FFCC22]">I was assigned the role of creative designer on this project.</span>'
 			}),
 			defineContent(ImageDetail, {
 				class: 'flex gap-4',
-				img: UranusCredit
+				img: uranusImg.UranusEndCredit
 			}),
 			defineContent(SubProject, {
 				class: 'mt-6',
