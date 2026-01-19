@@ -24,7 +24,7 @@ export const projects: Project[] = [
 		category: 'Poster Design',
 		image: socialImg.PlaveYejunThumbnail,
 		imageStyle: 'background-size: 220%;background-position:top center;',
-		tags: [tags.SocialMediaDesign],
+		tags: [tags.GraphicDesign,tags.SocialMediaDesign],
 		contents: [
 			defineContent(ImageDetail, {
 				img: socialImg.PlaveYejun,
@@ -48,7 +48,7 @@ export const projects: Project[] = [
 		date: '18-06-2023',
 		category: 'Poster Design',
 		image: socialImg.PlaveYejun100Thumbnail,
-		tags: [tags.SocialMediaDesign],
+		tags: [tags.GraphicDesign,tags.SocialMediaDesign],
 		contents: [
 			defineContent(ImageDetail, {
 				img: socialImg.PlaveYejun100,
@@ -72,7 +72,7 @@ export const projects: Project[] = [
 		date: '14-07-2023',
 		category: 'Poster Design',
 		image: socialImg.BambyThumbnail,
-		tags: [tags.SocialMediaDesign],
+		tags: [tags.GraphicDesign,tags.SocialMediaDesign],
 		contents: [
 			defineContent(ImageDetail, {
 				img: socialImg.Bamby,
