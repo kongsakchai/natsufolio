@@ -119,8 +119,9 @@ export const projects: Project[] = [
 					'The end credits of the movie Uranus 2324.<br/><span class="text-[#FFCC22]">I was assigned the role of creative designer on this project.</span>'
 			}),
 			defineContent(ImageDetail, {
-				class: 'flex gap-4 preview',
-				img: uranusImg.UranusEndCredit
+				class: 'flex gap-4',
+				img: uranusImg.UranusEndCredit,
+      classImg: 'preview'
 			}),
 			defineContent(SubProject, {
 				class: 'mt-6',
