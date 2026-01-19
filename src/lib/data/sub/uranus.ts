@@ -204,20 +204,144 @@ export const uranus0005: Project[] = [
 		name: 'URANUS2324 T-SHIRT<br/>I’M LIKE URANUS',
 		date: '',
 		image: uranusImg.TShirtImLikeUranusThumbnail,
-		details: 'A T-shirt inspired by a key scene from the movie URANUS 2324.'
+		details: 'A T-shirt inspired by a key scene from the movie URANUS 2324.',
+		contents: [
+			defineContent(ImageDetail, {
+				img: uranusImg.TShirtHowWouldMain,
+				classImg: 'w-[70%] mx-auto preview',
+				detail:
+					'A T-shirt inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (T-shirt pattern)</li><li>Photo Retouch</li><li>T-Shirt Design</li></ul>'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill, LRSkill],
+				class: 'mt-4 '
+			}),
+			defineContent(ScrollImage, {
+				initIndex: 0,
+				images: [uranusImg.TShirtImLikeUranusWhite, uranusImg.TShirtImLikeUranusPhoto]
+			}),
+			defineContent(ScrollImage, {
+				initIndex: 0,
+				images: [uranusImg.TShirtImLikeUranusBlack, uranusImg.TShirtImLikeUranusPhoto]
+			}),
+			defineContent(MultipleImage, {
+				images: [uranusImg.TShirtImLikeUranusExample1],
+				classImg: 'w-[80%] mx-auto preview',
+				class: 'flex flex-col w-full gap-1'
+			}),
+			defineContent(SubProject, {
+				class: 'mt-6',
+				title: 'Creative Producer',
+				disableClick: true,
+				projects: [
+					{
+						id: 'uranus-003',
+						name: 'Random Photo Card Pack',
+						date: '',
+						image: uranusImg.RandomCardExample2,
+						details:
+							'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+					}
+				]
+			})
+		]
 	},
 	{
 		id: 'uranus-007',
 		name: 'URANUS2324 LIN&KATH<br/>HOODIE',
 		date: '',
 		image: uranusImg.HoodieLinKathThumbnail,
-		details: 'A Hoodie inspired by a key scene from the movie URANUS 2324.'
+		details: 'A Hoodie inspired by a key scene from the movie URANUS 2324.',
+		contents: [
+			defineContent(ImageDetail, {
+				img: uranusImg.HoodieLinKathMain,
+				classImg: 'w-[70%] mx-auto preview',
+				detail:
+					'A Hoodie inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (Hoodie pattern)</li><li>Photo Retouch</li><li>Hoodie Design</li></ul>'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill, LRSkill],
+				class: 'mt-4 '
+			}),
+			defineContent(MultipleImage, {
+				images: [uranusImg.HoodieLinKathExample1, uranusImg.HoodieLinKathExample2],
+				classImg: 'w-full preview',
+				class: 'grid grid-cols-2 w-full gap-1'
+			}),
+			defineContent(MultipleImage, {
+				images: [uranusImg.HoodieLinKathExample3],
+				classImg: 'w-full mx-auto preview',
+				class: 'flex flex-col w-full gap-1'
+			}),
+			defineContent(MultipleImage, {
+				images: [uranusImg.HoodieLinKathExample4],
+				classImg: 'w-full mx-auto preview',
+				class: 'flex flex-col w-full gap-1'
+			}),
+			defineContent(SubProject, {
+				class: 'mt-6',
+				title: 'Creative Producer',
+				disableClick: true,
+				projects: [
+					{
+						id: 'uranus-003',
+						name: 'Random Photo Card Pack',
+						date: '',
+						image: uranusImg.RandomCardExample2,
+						details:
+							'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+					}
+				]
+			})
+		]
 	},
 	{
 		id: 'uranus-008',
 		name: 'URANUS2324 LOVE&PAIN<br/>HOODIE',
 		date: '',
 		image: uranusImg.HoodieLovePainThumbnail,
-		details: 'A Hoodie inspired by a key scene from the movie URANUS 2324.'
+		details: 'A Hoodie inspired by a key scene from the movie URANUS 2324.',
+		contents: [
+			defineContent(ImageDetail, {
+				img: uranusImg.HoodieLovePainMain,
+				classImg: 'w-[70%] mx-auto preview',
+				detail:
+					'A Hoodie inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (Hoodie pattern)</li><li>Photo Retouch</li><li>Hoodie Design</li></ul>'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill, LRSkill],
+				class: 'mt-4 '
+			}),
+			defineContent(MultipleImage, {
+				images: [uranusImg.HoodieLovePainExample1, uranusImg.HoodieLovePainExample2],
+				classImg: 'w-full preview',
+				class: 'grid grid-cols-2 w-full gap-1'
+			}),
+			defineContent(MultipleImage, {
+				images: [uranusImg.HoodieLovePainExample3],
+				classImg: 'w-full mx-auto preview',
+				class: 'flex flex-col w-full gap-1'
+			}),
+			defineContent(MultipleImage, {
+				images: [uranusImg.HoodieLovePainExample4],
+				classImg: 'w-full mx-auto preview',
+				class: 'flex flex-col w-full gap-1'
+			}),
+			defineContent(SubProject, {
+				class: 'mt-6',
+				title: 'Creative Producer',
+				disableClick: true,
+				projects: [
+					{
+						id: 'uranus-003',
+						name: 'Random Photo Card Pack',
+						date: '',
+						image: uranusImg.RandomCardExample2,
+						details:
+							'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+					}
+				]
+			})
+		]
 	}
 ];

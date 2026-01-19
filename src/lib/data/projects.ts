@@ -1,9 +1,13 @@
-import { HappyBambyDay, NamYejun, PlaveDebut100 } from '$lib/assets/works';
+// import { HappyBambyDay, NamYejun, PlaveDebut100 } from '$lib/assets/works';
+import { XIcon } from '$lib/assets/icons';
+import * as socialImg from '$lib/assets/works/social-media';
 import * as uranusImg from '$lib/assets/works/uranus';
 
 import ImageDetail from '$lib/components/project/image-detail.svelte';
+import ProgramUse from '$lib/components/project/program-use.svelte';
 import SubProject from '$lib/components/project/sub-project.svelte';
 
+import { AISkill, PSSkill } from '$lib/constants/skill';
 import { tags } from '$lib/constants/tags';
 
 import { defineContent } from '$lib/utils';
@@ -15,80 +19,80 @@ import { uranus0005 } from './sub/uranus';
 export const projects: Project[] = [
 	{
 		id: '0001',
-		name: '<div class="text-wrap">PLAVE : <span class="text-nowrap">YEJUN THAILAND</span></div>',
-		date: '18-01-2023',
-		details: '100th Day Debut Anniversary Celebration',
+		name: 'PLAVE : YEJUN THAILAND',
+		date: '18-06-2023',
 		category: 'Poster Design',
-		image: PlaveDebut100,
-		hastags: ['플레이브_100일_800하자', 'PLAVE_WITH_100DAYS'],
-		// skills: [PSSkill, AISkill],
-		// link: {
-		// 	...XPlatform,
-		// 	url: 'https://x.com/ONLYYEJUN_TH/status/1670438719860662272'
-		// },
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign]
+		image: socialImg.PlaveYejunThumbnail,
+		imageStyle: 'background-size: 220%;background-position:top center;',
+		tags: [tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.PlaveYejun,
+				classImg: 'w-full mx-auto preview',
+				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
+					<br/>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/%ED%94%8C%EB%A0%88%EC%9D%B4%EB%B8%8C_100%EC%9D%BC_800%ED%95%98%EC%9E%90?src=hashtag_click">#플레이브_100일_800하자</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/PLAVE_WITH_100DAYS?src=hashtag_click">#PLAVE_WITH_100DAYS</a>`
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
 	},
 	{
 		id: '0002',
-		name: '<div class="text-wrap">PLAVE : <span class="text-nowrap">YEJUN THAILAND</span></div>',
-		date: '18-01-2023',
-		details: 'Num Yejun : 100th Day Debut Anniversary Celebration',
+		name: 'PLAVE : YEJUN THAILAND',
+		date: '18-06-2023',
 		category: 'Poster Design',
-		image: NamYejun,
-		hastags: ['플레이브_100일_800하자', 'PLAVE_WITH_100DAYS'],
-		// skills: [PSSkill, AISkill],
-		// link: {
-		// 	...XPlatform,
-		// 	url: 'https://x.com/ONLYYEJUN_TH/status/1670446272648732672'
-		// },
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign]
+		image: socialImg.PlaveYejun100Thumbnail,
+		tags: [tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.PlaveYejun100,
+				classImg: 'w-full mx-auto preview',
+				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
+					<br/>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/%ED%94%8C%EB%A0%88%EC%9D%B4%EB%B8%8C_100%EC%9D%BC_800%ED%95%98%EC%9E%90?src=hashtag_click">#플레이브_100일_800하자</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/PLAVE_WITH_100DAYS?src=hashtag_click">#PLAVE_WITH_100DAYS</a>`
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
 	},
-	// {
-	// 	id: '0003',
-	// 	name: 'TWIN FLOWER',
-	// 	date: '30-05-2023',
-	// 	coverAlign: 'object-top',
-	// 	details:
-	// 		'"Twin Flower" is a character design inspired by flowers, using a combination of pink and blue paired with yellow to create an intriguing and captivating color scheme. This design was created to teach how to create flower petals using Adobe Illustrator.',
-	// 	image: TwinFlower,
-	// 	cover: TwinFlowerCover,
-	// 	skills: [AISkill],
-	// 	moreImages: [TwinFlower3Styles, TwinFlowerStepByStep],
-	// 	remark: 'Let’s make your own flower.',
-	// 	link: {
-	// 		...IgPlatform,
-	// 		url: 'https://www.instagram.com/p/Cs35K9tpdk_/?img_index=1&igsh=MTJubTd3Yzd0cHNrYg=='
-	// 	},
-	// 	moreLinks: [
-	// 		{
-	// 			...IgPlatform,
-	// 			url: 'https://www.instagram.com/p/Cs3McLkJbcl/?igsh=MW0zdWgyZGZrazB6aQ=='
-	// 		},
-	// 		{
-	// 			...TiktokPlatform,
-	// 			url: 'https://vt.tiktok.com/ZSM86Cyo3/'
-	// 		}
-	// 	]
-	// },
 	{
-		id: '0004',
-		name: '<div class="text-wrap">PLAVE : <span class="text-nowrap">YEJUN THAILAND</span></div>',
+		id: '0003',
+		name: 'PLAVE : YEJUN THAILAND',
 		date: '14-07-2023',
 		category: 'Poster Design',
-		image: HappyBambyDay,
-		// coverAlign: 'object-top',
-		hastags: [
-			'핑크빛여름_밤비야_생일축하해',
-			'HappyBongbyDay',
-			'Happy_Bamby_Day',
-			'밤비로_가득한_반짝이는_여름'
-		],
-		// skills: [PSSkill, AISkill],
-		// link: {
-		// 	...XPlatform,
-		// 	url: 'https://x.com/ONLYYEJUN_TH/status/1679884413373661187'
-		// },
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign]
+		image: socialImg.BambyThumbnail,
+		tags: [tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.Bamby,
+				classImg: 'w-full mx-auto preview',
+				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
+					<br/>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/%ED%95%91%ED%81%AC%EB%B9%9B%EC%97%AC%EB%A6%84_%EB%B0%A4%EB%B9%84%EC%95%BC_%EC%83%9D%EC%9D%BC%EC%B6%95%ED%95%98%ED%95%B4?src=hashtag_click">#핑크빛여름_밤비야_생일축하해</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/HappyBongbyDay?src=hashtag_click">#HappyBongbyDay</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/Happy_Bamby_Day?src=hashtag_click">#Happy_Bongby_Day</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/%EB%B0%A4%EB%B9%84%EB%A1%9C_%EA%B0%80%EB%93%9D%ED%95%9C_%EB%B0%98%EC%A7%9D%EC%9D%B4%EB%8A%94_%EC%97%AC%EB%A6%84?src=hashtag_click">#밤비로_가득한_반짝이는_여름</a>`
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
 	},
 	{
 		id: '0005',
@@ -97,7 +101,7 @@ export const projects: Project[] = [
 		endDate: '04-07-2024',
 		category: 'Merchandise Design',
 		image: uranusImg.UranusPosterThumbnail,
-		tags: [tags.GraphicDesign, tags.ProductDesign],
+		tags: [tags.ProductDesign],
 		contents: [
 			defineContent(ImageDetail, {
 				class: 'grid grid-cols-2 gap-4',

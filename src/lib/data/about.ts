@@ -1,4 +1,9 @@
-import { DigitalMarketing, SecureOnlineMarketig, SocialCommerce } from '$lib/assets/certificates';
+import {
+	DigitalMarketing,
+	JiraScrumProject,
+	SecureOnlineMarketig,
+	SocialCommerce
+} from '$lib/assets/certificates';
 
 import { AISkill, FigmaSkill, LRSkill, PSSkill } from '$lib/constants/skill';
 import { certificateTypes } from '$lib/constants/tags';
@@ -39,6 +44,16 @@ export const certificates: Certificates[] = [
 			{
 				name: 'การสร้างความมั่นคงปลอดภัยให้ธุรกิจออนไลน์<br/>โดยกรมพัฒนาฝีมือแรงาน ร่วมกับ ETDA',
 				img: SecureOnlineMarketig
+			}
+		]
+	},
+	{
+		type: certificateTypes.AgileAndScrum,
+		title: 'AGILE/SCRUM',
+		list: [
+			{
+				name: 'How to create Jira SCRUM project - Coursera',
+				img: JiraScrumProject
 			}
 		]
 	}

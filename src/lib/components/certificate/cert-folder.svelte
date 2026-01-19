@@ -21,7 +21,7 @@
 </script>
 
 <a
-	href="/certificate/{certs.type}"
+	href="/certificate/{encodeURIComponent(certs.type)}"
 	class="bg-folder w-full min-w-87.5 aspect-video max-w-110 flex rounded-2xl overflow-hidden relative p-4 z-1"
 >
 	{#each certs.list as cert, i}

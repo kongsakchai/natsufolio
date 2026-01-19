@@ -14,8 +14,9 @@
 </script>
 
 <div
-	class="w-full aspect-2/3 bg-cover rounded-3xl flex flex-col justify-between overflow-hidden"
-	style="background-image: url({project.image});background-position: center;"
+	class="w-full aspect-2/3 rounded-3xl flex flex-col justify-between overflow-hidden bg-cover"
+	style="background-image: url({project.image});{project.imageStyle ||
+		'background-position: center;'}"
 >
 	<p
 		class="font-almarai text-[10px] flex gap-1 items-center bg-black/45 w-fit px-1 md:py-0.5 md:px-2 rounded-3xl mt-2 ml-auto mr-2 md:text-sm"

@@ -29,6 +29,7 @@ export interface Content<T extends Component> {
 export interface Project {
 	id: string;
 	image: string;
+	imageStyle?: string;
 	name: string;
 	date: string;
 	endDate?: string;

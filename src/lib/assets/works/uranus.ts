@@ -46,7 +46,22 @@ export const TShirtHowWouldBlack = `${env.PUBLIC_IMG_URL}/v1768486924/uranus-shi
 export const TShirtHowWouldExample1 = `${env.PUBLIC_IMG_URL}/v1768486931/uranus-shirt1-2_zvkvyd.png`;
 
 export const TShirtImLikeUranusThumbnail = `${env.PUBLIC_IMG_URL}/t_media_lib_thumb/v1768486924/uranus-shirt2_c5wwsb.png`;
+export const TShirtImLikeUranusMain = `${env.PUBLIC_IMG_URL}/v1768486924/uranus-shirt2_c5wwsb.png`;
+export const TShirtImLikeUranusWhite = `${env.PUBLIC_IMG_URL}/v1768834277/uranus-shirt-style-2-white_eg1c7i.png`;
+export const TShirtImLikeUranusBlack = `${env.PUBLIC_IMG_URL}/v1768834276/uranus-shirt-style-2-black_zkfdp4.png`;
+export const TShirtImLikeUranusPhoto = `${env.PUBLIC_IMG_URL}/v1768834319/uranus-shirt-style-2-photo_vyfdfb.png`;
+export const TShirtImLikeUranusExample1 = `${env.PUBLIC_IMG_URL}/v1768834320/uranus-shirt-style-2-example-1_ajpnrq.png`;
 
 export const HoodieLinKathThumbnail = `${env.PUBLIC_IMG_URL}/t_media_lib_thumb/v1768486922/uranus-hoodie_lxgyzh.png`;
+export const HoodieLinKathMain = `${env.PUBLIC_IMG_URL}/v1768486922/uranus-hoodie_lxgyzh.png`;
+export const HoodieLinKathExample1 = `${env.PUBLIC_IMG_URL}/v1768835619/uranus-hoodie-lin-kath-example-1_sulbj3.png`;
+export const HoodieLinKathExample2 = `${env.PUBLIC_IMG_URL}/v1768835618/uranus-hoodie-lin-kath-example-2_zqxiqt.png`;
+export const HoodieLinKathExample3 = `${env.PUBLIC_IMG_URL}/v1768835619/uranus-hoodie-lin-kath-example-3_aiwehj.png`;
+export const HoodieLinKathExample4 = `${env.PUBLIC_IMG_URL}/v1768835619/uranus-hoodie-lin-kath-exampl-4_xzvjhy.png`;
 
 export const HoodieLovePainThumbnail = `${env.PUBLIC_IMG_URL}/t_media_lib_thumb/v1768486921/uranus-hoodie-2_ikkker.png`;
+export const HoodieLovePainMain = `${env.PUBLIC_IMG_URL}/v1768486921/uranus-hoodie-2_ikkker.png`;
+export const HoodieLovePainExample1 = `${env.PUBLIC_IMG_URL}/v1768837063/uranus-hoodie-lovepain-example-1_ipyzy2.png`;
+export const HoodieLovePainExample2 = `${env.PUBLIC_IMG_URL}/v1768837063/uranus-hoodie-lovepain-example-2_a80wrr.png`;
+export const HoodieLovePainExample3 = `${env.PUBLIC_IMG_URL}/v1768837063/uranus-hoodie-lovepain-example-3_yi5ub2.png`;
+export const HoodieLovePainExample4 = `${env.PUBLIC_IMG_URL}/v1768837063/uranus-hoodie-lovepain-example-4_sjs2t0.png`;
