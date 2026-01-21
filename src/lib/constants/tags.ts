@@ -4,7 +4,7 @@ export const tags = {
 	GraphicDesign: 'Graphic Design' as Tag,
 	ProjectCoordinator: 'Project Coordinator' as Tag,
 	CreativeProducer: 'Creative Producer' as Tag,
-	AssistantProducer: 'Assistant Producer' as Tag,
+	AssistantProducer: 'Producer Assistant' as Tag,
 	Thesis: 'Thesis' as Tag,
 
 	ProductDesign: 'Product Design' as Tag,

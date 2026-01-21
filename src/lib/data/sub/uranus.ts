@@ -15,7 +15,7 @@ import { defineContent } from '$lib/utils';
 
 import type { Project } from '$lib/types';
 
-export const uranus0005: Project[] = [
+export const uranus0004: Project[] = [
 	{
 		id: 'uranus-001',
 		name: 'กล่องพัสดุ URANUS 2324<br/><span class="text-[0.75em]">WORLDWIDE SHIPPING BOX</span>',
@@ -26,7 +26,8 @@ export const uranus0005: Project[] = [
 			defineContent(ImageDetail, {
 				img: uranusImg.BoxPoster,
 				classImg: 'w-2/3 mx-auto preview',
-				detail: 'Design a shipping package/parcel box for merchandise from the movie Uranus2324.'
+				detail: 'Design a shipping package/parcel box for merchandise from the movie Uranus2324.',
+				detailClass: 'mt-2'
 			}),
 			defineContent(ProgramUse, {
 				list: [PSSkill, AISkill],
@@ -51,7 +52,8 @@ export const uranus0005: Project[] = [
 				img: uranusImg.CameraPoster,
 				classImg: 'w-2/3 mx-auto preview',
 				detail:
-					'<span class="text-sm leading-5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging design</li><li>Film Camera Sticker</li><li>Film Camera Filter</li><li>Design images for social media and sales platforms</li></ul>'
+					'<span class="text-sm leading-5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging design</li><li>Film Camera Sticker</li><li>Film Camera Filter</li><li>Design images for social media and sales platforms</li></ul>',
+				detailClass: 'mt-2'
 			}),
 			defineContent(ProgramUse, {
 				list: [PSSkill, AISkill],
@@ -122,7 +124,8 @@ export const uranus0005: Project[] = [
 				img: uranusImg.CardHolderMain,
 				classImg: 'w-2/3 mx-auto preview',
 				detail:
-					'A card holder inspired by URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging</li><li>Card Holder</li><li>Acrylic</li><li>Cushion</li></ul>'
+					'A card holder inspired by URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging</li><li>Card Holder</li><li>Acrylic</li><li>Cushion</li></ul>',
+				detailClass: 'mt-2'
 			}),
 			defineContent(ProgramUse, {
 				list: [PSSkill, AISkill],
@@ -155,7 +158,8 @@ export const uranus0005: Project[] = [
 				img: uranusImg.TShirtHowWouldMain,
 				classImg: 'w-[70%] mx-auto preview',
 				detail:
-					'A T-shirt inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (T-shirt pattern)</li><li>Photo Retouch</li><li>T-Shirt Design</li></ul>'
+					'A T-shirt inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (T-shirt pattern)</li><li>Photo Retouch</li><li>T-Shirt Design</li></ul>',
+				detailClass: 'mt-2'
 			}),
 			defineContent(ProgramUse, {
 				list: [PSSkill, AISkill, LRSkill],
@@ -210,7 +214,8 @@ export const uranus0005: Project[] = [
 				img: uranusImg.TShirtHowWouldMain,
 				classImg: 'w-[70%] mx-auto preview',
 				detail:
-					'A T-shirt inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (T-shirt pattern)</li><li>Photo Retouch</li><li>T-Shirt Design</li></ul>'
+					'A T-shirt inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (T-shirt pattern)</li><li>Photo Retouch</li><li>T-Shirt Design</li></ul>',
+				detailClass: 'mt-2'
 			}),
 			defineContent(ProgramUse, {
 				list: [PSSkill, AISkill, LRSkill],
@@ -257,7 +262,8 @@ export const uranus0005: Project[] = [
 				img: uranusImg.HoodieLinKathMain,
 				classImg: 'w-[70%] mx-auto preview',
 				detail:
-					'A Hoodie inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (Hoodie pattern)</li><li>Photo Retouch</li><li>Hoodie Design</li></ul>'
+					'A Hoodie inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (Hoodie pattern)</li><li>Photo Retouch</li><li>Hoodie Design</li></ul>',
+				detailClass: 'mt-2'
 			}),
 			defineContent(ProgramUse, {
 				list: [PSSkill, AISkill, LRSkill],
@@ -306,7 +312,8 @@ export const uranus0005: Project[] = [
 				img: uranusImg.HoodieLovePainMain,
 				classImg: 'w-[70%] mx-auto preview',
 				detail:
-					'A Hoodie inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (Hoodie pattern)</li><li>Photo Retouch</li><li>Hoodie Design</li></ul>'
+					'A Hoodie inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (Hoodie pattern)</li><li>Photo Retouch</li><li>Hoodie Design</li></ul>',
+				detailClass: 'mt-2'
 			}),
 			defineContent(ProgramUse, {
 				list: [PSSkill, AISkill, LRSkill],

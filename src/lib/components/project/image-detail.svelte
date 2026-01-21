@@ -13,6 +13,6 @@
 <figure class="w-full {className} ">
 	<img src={img} alt="cover" class="object-contain {classImg}" />
 	{#if detail}
-		<figcaption class="mt-4 text-xs {detailClass}">{@html detail}</figcaption>
+		<figcaption class="text-xs {detailClass}">{@html detail}</figcaption>
 	{/if}
 </figure>

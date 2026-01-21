@@ -33,8 +33,11 @@
 		<div
 			class="w-full h-full z-1 flex flex-col relative px-2 md:px-4 pt-8 py-3 md:py-5 text-shadow"
 		>
-			<h3 class="font-roboto font-bold leading-4 md:leading-6 md:text-2xl">{@html project.name}</h3>
-			<p class="md:text-base">{project.category}</p>
+			<h6 class="font-roboto font-bold leading-4 md:leading-6">{@html project.name}</h6>
+			{#if project.subNameCard}
+				<h6 class="font-roboto font-normal leading-4 md:leading-6">{@html project.subNameCard}</h6>
+			{/if}
+			<p>{project.category}</p>
 
 			<a
 				href="/work/more-details/{project.id}"

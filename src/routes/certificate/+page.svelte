@@ -14,7 +14,7 @@
 
 <h1 class="header">CERTIFICATE</h1>
 
-<section class="mt-10 mb-10 mx-auto max-w-110 flex flex-col">
+<section class="mt-10 mb-10 mx-auto max-w-110 flex flex-col gap-4">
 	{#each certificates as cert}
 		<CertFolder certs={cert} />
 	{/each}

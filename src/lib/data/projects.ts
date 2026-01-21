@@ -1,9 +1,13 @@
 // import { HappyBambyDay, NamYejun, PlaveDebut100 } from '$lib/assets/works';
-import { XIcon } from '$lib/assets/icons';
+import { InstagramIcon, TiktokIcon, XIcon } from '$lib/assets/icons';
+import * as illusImg from '$lib/assets/works/illustration';
+import * as coordinatorImg from '$lib/assets/works/project-coordinator';
 import * as socialImg from '$lib/assets/works/social-media';
 import * as uranusImg from '$lib/assets/works/uranus';
 
 import ImageDetail from '$lib/components/project/image-detail.svelte';
+import MultipleImage from '$lib/components/project/multiple-image.svelte';
+import Paragraph from '$lib/components/project/paragraph.svelte';
 import ProgramUse from '$lib/components/project/program-use.svelte';
 import SubProject from '$lib/components/project/sub-project.svelte';
 
@@ -14,7 +18,7 @@ import { defineContent } from '$lib/utils';
 
 import type { Menu, Project, Tag } from '$lib/types';
 
-import { uranus0005 } from './sub/uranus';
+import { uranus0004 } from './sub/uranus';
 
 export const projects: Project[] = [
 	{
@@ -24,11 +28,12 @@ export const projects: Project[] = [
 		category: 'Poster Design',
 		image: socialImg.PlaveYejunThumbnail,
 		imageStyle: 'background-size: 220%;background-position:top center;',
-		tags: [tags.GraphicDesign,tags.SocialMediaDesign],
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
 		contents: [
 			defineContent(ImageDetail, {
 				img: socialImg.PlaveYejun,
 				classImg: 'w-full mx-auto preview',
+				detailClass: 'mt-6',
 				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
 					<br/>
 					<br/>
@@ -48,11 +53,12 @@ export const projects: Project[] = [
 		date: '18-06-2023',
 		category: 'Poster Design',
 		image: socialImg.PlaveYejun100Thumbnail,
-		tags: [tags.GraphicDesign,tags.SocialMediaDesign],
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
 		contents: [
 			defineContent(ImageDetail, {
 				img: socialImg.PlaveYejun100,
 				classImg: 'w-full mx-auto preview',
+				detailClass: 'mt-6',
 				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
 					<br/>
 					<br/>
@@ -72,10 +78,11 @@ export const projects: Project[] = [
 		date: '14-07-2023',
 		category: 'Poster Design',
 		image: socialImg.BambyThumbnail,
-		tags: [tags.GraphicDesign,tags.SocialMediaDesign],
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
 		contents: [
 			defineContent(ImageDetail, {
 				img: socialImg.Bamby,
+				detailClass: 'mt-6',
 				classImg: 'w-full mx-auto preview',
 				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
 					<br/>
@@ -95,13 +102,13 @@ export const projects: Project[] = [
 		]
 	},
 	{
-		id: '0005',
+		id: '0004',
 		name: 'URANUS 2324',
 		date: '05-09-2023',
 		endDate: '04-07-2024',
 		category: 'Merchandise Design',
 		image: uranusImg.UranusPosterThumbnail,
-		tags: [tags.ProductDesign],
+		tags: [tags.ProductDesign, tags.GraphicDesign],
 		contents: [
 			defineContent(ImageDetail, {
 				class: 'grid grid-cols-2 gap-4',
@@ -121,14 +128,199 @@ export const projects: Project[] = [
 			defineContent(ImageDetail, {
 				class: 'flex gap-4',
 				img: uranusImg.UranusEndCredit,
-      classImg: 'preview'
+				classImg: 'preview'
 			}),
 			defineContent(SubProject, {
 				class: 'mt-6',
 				title: 'Project Design Contributions',
-				projects: uranus0005
+				projects: uranus0004
 			})
 		]
+	},
+	{
+		id: '0005',
+		name: '2024 : CHRISTMAS POST',
+		subName: 'GM Generates Co.,Ltd',
+		date: '25-12-2024',
+		category: 'Social Post Design',
+		image: socialImg.ChirstmasRedHouse2024Thumbnail,
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.ChirstmasRedHouse2024,
+				class: 'text-center',
+				classImg: 'w-full mx-auto preview',
+				detail: `Graphics for social media posting.`,
+				detailClass: 'mt-2'
+			}),
+			defineContent(MultipleImage, {
+				images: [socialImg.ChirstmasRedHouse2024Card1, socialImg.ChirstmasRedHouse2024Card2],
+				class: 'grid grid-cols-2 gap-2 w-2/3',
+				classImg: 'size-50 mx-auto preview',
+				detail: 'Graphics to be shared with private partners.',
+				detailClass: 'text-center'
+			}),
+			defineContent(Paragraph, {
+				str: 'Gingerbread houses: the sweetest way to celebrate the season.'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
+	},
+	{
+		id: '0006',
+		name: '2025 : NEWYEAR POST',
+		subName: 'GM Generates Co.,Ltd',
+		date: '01-01-2025',
+		category: 'Social Post Design',
+		image: socialImg.NewYearSnake2025Thumbnail,
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.NewYearSnake2025,
+				class: 'text-center',
+				classImg: 'w-full mx-auto preview',
+				detail: `Graphics for social media posting.`,
+				detailClass: 'mt-2'
+			}),
+			defineContent(Paragraph, {
+				str: 'In 2025, the year of the Snake tn the Chinese calendar symbolizes wisdom, elegance, and transformation.'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
+	},
+	{
+		id: '0007',
+		name: '2025 : CHRISTMAS POST',
+		subName: 'GM Generates Co.,Ltd',
+		date: '25-12-2025',
+		category: 'Social Post Design',
+		image: socialImg.WeLoveChirstmas2025Thumbnail,
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.WeLoveChirstmas2025,
+				class: 'text-center',
+				classImg: 'w-full mx-auto preview',
+				detail: `Graphics for social media posting.`
+			}),
+			defineContent(Paragraph, {
+				str: 'Merry Christmas 2025, Stay iconic. '
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
+	},
+	{
+		id: '0008',
+		name: '2026 : NEWYEAR POST',
+		subName: 'GM Generates Co.,Ltd',
+		date: '01-01-2025',
+		category: 'Social Post Design',
+		image: socialImg.HorseYearThumbnail2026,
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.HorseYear2026,
+				class: 'text-center',
+				classImg: 'w-full mx-auto preview',
+				detail: `Graphics for social media posting.`
+			}),
+			defineContent(Paragraph, {
+				str: 'May the New Year 2026, the Year of the Horse, bring you a stronger heart, renewed energy, bright new opportunities, and endless possibilities.'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
+	},
+	{
+		id: '0009',
+		name: 'TWIN FLOWER',
+		date: '30-05-2024',
+		category: 'Illustration Design',
+		image: illusImg.TwinFlowerThumbnail,
+		tags: [tags.GraphicDesign, tags.Illustration],
+		contents: [
+			defineContent(ImageDetail, {
+				img: illusImg.TwinFlower,
+				classImg: 'w-full mx-auto preview',
+				detailClass: 'mt-6',
+				detail: `May 30, 2023 <br/><br/>Twin Flower" is a character design inspired by flowers, using a combination of pink and blue paired with yellow to create an intriguing and captivating color scheme. This design was created to teach how to create flower petals using Adobe Illustrator.`
+			}),
+			defineContent(ProgramUse, {
+				list: [AISkill],
+				class: 'mt-2'
+			}),
+			defineContent(ImageDetail, {
+				img: illusImg.TwinFlower3Style,
+				classImg: 'w-full mx-auto preview',
+				class: 'mt-6'
+			}),
+			defineContent(ImageDetail, {
+				img: illusImg.TwinFlowerHowTo,
+				classImg: 'w-full mx-auto preview',
+				detailClass: 'mt-4',
+				detail: `<p class="flex w-full gap-4">Let’s make your own flower. 
+				<img src="${InstagramIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/>
+				<img src="${TiktokIcon}" alt="x icon" class="w-5 h-5 inline"/>
+				</p>`
+			})
+		]
+	},
+	{
+		id: '0010',
+		name: 'LOOKIN’ X EASE AROUND',
+		date: '03-08-2025',
+		category: 'Coordinator',
+		image: coordinatorImg.LookinXEaseThumbnail,
+		tags: [tags.ProjectCoordinator],
+		contents: []
+	},
+	{
+		id: '0011',
+		name: 'LATE NIGHT DANCE CLUB <br/>X OSAMU GOODS BKK',
+		date: '13-12-2025',
+		category: 'Coordinator',
+		image: coordinatorImg.LateNightXOsamuThumbnail,
+		tags: [tags.ProjectCoordinator],
+		contents: []
+	},
+	{
+		id: '0012',
+		name: 'CODEC CREATION X<br/> OSAMU GOODS BKK',
+		date: 'xx-xx-2026',
+		category: 'Coordinator',
+		image: coordinatorImg.CodecCreatorThumbnail,
+		tags: [tags.ProjectCoordinator],
+		contents: []
+	},
+	{
+		id: '0013',
+		name: 'OSAMU GOODS BKK',
+		subNameCard: 'SONY CREATIVE PRODUCTS',
+		date: '01-01-2024',
+		category: 'Coordinator',
+		image: coordinatorImg.OsamuGoodBBKThumbnail,
+		tags: [tags.ProjectCoordinator],
+		contents: []
+	},
+	{
+		id: '0014',
+		name: 'A NORMAL DAY IN SKY TRAIN',
+		date: 'xx-xx-2024',
+		category: 'Coordinator',
+		image: illusImg.ANormalDayThumbnail,
+		tags: [tags.GraphicDesign, tags.Illustration],
+		contents: []
 	}
 ];
 

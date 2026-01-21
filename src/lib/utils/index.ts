@@ -8,7 +8,8 @@ import type { Content } from '$lib/types';
 dayjs.extend(customParseFormat);
 
 export const showFormattedDate = (date: string | dayjs.Dayjs) => {
-	return dayjs(date, 'DD-MM-YYYY').format('DD MMM YYYY');
+	const resp = dayjs(date, 'DD-MM-YYYY').format('DD MMM YYYY');
+	return resp.replaceAll('Invalid Date', date.toString().replaceAll('-', ' '));
 };
 
 export const convertToDate = (date: string) => {

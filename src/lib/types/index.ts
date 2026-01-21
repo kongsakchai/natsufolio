@@ -31,6 +31,8 @@ export interface Project {
 	image: string;
 	imageStyle?: string;
 	name: string;
+	subNameCard?: string;
+	subName?: string;
 	date: string;
 	endDate?: string;
 	category?: string;
