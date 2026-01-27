@@ -1,6 +1,6 @@
 <script lang="ts">
 	// import Emoji from '$lib/assets/Emoji.mp4';
-	import Emoji from '$lib/assets/Emoji.gif';
+	import Emoji from '$lib/assets/Emoji-Face.gif';
 </script>
 
 <!-- <video autoplay playsinline loop muted class="w-full">

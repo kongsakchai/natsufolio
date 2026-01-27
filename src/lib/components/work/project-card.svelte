@@ -10,7 +10,7 @@
 
 	dayjs.extend(customParseFormat);
 
-	let { project }: { project: Project } = $props();
+	let { project, tag }: { project: Project; tag: string } = $props();
 </script>
 
 <div
@@ -40,7 +40,7 @@
 			<p>{project.category}</p>
 
 			<a
-				href="/work/more-details/{project.id}"
+				href="/work/{tag}/more-details/{project.id}"
 				class="more-detail-btn w-4/5 mx-auto p-2 rounded-4xl flex justify-center items-center mt-4"
 			>
 				<p class="md:text-sm">More Details</p>

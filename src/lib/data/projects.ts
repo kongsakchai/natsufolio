@@ -20,89 +20,9 @@ import type { Menu, Project, Tag } from '$lib/types';
 
 import { uranus0004 } from './sub/uranus';
 
-export const projects: Project[] = [
+const productDesignProjects: Project[] = [
 	{
-		id: '0001',
-		name: 'PLAVE : YEJUN THAILAND',
-		date: '18-06-2023',
-		category: 'Poster Design',
-		image: socialImg.PlaveYejunThumbnail,
-		imageStyle: 'background-size: 220%;background-position:top center;',
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
-		contents: [
-			defineContent(ImageDetail, {
-				img: socialImg.PlaveYejun,
-				classImg: 'w-full mx-auto preview',
-				detailClass: 'mt-6',
-				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
-					<br/>
-					<br/>
-					<a class="underline underline-offset-3" href="https://x.com/hashtag/%ED%94%8C%EB%A0%88%EC%9D%B4%EB%B8%8C_100%EC%9D%BC_800%ED%95%98%EC%9E%90?src=hashtag_click">#플레이브_100일_800하자</a>
-					<br/>
-					<a class="underline underline-offset-3" href="https://x.com/hashtag/PLAVE_WITH_100DAYS?src=hashtag_click">#PLAVE_WITH_100DAYS</a>`
-			}),
-			defineContent(ProgramUse, {
-				list: [PSSkill, AISkill],
-				class: 'mt-4 '
-			})
-		]
-	},
-	{
-		id: '0002',
-		name: 'PLAVE : YEJUN THAILAND',
-		date: '18-06-2023',
-		category: 'Poster Design',
-		image: socialImg.PlaveYejun100Thumbnail,
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
-		contents: [
-			defineContent(ImageDetail, {
-				img: socialImg.PlaveYejun100,
-				classImg: 'w-full mx-auto preview',
-				detailClass: 'mt-6',
-				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
-					<br/>
-					<br/>
-					<a class="underline underline-offset-3" href="https://x.com/hashtag/%ED%94%8C%EB%A0%88%EC%9D%B4%EB%B8%8C_100%EC%9D%BC_800%ED%95%98%EC%9E%90?src=hashtag_click">#플레이브_100일_800하자</a>
-					<br/>
-					<a class="underline underline-offset-3" href="https://x.com/hashtag/PLAVE_WITH_100DAYS?src=hashtag_click">#PLAVE_WITH_100DAYS</a>`
-			}),
-			defineContent(ProgramUse, {
-				list: [PSSkill, AISkill],
-				class: 'mt-4 '
-			})
-		]
-	},
-	{
-		id: '0003',
-		name: 'PLAVE : YEJUN THAILAND',
-		date: '14-07-2023',
-		category: 'Poster Design',
-		image: socialImg.BambyThumbnail,
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
-		contents: [
-			defineContent(ImageDetail, {
-				img: socialImg.Bamby,
-				detailClass: 'mt-6',
-				classImg: 'w-full mx-auto preview',
-				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
-					<br/>
-					<br/>
-					<a class="underline underline-offset-3" href="https://x.com/hashtag/%ED%95%91%ED%81%AC%EB%B9%9B%EC%97%AC%EB%A6%84_%EB%B0%A4%EB%B9%84%EC%95%BC_%EC%83%9D%EC%9D%BC%EC%B6%95%ED%95%98%ED%95%B4?src=hashtag_click">#핑크빛여름_밤비야_생일축하해</a>
-					<br/>
-					<a class="underline underline-offset-3" href="https://x.com/hashtag/HappyBongbyDay?src=hashtag_click">#HappyBongbyDay</a>
-					<br/>
-					<a class="underline underline-offset-3" href="https://x.com/hashtag/Happy_Bamby_Day?src=hashtag_click">#Happy_Bongby_Day</a>
-					<br/>
-					<a class="underline underline-offset-3" href="https://x.com/hashtag/%EB%B0%A4%EB%B9%84%EB%A1%9C_%EA%B0%80%EB%93%9D%ED%95%9C_%EB%B0%98%EC%A7%9D%EC%9D%B4%EB%8A%94_%EC%97%AC%EB%A6%84?src=hashtag_click">#밤비로_가득한_반짝이는_여름</a>`
-			}),
-			defineContent(ProgramUse, {
-				list: [PSSkill, AISkill],
-				class: 'mt-4 '
-			})
-		]
-	},
-	{
-		id: '0004',
+		id: 'uranus-2324',
 		name: 'URANUS 2324',
 		date: '05-09-2023',
 		endDate: '04-07-2024',
@@ -136,9 +56,92 @@ export const projects: Project[] = [
 				projects: uranus0004
 			})
 		]
+	}
+];
+
+const socialMediaDesignProjects: Project[] = [
+	{
+		id: 'plave-yejun-001',
+		name: 'PLAVE : YEJUN THAILAND',
+		date: '18-06-2023',
+		category: 'Poster Design',
+		image: socialImg.PlaveYejunThumbnail,
+		imageStyle: 'background-size: 220%;background-position:top center;',
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.PlaveYejun,
+				classImg: 'w-full mx-auto preview',
+				detailClass: 'mt-6',
+				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
+					<br/>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/%ED%94%8C%EB%A0%88%EC%9D%B4%EB%B8%8C_100%EC%9D%BC_800%ED%95%98%EC%9E%90?src=hashtag_click">#플레이브_100일_800하자</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/PLAVE_WITH_100DAYS?src=hashtag_click">#PLAVE_WITH_100DAYS</a>`
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
 	},
 	{
-		id: '0005',
+		id: 'plave-yejun-002',
+		name: 'PLAVE : YEJUN THAILAND',
+		date: '18-06-2023',
+		category: 'Poster Design',
+		image: socialImg.PlaveYejun100Thumbnail,
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.PlaveYejun100,
+				classImg: 'w-full mx-auto preview',
+				detailClass: 'mt-6',
+				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
+					<br/>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/%ED%94%8C%EB%A0%88%EC%9D%B4%EB%B8%8C_100%EC%9D%BC_800%ED%95%98%EC%9E%90?src=hashtag_click">#플레이브_100일_800하자</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/PLAVE_WITH_100DAYS?src=hashtag_click">#PLAVE_WITH_100DAYS</a>`
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
+	},
+	{
+		id: 'plave-yejun-003',
+		name: 'PLAVE : YEJUN THAILAND',
+		date: '14-07-2023',
+		category: 'Poster Design',
+		image: socialImg.BambyThumbnail,
+		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: socialImg.Bamby,
+				detailClass: 'mt-6',
+				classImg: 'w-full mx-auto preview',
+				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
+					<br/>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/%ED%95%91%ED%81%AC%EB%B9%9B%EC%97%AC%EB%A6%84_%EB%B0%A4%EB%B9%84%EC%95%BC_%EC%83%9D%EC%9D%BC%EC%B6%95%ED%95%98%ED%95%B4?src=hashtag_click">#핑크빛여름_밤비야_생일축하해</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/HappyBongbyDay?src=hashtag_click">#HappyBongbyDay</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/Happy_Bamby_Day?src=hashtag_click">#Happy_Bongby_Day</a>
+					<br/>
+					<a class="underline underline-offset-3" href="https://x.com/hashtag/%EB%B0%A4%EB%B9%84%EB%A1%9C_%EA%B0%80%EB%93%9D%ED%95%9C_%EB%B0%98%EC%A7%9D%EC%9D%B4%EB%8A%94_%EC%97%AC%EB%A6%84?src=hashtag_click">#밤비로_가득한_반짝이는_여름</a>`
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
+	},
+	{
+		id: '2024-christmas-post',
 		name: '2024 : CHRISTMAS POST',
 		subName: 'GM Generates Co.,Ltd',
 		date: '25-12-2024',
@@ -170,7 +173,7 @@ export const projects: Project[] = [
 		]
 	},
 	{
-		id: '0006',
+		id: '2025-newyear-post',
 		name: '2025 : NEWYEAR POST',
 		subName: 'GM Generates Co.,Ltd',
 		date: '01-01-2025',
@@ -195,7 +198,7 @@ export const projects: Project[] = [
 		]
 	},
 	{
-		id: '0007',
+		id: '2025-christmas-post',
 		name: '2025 : CHRISTMAS POST',
 		subName: 'GM Generates Co.,Ltd',
 		date: '25-12-2025',
@@ -210,7 +213,7 @@ export const projects: Project[] = [
 				detail: `Graphics for social media posting.`
 			}),
 			defineContent(Paragraph, {
-				str: 'Merry Christmas 2025, Stay iconic. '
+				str: 'Merry Christmas 2025, Stay iconic. '
 			}),
 			defineContent(ProgramUse, {
 				list: [PSSkill, AISkill],
@@ -219,7 +222,7 @@ export const projects: Project[] = [
 		]
 	},
 	{
-		id: '0008',
+		id: '2026-newyear-post',
 		name: '2026 : NEWYEAR POST',
 		subName: 'GM Generates Co.,Ltd',
 		date: '01-01-2025',
@@ -241,9 +244,12 @@ export const projects: Project[] = [
 				class: 'mt-4 '
 			})
 		]
-	},
+	}
+];
+
+const IllustrationProjects: Project[] = [
 	{
-		id: '0009',
+		id: 'twin-flower',
 		name: 'TWIN FLOWER',
 		date: '30-05-2024',
 		category: 'Illustration Design',
@@ -269,60 +275,208 @@ export const projects: Project[] = [
 				img: illusImg.TwinFlowerHowTo,
 				classImg: 'w-full mx-auto preview',
 				detailClass: 'mt-4',
-				detail: `<p class="flex w-full gap-4">Let’s make your own flower. 
+				detail: `<p class="flex w-full gap-4">Let’s make your own flower.
 				<img src="${InstagramIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/>
 				<img src="${TiktokIcon}" alt="x icon" class="w-5 h-5 inline"/>
 				</p>`
 			})
 		]
 	},
+
 	{
-		id: '0010',
+		id: 'a-normal-day-in-sky-train',
+		name: 'A NORMAL DAY IN SKY TRAIN',
+		date: 'xx-xx-2024',
+		category: 'Coordinator',
+		image: illusImg.ANormalDayThumbnail,
+		tags: [tags.GraphicDesign, tags.Illustration],
+		contents: [
+			defineContent(ImageDetail, {
+				img: illusImg.ANormalDayThumbnail,
+				classImg: 'w-2/3 mx-auto preview',
+				detailClass: 'mt-6',
+				detail: ``
+			})
+		]
+	}
+];
+
+const projectCoordinatorProjects: Project[] = [];
+
+const creativeProducerProjects: Project[] = [
+	{
+		id: 'lookin-x-ease-around',
 		name: 'LOOKIN’ X EASE AROUND',
 		date: '03-08-2025',
 		category: 'Coordinator',
 		image: coordinatorImg.LookinXEaseThumbnail,
 		tags: [tags.ProjectCoordinator],
-		contents: []
+		contents: [
+			defineContent(ImageDetail, {
+				img: coordinatorImg.LookinXEaseThumbnail,
+				classImg: 'w-2/3 mx-auto preview',
+				detailClass: 'mt-6',
+				detail: `A collaboration project between Thai eyewear brand Lookin’ and Thai artist Ease Around, launched under the collection name “Lookin’ Around.” The project involved the co-development of three eyewear designs bundled with gift sets, distributed through selected LOOKIN’ retail stores. The initiative focused on aligning creative collaboration with business objectives, enhancing customer value, and improving in-store sales performance, complemented by an exclusive pop-up store to elevate customer experience and drive engagement during the launch period.
+<br/><br/>
+<h6>Project Role & Responsibilities</h6>
+<br/>
+<ul>
+<li>Served as the primary liaison between the brand and the artist, responsible for eliciting, clarifying, and managing design and production requirements from all stakeholders.</li>
+<li>Conducted requirement analysis to identify constraints, risks, and dependencies within the production process, and proposed data-informed solutions aligned with business objectives.</li>
+<li>Planned and facilitated project meetings, including requirement discussions, scope alignment sessions, and key decision checkpoints; prepared meeting agendas, documented decisions, and tracked action items.</li>
+<li>Monitored project progress against defined milestones and supported stakeholder decision-making to ensure on-time delivery within agreed scope and constraints.</li>
+</ul>
+`
+			})
+		]
 	},
 	{
-		id: '0011',
+		id: 'late-night-dance-club',
 		name: 'LATE NIGHT DANCE CLUB <br/>X OSAMU GOODS BKK',
 		date: '13-12-2025',
 		category: 'Coordinator',
 		image: coordinatorImg.LateNightXOsamuThumbnail,
 		tags: [tags.ProjectCoordinator],
-		contents: []
+		contents: [
+			defineContent(MultipleImage, {
+				images: [
+					{
+						src: coordinatorImg.LateNightXOsamuPhoto1,
+						class: 'col-span-3 preview'
+					},
+					coordinatorImg.LateNightXOsamuPhoto2,
+					coordinatorImg.LateNightXOsamuPhoto3,
+					coordinatorImg.LateNightXOsamuPhoto4
+				],
+				class: 'grid grid-cols-3 gap-1 w-2/3',
+				classImg: ' preview',
+				detail: `A cross-brand collaboration marking the first launch of OSAMU GOODS in Thailand. The project was initiated based on market, brand-fit, and consumer behavior analysis, which led to the proposal of a collaboration between a Thai fashion brand and a Japanese character brand. The initiative involved close collaboration with an international licensing partner, Sony Music, to ensure alignment with global brand standards
+				<br/><br/>
+				<h6>Project Role & Responsibilities</h6>
+				<br/>
+				<ul>
+				<li>Initiated a cross-brand collaboration project by analyzing market fit and consumer demand, resulting in approval from an international licensing partner (Sony Music).</li>
+<li>Gathered and clarified business requirements from clients and stakeholders, translating expectations into actionable workflows aligned across design, marketing, and production teams.</li>
+<li>Analyzed customer behavior and engagement data to recommend a two-drop release strategy, leading to sustained engagement and a sell-out shortly after launch.
+Translated business objectives into structured project flows and key milestones to ensure the launch was delivered on schedule.</li>
+<li>Coordinated with internal teams and external licensing partners to align requirements, approvals, and timelines, resulting in smooth project execution with no launch delays.</li>
+<li>Monitored launch performance metrics including reach and engagement, achieving exposure to tens of thousands of users during the launch period.</li>
+</ul>`,
+				detailClass: 'mt-8'
+			})
+		]
 	},
 	{
-		id: '0012',
+		id: 'codec-creation',
 		name: 'CODEC CREATION X<br/> OSAMU GOODS BKK',
 		date: 'xx-xx-2026',
 		category: 'Coordinator',
 		image: coordinatorImg.CodecCreatorThumbnail,
 		tags: [tags.ProjectCoordinator],
-		contents: []
+		contents: [
+			defineContent(ImageDetail, {
+				img: coordinatorImg.CodecCreatorThumbnail,
+				classImg: 'w-2/3 mx-auto preview',
+				detailClass: 'mt-6',
+				detail: `A cross-brand collaboration marking the first launch of OSAMU GOODS in Thailand. The project was initiated based on market, brand-fit, and consumer behavior analysis, which led to the proposal of a collaboration between a Thai fashion brand and a Japanese character brand. The initiative involved close collaboration with an international licensing partner, Sony Creative Products Japan, to ensure alignment with global brand standards.
+<br/><br/>
+<h6>Project Role & Responsibilities</h6>
+<br/>
+<ul>
+<li>Initiated a cross-brand collaboration project by analyzing market fit and consumer demand, resulting in approval from an international licensing partner (Sony Creative Products Japan).</li>
+<li>Gathered and clarified business requirements from clients and stakeholders, translating expectations into actionable workflows aligned across design, marketing, and production teams.</li>
+<li>Analyzed customer behavior and engagement data to recommend a two-drop release strategy, leading to sustained engagement and a sell-out shortly after launch.</li>
+<li>Translated business objectives into structured project flows and key milestones to ensure the launch was delivered on schedule.</li>
+<li>Coordinated with internal teams and external licensing partners to align requirements, approvals, and timelines, resulting in smooth project execution with no launch delays.</li>
+<li>Monitored launch performance metrics including reach and engagement, achieving exposure to tens of thousands of users during the launch period.</li>
+</ul>
+`
+			})
+		]
 	},
 	{
-		id: '0013',
+		id: 'osamu-goods-bkk',
 		name: 'OSAMU GOODS BKK',
 		subNameCard: 'SONY CREATIVE PRODUCTS',
 		date: '01-01-2024',
 		category: 'Coordinator',
 		image: coordinatorImg.OsamuGoodBBKThumbnail,
 		tags: [tags.ProjectCoordinator],
-		contents: []
-	},
-	{
-		id: '0014',
-		name: 'A NORMAL DAY IN SKY TRAIN',
-		date: 'xx-xx-2024',
-		category: 'Coordinator',
-		image: illusImg.ANormalDayThumbnail,
-		tags: [tags.GraphicDesign, tags.Illustration],
-		contents: []
+		contents: [
+			defineContent(ImageDetail, {
+				img: coordinatorImg.OsamuGoodBBKCover,
+				classImg: 'w-2/3 mx-auto preview',
+				detailClass: 'mt-6',
+				detail: `Osamu Goods is a character brand under Sony Music.
+GM Generates holds the official licensing rights for Osamu Goods in Thailand.
+<br/><br/>
+I was assigned to serve as the key point of coordination between Sony Creative Products team and local clients, ensuring clear communication, alignment of requirements, and smooth collaboration throughout the licensing and product development processes.
+<br/><br/>
+<h6>Responsibilities</h6>
+<br/>
+<ul>
+<li>Analyzed business opportunities and feasibility for brand collaboration projects, and prepared strategic proposals for executive review and decision-making.</li>
+<li>Acted as the primary point of contact for communicating and providing project updates to Sony Creative Products Team, ensuring alignment and up-to-date information throughout the project lifecycle.</li>
+<li>Ensured product development complied with intellectual property guidelines and design standards defined by the licensor, covering all stages from design, pre-production, and mass production to market launch.</li>
+<li>Provided analytical consultation and recommendations to clients on design and project execution, including issue analysis and proposing effective solutions to ensure projects achieved defined objectives.</li>
+</ul>
+`
+			})
+		]
 	}
 ];
+
+const assistantProducerProjects: Project[] = [];
+
+const thesisProjects: Project[] = [];
+
+export const projects = (tag: Tag): Project[] => {
+	switch (tag) {
+		case tags.ProductDesign:
+			return productDesignProjects;
+		case tags.SocialMediaDesign:
+			return socialMediaDesignProjects;
+		case tags.Illustration:
+			return IllustrationProjects;
+		case tags.ProjectCoordinator:
+			return projectCoordinatorProjects;
+		case tags.CreativeProducer:
+			return creativeProducerProjects;
+		case tags.AssistantProducer:
+			return assistantProducerProjects;
+		case tags.Thesis:
+			return thesisProjects;
+	}
+
+	return [];
+};
+
+export const projectCount = (tag: Tag): number => {
+	switch (tag) {
+		case tags.GraphicDesign:
+			return (
+				productDesignProjects.length +
+				socialMediaDesignProjects.length +
+				IllustrationProjects.length
+			);
+		case tags.ProductDesign:
+			return productDesignProjects.length;
+		case tags.SocialMediaDesign:
+			return socialMediaDesignProjects.length;
+		case tags.Illustration:
+			return IllustrationProjects.length;
+		case tags.ProjectCoordinator:
+			return projectCoordinatorProjects.length;
+		case tags.CreativeProducer:
+			return creativeProducerProjects.length;
+		case tags.AssistantProducer:
+			return assistantProducerProjects.length;
+		case tags.Thesis:
+			return thesisProjects.length;
+	}
+
+	return 0;
+};
 
 export const workMenus: Menu[] = [
 	{
@@ -352,14 +506,3 @@ export const workMenus: Menu[] = [
 		name: tags.Thesis
 	}
 ];
-
-export const workCountByTags: Record<Tag, number> = projects.reduce(
-	(prev, cur) => {
-		cur.tags?.forEach((t) => {
-			prev[t] ||= 0;
-			prev[t]++;
-		});
-		return prev;
-	},
-	{} as Record<Tag, number>
-);

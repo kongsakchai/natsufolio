@@ -21,6 +21,8 @@
 		});
 	});
 
+	const ignorePaths = ['/'];
+
 	onMount(() => {
 		// let timer: number;
 		// const onScroll = () => {
@@ -38,6 +40,7 @@
 </script>
 
 <nav
+	hidden={ignorePaths.includes(page.url.pathname)}
 	class="menu flex justify-between gap-6 rounded-3xl bg-[#252525]/60 px-8 py-4 relative z-10"
 	class:opacity-0={scroll}
 >
