@@ -301,9 +301,9 @@ const IllustrationProjects: Project[] = [
 	}
 ];
 
-const projectCoordinatorProjects: Project[] = [];
+const  creativeProducerProjects: Project[] = [];
 
-const creativeProducerProjects: Project[] = [
+const projectCoordinatorProjects: Project[] = [
 	{
 		id: 'lookin-x-ease-around',
 		name: 'LOOKIN’ X EASE AROUND',
