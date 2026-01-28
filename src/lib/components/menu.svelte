@@ -21,7 +21,7 @@
 		});
 	});
 
-	const ignorePaths = ['/'];
+	const ignorePaths: string[] = [];
 
 	onMount(() => {
 		// let timer: number;
