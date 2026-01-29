@@ -6,7 +6,7 @@ export const fadeInView = (element: HTMLElement) => {
 		if (scrollHeight === clientHeight) return;
 
 		const offsetTop = element.getBoundingClientRect().top;
-		const opacity = clamp((clientHeight - offsetTop) / element.offsetHeight, 0, 1);
+		const opacity = clamp((clientHeight - offsetTop * 1.075) / element.offsetHeight, 0, 1);
 		element.style.opacity = opacity.toString();
 	};
 

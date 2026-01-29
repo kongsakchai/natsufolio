@@ -86,7 +86,7 @@
 
 	ul {
 		list-style: disc;
-		@apply pl-2;
+		@apply pl-2 text-xs;
 	}
 }
 

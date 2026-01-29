@@ -3,7 +3,6 @@ import { InstagramIcon, TiktokIcon, XIcon } from '$lib/assets/icons';
 import * as illusImg from '$lib/assets/works/illustration';
 import * as coordinatorImg from '$lib/assets/works/project-coordinator';
 import * as socialImg from '$lib/assets/works/social-media';
-import * as uranusImg from '$lib/assets/works/uranus';
 
 import ImageDetail from '$lib/components/project/image-detail.svelte';
 import MultipleImage from '$lib/components/project/multiple-image.svelte';
@@ -18,46 +17,9 @@ import { defineContent } from '$lib/utils';
 
 import type { Menu, Project, Tag } from '$lib/types';
 
-import { uranus0004 } from './sub/uranus';
+import { uranusProject } from './uranus';
 
-const productDesignProjects: Project[] = [
-	{
-		id: 'uranus-2324',
-		name: 'URANUS 2324',
-		date: '05-09-2023',
-		endDate: '04-07-2024',
-		category: 'Merchandise Design',
-		image: uranusImg.UranusPosterThumbnail,
-		tags: [tags.ProductDesign, tags.GraphicDesign],
-		contents: [
-			defineContent(ImageDetail, {
-				class: 'grid grid-cols-2 gap-4',
-				img: uranusImg.UranusPoster,
-				classImg: 'preview',
-				detail:
-					'โปรเจคหนัง  ยูเรนัส 2324 เป็นภาพยนตร์ไซไฟ–โรแมนติกที่เล่าเรื่องความรัก การเวลา และจักรวาล ผ่านมุมมองอารมณ์และความสัมพันธ์ของตัวละคร<br/><br/>The film project Uranus 2324 is a sci-fi romantic movie that explores love, time, and the universe through the emotional perspectives and relationships of its characters.'
-			}),
-			defineContent(ImageDetail, {
-				class: 'flex gap-4',
-				classImg: 'w-[150px]',
-				img: uranusImg.NetflixLogo,
-				detailClass: 'text-center ',
-				detail:
-					'The end credits of the movie Uranus 2324.<br/><span class="text-[#FFCC22]">I was assigned the role of creative designer on this project.</span>'
-			}),
-			defineContent(ImageDetail, {
-				class: 'flex gap-4',
-				img: uranusImg.UranusEndCredit,
-				classImg: 'preview'
-			}),
-			defineContent(SubProject, {
-				class: 'mt-6',
-				title: 'Project Design Contributions',
-				projects: uranus0004
-			})
-		]
-	}
-];
+const productDesignProjects: Project[] = [uranusProject];
 
 const socialMediaDesignProjects: Project[] = [
 	{
@@ -301,7 +263,7 @@ const IllustrationProjects: Project[] = [
 	}
 ];
 
-const creativeProducerProjects: Project[] = [];
+const creativeProducerProjects: Project[] = [uranusProject];
 
 const projectCoordinatorProjects: Project[] = [
 	{
@@ -314,7 +276,7 @@ const projectCoordinatorProjects: Project[] = [
 		contents: [
 			defineContent(ImageDetail, {
 				img: coordinatorImg.LookinXEaseThumbnail,
-				classImg: 'w-2/3 mx-auto preview',
+				classImg: 'w-2/3 mx-auto preview ',
 				detailClass: 'mt-6',
 				detail: `A collaboration project between Thai eyewear brand Lookin’ and Thai artist Ease Around, launched under the collection name “Lookin’ Around.” The project involved the co-development of three eyewear designs bundled with gift sets, distributed through selected LOOKIN’ retail stores. The initiative focused on aligning creative collaboration with business objectives, enhancing customer value, and improving in-store sales performance, complemented by an exclusive pop-up store to elevate customer experience and drive engagement during the launch period.
 <br/><br/>
@@ -372,6 +334,7 @@ Translated business objectives into structured project flows and key milestones 
 		date: 'xx-xx-2026',
 		category: 'Coordinator',
 		image: coordinatorImg.CodecCreatorThumbnail,
+		imageStyle: 'background-size: 200%;background-position: center 80%;',
 		tags: [tags.ProjectCoordinator],
 		contents: [
 			defineContent(ImageDetail, {
@@ -379,10 +342,15 @@ Translated business objectives into structured project flows and key milestones 
 				classImg: 'w-2/3 mx-auto preview',
 				detailClass: 'mt-6',
 				detail: `Codec Creation has partnered with GM Generates to develop and expand products under the OSAMU GOODS brand for the Thai market, with an official launch and product release planned for early 2026.
-				<br/>
-				<br/>
+				<br/><br/>
 				The objective of this project is to build brand awareness for OSAMU GOODS in Thailand, while simultaneously developing products that effectively align with the preferences and needs of Thai consumers.
-`
+				<br/><br/>
+				<h6>Project Role & Responsibilities</h6>
+				<br/>
+				<ul>
+				<li>Coordinated with cross-functional internal teams and external licensing stakeholders to gather, validate, and align business requirements, approvals, and delivery timelines in preparation for the planned product launch.</li>
+				<li>Tracked and analyzed pre-launch performance indicators (e.g., reach and engagement) to support data-driven decision-making and inform launch strategy.</li>
+				</ul>`
 			})
 		]
 	},
@@ -413,6 +381,51 @@ I was assigned to serve as the key point of coordination between Sony Creative P
 <li>Provided analytical consultation and recommendations to clients on design and project execution, including issue analysis and proposing effective solutions to ensure projects achieved defined objectives.</li>
 </ul>
 `
+			}),
+			defineContent(SubProject, {
+				class: 'mt-6',
+				title: 'Project',
+				projects: [
+					{
+						goto: true,
+						link: '/work/Project%20Coordinator/more-details/late-night-dance-club',
+						id: 'osamu-01',
+						name: 'LATE NIGHT DANCE CLUB <br/>X OSAMU GOODS BKK',
+						date: '13-12-2025',
+						category: 'Coordinator',
+						image: coordinatorImg.LateNightXOsamuPhoto1,
+						imageStyle: 'object-fit: cover;',
+						details: 'LATE NIGHT DANCE CLUB × OSAMU GOODS BKK<br/>”DANCE SAVES THE DAY“ Collection',
+						contents: [
+							defineContent(MultipleImage, {
+								images: [
+									{
+										src: coordinatorImg.LateNightXOsamuPhoto1,
+										class: 'col-span-3 preview'
+									},
+									coordinatorImg.LateNightXOsamuPhoto2,
+									coordinatorImg.LateNightXOsamuPhoto3,
+									coordinatorImg.LateNightXOsamuPhoto4
+								],
+								class: 'grid grid-cols-3 gap-1 w-2/3',
+								classImg: ' preview',
+								detail: `A cross-brand collaboration marking the first launch of OSAMU GOODS in Thailand. The project was initiated based on market, brand-fit, and consumer behavior analysis, which led to the proposal of a collaboration between a Thai fashion brand and a Japanese character brand. The initiative involved close collaboration with an international licensing partner, Sony Music, to ensure alignment with global brand standards
+				<br/><br/>
+				<h6>Project Role & Responsibilities</h6>
+				<br/>
+				<ul>
+				<li>Initiated a cross-brand collaboration project by analyzing market fit and consumer demand, resulting in approval from an international licensing partner (Sony Music).</li>
+<li>Gathered and clarified business requirements from clients and stakeholders, translating expectations into actionable workflows aligned across design, marketing, and production teams.</li>
+<li>Analyzed customer behavior and engagement data to recommend a two-drop release strategy, leading to sustained engagement and a sell-out shortly after launch.
+Translated business objectives into structured project flows and key milestones to ensure the launch was delivered on schedule.</li>
+<li>Coordinated with internal teams and external licensing partners to align requirements, approvals, and timelines, resulting in smooth project execution with no launch delays.</li>
+<li>Monitored launch performance metrics including reach and engagement, achieving exposure to tens of thousands of users during the launch period.</li>
+</ul>`,
+								detailClass: 'mt-8'
+							})
+						]
+					}
+				]
 			})
 		]
 	}

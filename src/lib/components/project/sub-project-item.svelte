@@ -20,6 +20,7 @@
 		src={project.image}
 		alt=""
 		class="my-auto h-full aspect-square rounded-2xl object-contain"
+		style={project.imageStyle}
 	/>
 
 	<section

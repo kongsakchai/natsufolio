@@ -1,4 +1,4 @@
-import { AiIcon, FigmaIcon, LrIcon, PsIcon } from '$lib/assets/icons';
+import { AiIcon, FigmaIcon, JiraIcon, LrIcon, NotionIcon, PsIcon } from '$lib/assets/icons';
 
 import type { Skill } from '$lib/types';
 
@@ -24,4 +24,16 @@ export const FigmaSkill: Skill = {
 	icon: FigmaIcon,
 	name: 'Figma',
 	level: 'Advance'
+};
+
+export const JiraSkill: Skill = {
+	icon: JiraIcon,
+	name: 'Jira',
+	level: 'Intermediate'
+};
+
+export const NotionSkill: Skill = {
+	icon: NotionIcon,
+	name: 'Notion',
+	level: 'Intermediate'
 };

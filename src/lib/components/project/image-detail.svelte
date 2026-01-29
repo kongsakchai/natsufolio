@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fadeInView } from '$lib/services/use/fade-in-view';
+
 	interface Props {
 		class?: string;
 		classImg?: string;
@@ -10,7 +12,7 @@
 	let { class: className, img, detail, classImg, detailClass }: Props = $props();
 </script>
 
-<figure class="w-full {className} ">
+<figure class="w-full {className} " use:fadeInView>
 	<img src={img} alt="cover" class="object-contain {classImg}" />
 	{#if detail}
 		<figcaption class="text-xs {detailClass}">{@html detail}</figcaption>

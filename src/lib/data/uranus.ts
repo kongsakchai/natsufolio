@@ -6,10 +6,11 @@ import MultipleImage from '$lib/components/project/multiple-image.svelte';
 import Paragraph from '$lib/components/project/paragraph.svelte';
 import ProgramUse from '$lib/components/project/program-use.svelte';
 import ScrollImage from '$lib/components/project/scroll-image.svelte';
-// import SubProject from '$lib/components/project/sub-project.svelte';
+import SubProject from '$lib/components/project/sub-project.svelte';
 import Title from '$lib/components/project/title.svelte';
 
 import { AISkill, LRSkill, PSSkill } from '$lib/constants/skill';
+import { tags } from '$lib/constants/tags';
 
 import { defineContent } from '$lib/utils';
 
@@ -352,3 +353,40 @@ export const uranus0004: Project[] = [
 		]
 	}
 ];
+
+export const uranusProject: Project = {
+	id: 'uranus-2324',
+	name: 'URANUS 2324',
+	date: '05-09-2023',
+	endDate: '04-07-2024',
+	category: 'Merchandise Design',
+	image: uranusImg.UranusPosterThumbnail,
+	tags: [tags.ProductDesign, tags.GraphicDesign],
+	contents: [
+		defineContent(ImageDetail, {
+			class: 'grid grid-cols-2 gap-4',
+			img: uranusImg.UranusPoster,
+			classImg: 'preview',
+			detail:
+				'โปรเจคหนัง  ยูเรนัส 2324 เป็นภาพยนตร์ไซไฟ–โรแมนติกที่เล่าเรื่องความรัก การเวลา และจักรวาล ผ่านมุมมองอารมณ์และความสัมพันธ์ของตัวละคร<br/><br/>The film project Uranus 2324 is a sci-fi romantic movie that explores love, time, and the universe through the emotional perspectives and relationships of its characters.'
+		}),
+		defineContent(ImageDetail, {
+			class: 'flex gap-4',
+			classImg: 'w-[150px]',
+			img: uranusImg.NetflixLogo,
+			detailClass: 'text-center ',
+			detail:
+				'The end credits of the movie Uranus 2324.<br/><span class="text-[#FFCC22]">I was assigned the role of creative designer on this project.</span>'
+		}),
+		defineContent(ImageDetail, {
+			class: 'flex gap-4',
+			img: uranusImg.UranusEndCredit,
+			classImg: 'preview'
+		}),
+		defineContent(SubProject, {
+			class: 'mt-6 text-center',
+			title: 'Project Design Contributions',
+			projects: uranus0004
+		})
+	]
+};

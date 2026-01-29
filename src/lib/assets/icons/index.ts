@@ -8,5 +8,7 @@ export { default as ClockIcon } from './clock.svg';
 export { default as CloseIcon } from './close.svg';
 export { default as FigmaIcon } from './figma.svg';
 export { default as InstagramIcon } from './ig.svg';
+export { default as JiraIcon } from './jira.svg';
+export { default as NotionIcon } from './notion.svg';
 export { default as TiktokIcon } from './tiktok.svg';
 export { default as XIcon } from './x.svg';

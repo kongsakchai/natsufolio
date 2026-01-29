@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fadeInView } from '$lib/services/use/fade-in-view';
+
 	import type { Skill } from '$lib/types';
 
 	interface Props {
@@ -14,6 +16,7 @@
 	class="grid w-full {multiple
 		? 'grid-cols-2'
 		: ''} gap-x-6 gap-y-4 text-nowrap font-almarai {className}"
+	use:fadeInView
 >
 	<h3 class="col-span-full font-almarai font-normal">Program Used</h3>
 

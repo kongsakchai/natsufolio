@@ -15,35 +15,57 @@
 	<CardId />
 </section>
 
-<section class="mx-auto -mt-8 mb-10 grid max-w-110 grid-cols-3 gap-y-8 text-nowrap font-almarai">
+<section class="mx-auto -mt-8 mb-20 grid max-w-110 grid-cols-3 gap-y-8 text-nowrap font-almarai">
 	<article>
-		<h5 class="font-normal header">/ EDUCATION</h5>
-		<p>Fine and Applied Arts<br />(Fashion Design)</p>
-		<span>Thammasat University</span>
+		<h5 class="font-normal header font-almarai">/ EDUCATION</h5>
+		<p>
+			Fine and Applied Arts
+			<br />(Fashion Design)
+		</p>
+
+		<ul class="ml-3">
+			<li>Thammasat University</li>
+		</ul>
 	</article>
 
 	<article class="col-start-3">
-		<h5 class="font-normal header">/ LANGUAGES</h5>
+		<h5 class="font-normal header font-almarai">/ LANGUAGES</h5>
 		<p>Thai (Native) <br />English (Advance)</p>
 	</article>
 
 	<article class="col-span-3" use:fadeInView>
-		<h5 class="font-normal header">/ EXPERIENCES</h5>
+		<h5 class="font-normal header font-almarai">/ EXPERIENCES</h5>
 		<Experiences list={experiences} />
 	</article>
 
 	<article class="col-span-3" use:fadeInView>
-		<h5 class="font-normal header">/ CREATIVE FIELDS</h5>
+		<h5 class="font-normal header font-almarai">/ CREATIVE FIELDS</h5>
 		<ChipList list={creativeFields} />
 	</article>
 
 	<article class="col-span-3" use:fadeInView>
-		<h5 class="font-normal header">/ SOFT SKILLS</h5>
+		<h5 class="font-normal header font-almarai">/ SOFT SKILLS</h5>
 		<ChipList list={softSkills} />
 	</article>
 
 	<article class="col-span-3" use:fadeInView>
-		<h5 class="font-normal header">/ HARD SKILLS</h5>
+		<h5 class="font-normal header font-almarai">/ HARD SKILLS</h5>
 		<HardSkill list={skills} />
+	</article>
+
+	<article class="col-span-3" use:fadeInView>
+		<h5 class="font-normal header font-almarai">/ OFFICE & DOCUMENTATION SKILLS</h5>
+		<p class="text-wrap">
+			Proficient in Google Drive, Sheet, Slides and Word, with experience creating clear, organised,
+			and well-structured project documents and reports.
+		</p>
+	</article>
+
+	<article class="col-span-3" use:fadeInView>
+		<h5 class="font-normal header font-almarai">/ COORDINATION & MANAGEMENT</h5>
+		<p class="text-wrap">
+			Proficient in Google Drive, Sheet, Slides and Word, with experience creating clear, organised,
+			and well-structured project documents and reports.
+		</p>
 	</article>
 </section>

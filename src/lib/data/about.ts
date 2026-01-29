@@ -5,7 +5,14 @@ import {
 	SocialCommerce
 } from '$lib/assets/certificates';
 
-import { AISkill, FigmaSkill, LRSkill, PSSkill } from '$lib/constants/skill';
+import {
+	AISkill,
+	FigmaSkill,
+	JiraSkill,
+	LRSkill,
+	NotionSkill,
+	PSSkill
+} from '$lib/constants/skill';
 import { certificateTypes } from '$lib/constants/tags';
 
 import type { Certificates, Experience } from '$lib/types';
@@ -75,7 +82,11 @@ export const softSkills = [
 	'TIME MANAGEMENT',
 	'TEAM WORK',
 	'FLEXIBILITY',
-	'CREATIVITY'
+	'CREATIVITY',
+	'PROBLEM-SOLVING',
+	'ANALYTICAL THINKING',
+	'STAKEHOLDER MANAGEMENT',
+	'RESPONSIBILITY & ACCOUNTABILITY'
 ];
 
-export const skills = [PSSkill, LRSkill, AISkill, FigmaSkill];
+export const skills = [PSSkill, FigmaSkill, AISkill, JiraSkill, LRSkill, NotionSkill];

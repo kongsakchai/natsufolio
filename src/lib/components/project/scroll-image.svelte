@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { fadeInView } from '$lib/services/use/fade-in-view';
+
 	interface Props {
 		initIndex?: number;
 		class?: string;
@@ -46,7 +48,7 @@
 	// };
 </script>
 
-<div class="w-full {className} flex flex-col relative">
+<div class="w-full {className} flex flex-col relative" use:fadeInView>
 	<section class="w-[65%] aspect-square mx-auto relative">
 		{#each images as img, i}
 			<button

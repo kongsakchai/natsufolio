@@ -8,9 +8,9 @@
 	let { list = [] }: Props = $props();
 </script>
 
-<section class="exp relative grid grid-cols-3 gap-y-4">
+<section class="exp relative grid grid-cols-4 gap-y-4">
 	{#snippet exp(years: number, title: string, details: string)}
-		<p class="year">{years}</p>
+		<p class="year col-start-1">{years}</p>
 		<p class=" col-span-2 col-start-2">
 			{title} <br />
 			<span class="text-[#D7D1BF]">{details}</span>
@@ -21,7 +21,7 @@
 		{@render exp(year, title, details)}
 	{/each}
 
-	<p class="text-center year">PRESENT</p>
+	<p class="text-center year col-start-1">PRESENT</p>
 </section>
 
 <style lang="postcss">
