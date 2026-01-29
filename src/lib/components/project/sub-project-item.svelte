@@ -15,13 +15,17 @@
 </script>
 
 {#if !hide}
-	<img
+	<div
 		transition:fade={{ duration: duration }}
-		src={project.image}
-		alt=""
-		class="my-auto h-full aspect-square rounded-2xl object-contain"
-		style={project.imageStyle}
-	/>
+		class="h-full aspect-square rounded-2xl overflow-hidden"
+	>
+		<img
+			src={project.image}
+			alt=""
+			class="w-full h-full object-contain"
+			style={project.imageStyle}
+		/>
+	</div>
 
 	<section
 		transition:fade={{ duration: duration }}

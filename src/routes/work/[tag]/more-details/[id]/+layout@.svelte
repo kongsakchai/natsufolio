@@ -4,8 +4,6 @@
 	let { children, data } = $props();
 </script>
 
-<!-- {#key data.id} -->
 <PageTransition>
 	{@render children()}
 </PageTransition>
-<!-- {/key} -->

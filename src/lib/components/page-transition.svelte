@@ -7,8 +7,8 @@
 
 <main
 	class="w-full px-6 py-6 pb-24 {className} {navigating.to ? 'absolute' : ''}"
-	in:fade|global={{ duration: 300 }}
-	out:fade|global={{ duration: 300 }}
+	in:fade={{ duration: 300 }}
+	out:fade={{ duration: 300 }}
 >
 	{@render children()}
 </main>
