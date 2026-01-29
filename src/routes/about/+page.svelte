@@ -9,9 +9,9 @@
 	import { fadeInView } from '$lib/services/use/fade-in-view';
 </script>
 
-<h1 class="header">ABOUT (ME)</h1>
+<h1 class="header fixpos">ABOUT (ME)</h1>
 
-<section class="relative mt-16 flex flex-col items-center">
+<section class="relative mt-13 flex flex-col items-center">
 	<CardId />
 </section>
 

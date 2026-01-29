@@ -301,7 +301,7 @@ const IllustrationProjects: Project[] = [
 	}
 ];
 
-const  creativeProducerProjects: Project[] = [];
+const creativeProducerProjects: Project[] = [];
 
 const projectCoordinatorProjects: Project[] = [
 	{
@@ -378,18 +378,10 @@ Translated business objectives into structured project flows and key milestones 
 				img: coordinatorImg.CodecCreatorThumbnail,
 				classImg: 'w-2/3 mx-auto preview',
 				detailClass: 'mt-6',
-				detail: `A cross-brand collaboration marking the first launch of OSAMU GOODS in Thailand. The project was initiated based on market, brand-fit, and consumer behavior analysis, which led to the proposal of a collaboration between a Thai fashion brand and a Japanese character brand. The initiative involved close collaboration with an international licensing partner, Sony Creative Products Japan, to ensure alignment with global brand standards.
-<br/><br/>
-<h6>Project Role & Responsibilities</h6>
-<br/>
-<ul>
-<li>Initiated a cross-brand collaboration project by analyzing market fit and consumer demand, resulting in approval from an international licensing partner (Sony Creative Products Japan).</li>
-<li>Gathered and clarified business requirements from clients and stakeholders, translating expectations into actionable workflows aligned across design, marketing, and production teams.</li>
-<li>Analyzed customer behavior and engagement data to recommend a two-drop release strategy, leading to sustained engagement and a sell-out shortly after launch.</li>
-<li>Translated business objectives into structured project flows and key milestones to ensure the launch was delivered on schedule.</li>
-<li>Coordinated with internal teams and external licensing partners to align requirements, approvals, and timelines, resulting in smooth project execution with no launch delays.</li>
-<li>Monitored launch performance metrics including reach and engagement, achieving exposure to tens of thousands of users during the launch period.</li>
-</ul>
+				detail: `Codec Creation has partnered with GM Generates to develop and expand products under the OSAMU GOODS brand for the Thai market, with an official launch and product release planned for early 2026.
+				<br/>
+				<br/>
+				The objective of this project is to build brand awareness for OSAMU GOODS in Thailand, while simultaneously developing products that effectively align with the preferences and needs of Thai consumers.
 `
 			})
 		]

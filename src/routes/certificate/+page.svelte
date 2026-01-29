@@ -12,9 +12,9 @@
 	</clipPath>
 </svg>
 
-<h1 class="header">CERTIFICATE</h1>
+<h1 class="header fixpos">CERTIFICATE</h1>
 
-<section class="mt-10 mb-10 mx-auto max-w-110 flex flex-col gap-4">
+<section class="mt-7 mb-10 mx-auto max-w-110 flex flex-col gap-4">
 	{#each certificates as cert}
 		<CertFolder certs={cert} />
 	{/each}

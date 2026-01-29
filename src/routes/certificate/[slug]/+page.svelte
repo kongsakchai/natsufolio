@@ -6,11 +6,11 @@
 	let { data } = $props();
 </script>
 
-<h1 class="header flex items-start gap-3">
+<h1 class="header fixpos flex items-start gap-3">
 	<button onclick={() => window.history.back()}>
 		<img src={ArrowLeft} alt="arrow right" class=" w-4" />
 	</button>
-	{@html data.certificates.title}
+	<span class="mt-1">{@html data.certificates.title}</span>
 </h1>
 
 <section class="mt-10 mb-10 mx-auto max-w-110 flex flex-col items-center gap-4">

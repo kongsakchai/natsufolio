@@ -10,9 +10,9 @@
 	});
 </script>
 
-<h1 class="header">WORK</h1>
+<h1 class="header fixpos">WORK</h1>
 
-<section class="mt-10 w-full text-nowrap mb-10 flex flex-col gap-4">
+<section class="mt-7 w-full text-nowrap mb-10 flex flex-col gap-4">
 	{#each workMenus as work}
 		<WorkMenu {work} />
 	{/each}

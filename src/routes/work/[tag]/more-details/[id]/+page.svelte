@@ -10,7 +10,7 @@
 	});
 </script>
 
-<h1 class="header uppercase flex items-start gap-3 font-almarai font-normal">
+<h1 class="header uppercase flex items-start gap-3 font-almarai font-normal fixpos">
 	<button onclick={() => window.history.back()}>
 		<img src={ArrowLeft} alt="arrow right" class=" w-4" />
 	</button>
@@ -22,7 +22,7 @@
 	</div>
 </h1>
 
-<section class="mt-10 mb-10 flex flex-col max-w-110 mx-auto gap-6">
+<section class="mt-7 mb-10 flex flex-col max-w-110 mx-auto gap-6">
 	{#each data.project.contents as { Component, params }}
 		<Component {...params} />
 	{/each}

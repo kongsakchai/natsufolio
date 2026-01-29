@@ -6,7 +6,7 @@ import MultipleImage from '$lib/components/project/multiple-image.svelte';
 import Paragraph from '$lib/components/project/paragraph.svelte';
 import ProgramUse from '$lib/components/project/program-use.svelte';
 import ScrollImage from '$lib/components/project/scroll-image.svelte';
-import SubProject from '$lib/components/project/sub-project.svelte';
+// import SubProject from '$lib/components/project/sub-project.svelte';
 import Title from '$lib/components/project/title.svelte';
 
 import { AISkill, LRSkill, PSSkill } from '$lib/constants/skill';
@@ -185,22 +185,22 @@ export const uranus0004: Project[] = [
 				images: [uranusImg.TShirtHowWouldExample1],
 				classImg: 'w-[80%] mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
-			}),
-			defineContent(SubProject, {
-				class: 'mt-6',
-				title: 'Creative Producer',
-				disableClick: true,
-				projects: [
-					{
-						id: 'uranus-003',
-						name: 'Random Photo Card Pack',
-						date: '',
-						image: uranusImg.RandomCardExample2,
-						details:
-							'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
-					}
-				]
 			})
+			// defineContent(SubProject, {
+			// 	class: 'mt-6',
+			// 	title: 'Creative Producer',
+			// 	disableClick: true,
+			// 	projects: [
+			// 		{
+			// 			id: 'uranus-003',
+			// 			name: 'Random Photo Card Pack',
+			// 			date: '',
+			// 			image: uranusImg.RandomCardExample2,
+			// 			details:
+			// 				'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+			// 		}
+			// 	]
+			// })
 		]
 	},
 	{
@@ -233,22 +233,22 @@ export const uranus0004: Project[] = [
 				images: [uranusImg.TShirtImLikeUranusExample1],
 				classImg: 'w-[80%] mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
-			}),
-			defineContent(SubProject, {
-				class: 'mt-6',
-				title: 'Creative Producer',
-				disableClick: true,
-				projects: [
-					{
-						id: 'uranus-003',
-						name: 'Random Photo Card Pack',
-						date: '',
-						image: uranusImg.RandomCardExample2,
-						details:
-							'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
-					}
-				]
 			})
+			// defineContent(SubProject, {
+			// 	class: 'mt-6',
+			// 	title: 'Creative Producer',
+			// 	disableClick: true,
+			// 	projects: [
+			// 		{
+			// 			id: 'uranus-003',
+			// 			name: 'Random Photo Card Pack',
+			// 			date: '',
+			// 			image: uranusImg.RandomCardExample2,
+			// 			details:
+			// 				'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+			// 		}
+			// 	]
+			// })
 		]
 	},
 	{
@@ -283,22 +283,22 @@ export const uranus0004: Project[] = [
 				images: [uranusImg.HoodieLinKathExample4],
 				classImg: 'w-full mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
-			}),
-			defineContent(SubProject, {
-				class: 'mt-6',
-				title: 'Creative Producer',
-				disableClick: true,
-				projects: [
-					{
-						id: 'uranus-003',
-						name: 'Random Photo Card Pack',
-						date: '',
-						image: uranusImg.RandomCardExample2,
-						details:
-							'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
-					}
-				]
 			})
+			// defineContent(SubProject, {
+			// 	class: 'mt-6',
+			// 	title: 'Creative Producer',
+			// 	disableClick: true,
+			// 	projects: [
+			// 		{
+			// 			id: 'uranus-003',
+			// 			name: 'Random Photo Card Pack',
+			// 			date: '',
+			// 			image: uranusImg.RandomCardExample2,
+			// 			details:
+			// 				'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+			// 		}
+			// 	]
+			// })
 		]
 	},
 	{
@@ -333,22 +333,22 @@ export const uranus0004: Project[] = [
 				images: [uranusImg.HoodieLovePainExample4],
 				classImg: 'w-full mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
-			}),
-			defineContent(SubProject, {
-				class: 'mt-6',
-				title: 'Creative Producer',
-				disableClick: true,
-				projects: [
-					{
-						id: 'uranus-003',
-						name: 'Random Photo Card Pack',
-						date: '',
-						image: uranusImg.RandomCardExample2,
-						details:
-							'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
-					}
-				]
 			})
+			// defineContent(SubProject, {
+			// 	class: 'mt-6',
+			// 	title: 'Creative Producer',
+			// 	disableClick: true,
+			// 	projects: [
+			// 		{
+			// 			id: 'uranus-003',
+			// 			name: 'Random Photo Card Pack',
+			// 			date: '',
+			// 			image: uranusImg.RandomCardExample2,
+			// 			details:
+			// 				'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.'
+			// 		}
+			// 	]
+			// })
 		]
 	}
 ];
