@@ -22,7 +22,7 @@
 	</div>
 </h1>
 
-<section class="mt-7 mb-10 flex flex-col max-w-110 mx-auto gap-6">
+<section class="mt-7 mb-10 flex flex-col max-w-110 mx-auto gap-4">
 	{#each data.project.contents as { Component, params }}
 		<Component {...params} />
 	{/each}

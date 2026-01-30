@@ -13,7 +13,7 @@
 		<p class="year col-start-1">{years}</p>
 		<p class=" col-span-2 col-start-2">
 			{title} <br />
-			<span class="text-[#D7D1BF]">{details}</span>
+			<span class="text-[#D7D1BF]">{@html details}</span>
 		</p>
 	{/snippet}
 

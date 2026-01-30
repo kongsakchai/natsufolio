@@ -31,7 +31,7 @@ export const experiences: Experience[] = [
 	{
 		year: 2023,
 		title: 'GM Generates Co.,Ltd',
-		details: '# Creative & Graphic Design'
+		details: '# Creative & Graphic Design<br/># Project Coordinator'
 	}
 ];
 

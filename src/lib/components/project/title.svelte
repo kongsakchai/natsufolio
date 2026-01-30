@@ -10,6 +10,6 @@
 	let { h, content, class: className }: Props = $props();
 </script>
 
-<svelte:element this={'h' + h} class={className} use:fadeInView>
+<svelte:element this={'h' + h} class=" {className}" use:fadeInView>
 	{@html content}
 </svelte:element>

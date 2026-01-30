@@ -22,7 +22,9 @@
 		class="font-almarai text-[10px] flex gap-1 items-center bg-black/45 w-fit px-1 md:py-0.5 md:px-2 rounded-3xl mt-2 ml-auto mr-2 md:text-sm"
 	>
 		<img src={ClockIcon} alt={'clock-icon'} class="w-3 h-3 md:w-5 md:h-5 rounded-full img-shadow" />
-		{showFormattedDate(project.date)}
+		{#if project.date}
+			{showFormattedDate(project.date)}
+		{/if}
 		{#if project.endDate}
 			- {showFormattedDate(project.endDate)}
 		{/if}
@@ -37,7 +39,7 @@
 			{#if project.subNameCard}
 				<h6 class="font-roboto font-normal leading-4 md:leading-6">{@html project.subNameCard}</h6>
 			{/if}
-			<p>{project.category}</p>
+			<p>{@html project.category}</p>
 
 			<a
 				href="/work/{tag}/more-details/{project.id}"

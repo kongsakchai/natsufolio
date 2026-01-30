@@ -48,7 +48,7 @@
 </script>
 
 <section class="flex flex-col gap-4 {className}">
-	<h2 class="font-almarai font-normal tracking-wider mb-6">{title}</h2>
+	<h2 class="font-almarai font-normal tracking-wider">{title}</h2>
 
 	{#each projects as p}
 		<button

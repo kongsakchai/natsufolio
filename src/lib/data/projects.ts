@@ -1,6 +1,8 @@
 // import { HappyBambyDay, NamYejun, PlaveDebut100 } from '$lib/assets/works';
 import { InstagramIcon, TiktokIcon, XIcon } from '$lib/assets/icons';
 import * as illusImg from '$lib/assets/works/illustration';
+import * as producerAssistantImg from '$lib/assets/works/producer-assistant';
+import * as productDesignImg from '$lib/assets/works/product-design';
 import * as coordinatorImg from '$lib/assets/works/project-coordinator';
 import * as socialImg from '$lib/assets/works/social-media';
 
@@ -19,7 +21,37 @@ import type { Menu, Project, Tag } from '$lib/types';
 import { codecXOsamu, lateNightXOsamu, osamuGoodBkk } from './osamu';
 import { uranusProject } from './uranus';
 
-const productDesignProjects: Project[] = [uranusProject];
+const productDesignProjects: Project[] = [
+	uranusProject,
+	{
+		id: 'paul-bakery',
+		name: 'PAUL Bakery',
+		date: '17-01-2026',
+		category: 'Merchandise Re-drawing',
+		image: productDesignImg.PaulBakeryThumbnail,
+		tags: [tags.GraphicDesign, tags.ProductDesign],
+		contents: [
+			defineContent(MultipleImage, {
+				images: [
+					productDesignImg.PaulBakeryPhoto1,
+					productDesignImg.PaulBakeryPhoto2,
+					{
+						src: productDesignImg.PaulBakeryPhoto3,
+						class: 'col-span-2 preview'
+					}
+				],
+				class: 'grid grid-cols-2 gap-1 w-2/3',
+				classImg: ' preview',
+				detail: `In this project, I was responsible for re-drawing and refining the coffee cup artwork of Paul Bakery to be developed into a keychain product, as well as coordinating with manufacturing partners throughout the production process to ensure that the final product accurately reflected the approved design.`,
+				detailClass: 'mt-8'
+			}),
+			defineContent(ProgramUse, {
+				list: [PSSkill, AISkill],
+				class: 'mt-4 '
+			})
+		]
+	}
+];
 
 const socialMediaDesignProjects: Project[] = [
 	{
@@ -297,7 +329,38 @@ const projectCoordinatorProjects: Project[] = [
 	osamuGoodBkk
 ];
 
-const assistantProducerProjects: Project[] = [];
+const assistantProducerProjects: Project[] = [
+	{
+		id: 'ztylezhk-magazine',
+		name: 'ZTYLEZHK Magazine',
+		date: '',
+		category: 'Producer assistance /<br/>Retouch',
+		image: producerAssistantImg.magazineThumbnail,
+		tags: [tags.GraphicDesign, tags.ProductDesign],
+		contents: [
+			defineContent(ImageDetail, {
+				img: producerAssistantImg.magazinePhoto1,
+				classImg: 'preview',
+				detail: 'The images that I was assigned to retouch.',
+				detailClass: 'text-center mt-1 opacity-50'
+			}),
+			defineContent(Paragraph, {
+				str: 'Digital Cover photoshoot for ZTYLEZ Magazine (Hong Kong). Acted as a coordinator between the Thai and Hong Kong teams, ensuring smooth cross-functional collaboration. Also supported post-production by reviewing and retouching images used in the magazine.'
+			}),
+			defineContent(MultipleImage, {
+				images: [
+					producerAssistantImg.magazinePhoto2,
+					producerAssistantImg.magazinePhoto3,
+					producerAssistantImg.magazinePhoto4,
+					producerAssistantImg.magazinePhoto5
+				],
+				classImg: 'preview',
+				class: 'grid grid-cols-2 gap-4',
+				classParent: 'mt-6'
+			})
+		]
+	}
+];
 
 const thesisProjects: Project[] = [];
 
