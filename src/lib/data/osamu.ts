@@ -73,12 +73,12 @@ export const codecXOsamu = {
 	date: 'xx-xx-2026',
 	category: 'Coordinator',
 	image: coordinatorImg.CodecCreatorThumbnail,
-	imageStyle: 'background-size: 200%;background-position: center 80%;',
+	imageStyle: 'background-size: 100%;background-position: center 80%;',
 	tags: [tags.ProjectCoordinator],
 	contents: [
 		defineContent(ImageDetail, {
-			img: coordinatorImg.CodecCreatorThumbnail,
-			classImg: 'w-2/3 mx-auto preview',
+			img: coordinatorImg.CodecXOsamuThumbnail,
+			classImg: 'w-full mx-auto preview',
 			detailClass: 'mt-6',
 			detail: `Codec Creation has partnered with GM Generates to develop and expand products under the OSAMU GOODS brand for the Thai market, with an official launch and product release planned for early 2026.
 				<br/><br/>
@@ -93,6 +93,16 @@ export const codecXOsamu = {
 				'Coordinated with cross-functional internal teams and external licensing stakeholders to gather, validate, and align business requirements, approvals, and delivery timelines in preparation for the planned product launch.',
 				'Tracked and analyzed pre-launch performance indicators (e.g., reach and engagement) to support data-driven decision-making and inform launch strategy.'
 			]
+		}),
+		defineContent(MultipleImage, {
+			images: [
+				coordinatorImg.CodecXOsamuPhoto1,
+				coordinatorImg.CodecXOsamuPhoto2,
+				coordinatorImg.CodecXOsamuPhoto3,
+				coordinatorImg.CodecXOsamuPhoto4
+			],
+			class: 'grid grid-cols-2 gap-2 mt-8',
+			classImg: 'preview'
 		})
 	]
 };
@@ -139,6 +149,7 @@ I was assigned to serve as the key point of coordination between Sony Creative P
 				},
 				{
 					...codecXOsamu,
+					image: coordinatorImg.CodecXOsamuThumbnail,
 					imageStyle: 'object-fit: cover;scale:150%; object-position: center 60%;',
 					details:
 						'Codec Creation has partnered with GM Generates to develop and expand products under the OSAMU GOODS brand for the Thai market.'

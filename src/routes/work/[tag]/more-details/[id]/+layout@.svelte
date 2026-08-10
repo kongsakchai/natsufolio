@@ -1,7 +1,7 @@
 <script lang="ts">
 	import PageTransition from '$lib/components/page-transition.svelte';
 
-	let { children, data } = $props();
+	let { children } = $props();
 </script>
 
 <PageTransition>

@@ -17,9 +17,13 @@
 	<div class="w-full {className}">
 		{#each images as img}
 			{#if typeof img === 'object'}
-				<img src={img.src} alt="cover" class="object-contain {img.class ?? classImg}" />
+				<img
+					src={img.src}
+					alt="cover"
+					class=" object-cover w-full h-full {img.class ?? classImg}"
+				/>
 			{:else}
-				<img src={img} alt="cover" class="object-contain {classImg}" />
+				<img src={img} alt="cover" class=" object-cover w-full h-full {classImg}" />
 			{/if}
 		{/each}
 	</div>

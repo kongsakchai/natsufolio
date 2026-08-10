@@ -22,7 +22,8 @@
 >
 	<h3
 		transition:slide|global
-		class="uppercase flex items-center gap-3 font-almarai {isSub && 'text-sm sm:text-base'}"
+		class="uppercase flex items-center cursor-pointer gap-3 font-almarai {isSub &&
+			'text-sm sm:text-base'}"
 	>
 		<img src={ArrowRight} alt="arrow right" class="inline-block {isSub ? 'w-3' : 'w-4'}" />
 		{work.name}
