@@ -4,7 +4,7 @@ export const tags = {
 	CreativeProducer: 'Creative Producer',
 	AssistantProducer: 'Producer Assistant',
 	Thesis: 'Thesis',
-	UXUI: 'UX/UI',
+	UXUI: 'UXUI',
 
 	ProductDesign: 'Product Design',
 	SocialMediaDesign: 'Social Media Design',
