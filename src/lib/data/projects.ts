@@ -307,8 +307,8 @@ const projectCoordinatorProjects: Project[] = [
 		tags: [tags.ProjectCoordinator],
 		contents: [
 			defineContent(ImageDetail, {
-				img: coordinatorImg.LookinXEaseThumbnail,
-				classImg: 'w-2/3 mx-auto preview ',
+				img: coordinatorImg.LookinXEaseCover,
+				classImg: 'w-full mx-auto preview ',
 				detailClass: 'mt-6',
 				detail: `A collaboration project between Thai eyewear brand Lookin’ and Thai artist Ease Around, launched under the collection name “Lookin’ Around.” The project involved the co-development of three eyewear designs bundled with gift sets, distributed through selected LOOKIN’ retail stores. The initiative focused on aligning creative collaboration with business objectives, enhancing customer value, and improving in-store sales performance, complemented by an exclusive pop-up store to elevate customer experience and drive engagement during the launch period.
 <br/><br/>
@@ -321,6 +321,21 @@ const projectCoordinatorProjects: Project[] = [
 <li>Monitored project progress against defined milestones and supported stakeholder decision-making to ensure on-time delivery within agreed scope and constraints.</li>
 </ul>
 `
+			}),
+			defineContent(MultipleImage, {
+				images: [
+					coordinatorImg.LookinXEasePhoto1,
+					coordinatorImg.LookinXEasePhoto2,
+					coordinatorImg.LookinXEasePhoto3,
+					coordinatorImg.LookinXEasePhoto4,
+					coordinatorImg.LookinXEasePhoto5,
+					coordinatorImg.LookinXEasePhoto6,
+					coordinatorImg.LookinXEasePhoto7,
+					coordinatorImg.LookinXEasePhoto8
+				],
+				classImg: 'preview',
+				class: 'grid grid-cols-2 gap-4',
+				classParent: 'mt-6'
 			})
 		]
 	},
