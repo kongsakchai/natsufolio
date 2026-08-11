@@ -1,4 +1,4 @@
-import * as uranusImg from '$lib/assets/works/uranus';
+import * as workImages from '$lib/assets/works';
 
 import CardFlip from '$lib/components/project/card-flip.svelte';
 import ImageDetail from '$lib/components/project/image-detail.svelte';
@@ -10,7 +10,6 @@ import SubProject from '$lib/components/project/sub-project.svelte';
 import Title from '$lib/components/project/title.svelte';
 
 import { AISkill, LRSkill, PSSkill } from '$lib/constants/skill';
-import { tags } from '$lib/constants/tags';
 
 import { defineContent } from '$lib/utils';
 
@@ -21,11 +20,11 @@ export const uranus0004: Project[] = [
 		id: 'uranus-001',
 		name: 'กล่องพัสดุ URANUS 2324<br/><span class="text-[0.75em]">WORLDWIDE SHIPPING BOX</span>',
 		date: '',
-		image: uranusImg.BoxThumbnail,
+		image: workImages.BoxThumbnail,
 		details: 'Design a shipping package/parcel box for merchandise from the movie Uranus2324.',
 		contents: [
 			defineContent(ImageDetail, {
-				img: uranusImg.BoxPoster,
+				img: workImages.BoxPoster,
 				classImg: 'w-2/3 mx-auto preview',
 				detail: 'Design a shipping package/parcel box for merchandise from the movie Uranus2324.',
 				detailClass: 'mt-2'
@@ -35,7 +34,7 @@ export const uranus0004: Project[] = [
 				class: 'mt-4'
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.BoxExample1, uranusImg.BoxExample2],
+				images: [workImages.BoxExample1, workImages.BoxExample2],
 				class: 'grid grid-cols-2 gap-4',
 				classImg: 'size-50 mx-auto preview'
 			})
@@ -45,12 +44,12 @@ export const uranus0004: Project[] = [
 		id: 'uranus-002',
 		name: 'Film Camera URANUS 2324',
 		date: '',
-		image: uranusImg.CameraThumbnail,
+		image: workImages.CameraThumbnail,
 		details:
 			'<span class="leading-4.5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.',
 		contents: [
 			defineContent(ImageDetail, {
-				img: uranusImg.CameraPoster,
+				img: workImages.CameraPoster,
 				classImg: 'w-2/3 mx-auto preview',
 				detail:
 					'<span class="text-sm leading-5">TIME FREEZER</span><br/>Capture your memories in a unique way with the URANUS2324 Time Freezer Black (NYC) single-use camera. Designed for ease of use and quick operation, this camera is perfect for anyone wanting to experience the charm of film photography.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging design</li><li>Film Camera Sticker</li><li>Film Camera Filter</li><li>Design images for social media and sales platforms</li></ul>',
@@ -66,15 +65,15 @@ export const uranus0004: Project[] = [
 				class: 'font-almarai font-normal text-center'
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.CameraSheet1, uranusImg.CameraSheet2],
+				images: [workImages.CameraSheet1, workImages.CameraSheet2],
 				classImg: 'w-full preview',
 				class: 'flex flex-col w-full gap-1'
 			}),
 			defineContent(ScrollImage, {
-				images: [uranusImg.CameraExample1, uranusImg.CameraExample2, uranusImg.CameraExample3]
+				images: [workImages.CameraExample1, workImages.CameraExample2, workImages.CameraExample3]
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.CameraExample4, uranusImg.CameraExample5],
+				images: [workImages.CameraExample4, workImages.CameraExample5],
 				classImg: 'w-full preview',
 				class: 'flex flex-col w-full gap-1'
 			})
@@ -84,13 +83,13 @@ export const uranus0004: Project[] = [
 		id: 'uranus-003',
 		name: 'Random Photo Card Pack',
 		date: '',
-		image: uranusImg.RandomCardThumbnail,
+		image: workImages.RandomCardThumbnail,
 		details:
 			'A random photo card pack featuring characters from URANUS 2324.<br/><br/>Each pack contains 4 random cards. There are a total of 13 different cards to collect.',
 		contents: [
 			defineContent(CardFlip, {
-				front: uranusImg.RandomCardFlipFront,
-				back: uranusImg.RandomCardFlipBack,
+				front: workImages.RandomCardFlipFront,
+				back: workImages.RandomCardFlipBack,
 				class: 'w-[60%]'
 			}),
 			defineContent(Paragraph, {
@@ -102,13 +101,13 @@ export const uranus0004: Project[] = [
 			}),
 			defineContent(ScrollImage, {
 				images: [
-					uranusImg.RandomCardExample1,
-					uranusImg.RandomCardExample2,
-					uranusImg.RandomCardExample3
+					workImages.RandomCardExample1,
+					workImages.RandomCardExample2,
+					workImages.RandomCardExample3
 				]
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.RandomCardExample4],
+				images: [workImages.RandomCardExample4],
 				classImg: 'w-[80%] mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
 			})
@@ -118,11 +117,11 @@ export const uranus0004: Project[] = [
 		id: 'uranus-004',
 		name: 'Card Holder ',
 		date: '',
-		image: uranusImg.CardHolderExample2,
+		image: workImages.CardHolderExample2,
 		details: 'A card holder inspired by URANUS 2324.',
 		contents: [
 			defineContent(ImageDetail, {
-				img: uranusImg.CardHolderMain,
+				img: workImages.CardHolderMain,
 				classImg: 'w-2/3 mx-auto preview',
 				detail:
 					'A card holder inspired by URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Packaging</li><li>Card Holder</li><li>Acrylic</li><li>Cushion</li></ul>',
@@ -135,14 +134,14 @@ export const uranus0004: Project[] = [
 			defineContent(ScrollImage, {
 				initIndex: 1,
 				images: [
-					uranusImg.CardHolderExample1,
-					uranusImg.CardHolderExample2,
-					uranusImg.CardHolderExample3,
-					uranusImg.CardHolderExample4
+					workImages.CardHolderExample1,
+					workImages.CardHolderExample2,
+					workImages.CardHolderExample3,
+					workImages.CardHolderExample4
 				]
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.CardHolderExample5],
+				images: [workImages.CardHolderExample5],
 				classImg: 'w-[80%] mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
 			})
@@ -152,11 +151,11 @@ export const uranus0004: Project[] = [
 		id: 'uranus-005',
 		name: 'URANUS2324 T-SHIRT<br/>HOW WOULD IT BE IF…',
 		date: '',
-		image: uranusImg.TShirtHowWouldThumbnail,
+		image: workImages.TShirtHowWouldThumbnail,
 		details: 'A T-shirt inspired by a key scene from the movie URANUS 2324.',
 		contents: [
 			defineContent(ImageDetail, {
-				img: uranusImg.TShirtHowWouldMain,
+				img: workImages.TShirtHowWouldMain,
 				classImg: 'w-[70%] mx-auto preview',
 				detail:
 					'A T-shirt inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (T-shirt pattern)</li><li>Photo Retouch</li><li>T-Shirt Design</li></ul>',
@@ -169,21 +168,21 @@ export const uranus0004: Project[] = [
 			defineContent(ScrollImage, {
 				initIndex: 1,
 				images: [
-					uranusImg.TShirtHowWouldLogo,
-					uranusImg.TShirtHowWouldWhite,
-					uranusImg.TShirtHowWouldPhoto
+					workImages.TShirtHowWouldLogo,
+					workImages.TShirtHowWouldWhite,
+					workImages.TShirtHowWouldPhoto
 				]
 			}),
 			defineContent(ScrollImage, {
 				initIndex: 1,
 				images: [
-					uranusImg.TShirtHowWouldLogo,
-					uranusImg.TShirtHowWouldBlack,
-					uranusImg.TShirtHowWouldPhoto
+					workImages.TShirtHowWouldLogo,
+					workImages.TShirtHowWouldBlack,
+					workImages.TShirtHowWouldPhoto
 				]
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.TShirtHowWouldExample1],
+				images: [workImages.TShirtHowWouldExample1],
 				classImg: 'w-[80%] mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
 			})
@@ -208,11 +207,11 @@ export const uranus0004: Project[] = [
 		id: 'uranus-006',
 		name: 'URANUS2324 T-SHIRT<br/>I’M LIKE URANUS',
 		date: '',
-		image: uranusImg.TShirtImLikeUranusThumbnail,
+		image: workImages.TShirtImLikeUranusThumbnail,
 		details: 'A T-shirt inspired by a key scene from the movie URANUS 2324.',
 		contents: [
 			defineContent(ImageDetail, {
-				img: uranusImg.TShirtHowWouldMain,
+				img: workImages.TShirtHowWouldMain,
 				classImg: 'w-[70%] mx-auto preview',
 				detail:
 					'A T-shirt inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (T-shirt pattern)</li><li>Photo Retouch</li><li>T-Shirt Design</li></ul>',
@@ -224,14 +223,14 @@ export const uranus0004: Project[] = [
 			}),
 			defineContent(ScrollImage, {
 				initIndex: 0,
-				images: [uranusImg.TShirtImLikeUranusWhite, uranusImg.TShirtImLikeUranusPhoto]
+				images: [workImages.TShirtImLikeUranusWhite, workImages.TShirtImLikeUranusPhoto]
 			}),
 			defineContent(ScrollImage, {
 				initIndex: 0,
-				images: [uranusImg.TShirtImLikeUranusBlack, uranusImg.TShirtImLikeUranusPhoto]
+				images: [workImages.TShirtImLikeUranusBlack, workImages.TShirtImLikeUranusPhoto]
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.TShirtImLikeUranusExample1],
+				images: [workImages.TShirtImLikeUranusExample1],
 				classImg: 'w-[80%] mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
 			})
@@ -256,11 +255,11 @@ export const uranus0004: Project[] = [
 		id: 'uranus-007',
 		name: 'URANUS2324 LIN&KATH<br/>HOODIE',
 		date: '',
-		image: uranusImg.HoodieLinKathThumbnail,
+		image: workImages.HoodieLinKathThumbnail,
 		details: 'A Hoodie inspired by a key scene from the movie URANUS 2324.',
 		contents: [
 			defineContent(ImageDetail, {
-				img: uranusImg.HoodieLinKathMain,
+				img: workImages.HoodieLinKathMain,
 				classImg: 'w-[70%] mx-auto preview',
 				detail:
 					'A Hoodie inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (Hoodie pattern)</li><li>Photo Retouch</li><li>Hoodie Design</li></ul>',
@@ -271,17 +270,17 @@ export const uranus0004: Project[] = [
 				class: 'mt-4 '
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.HoodieLinKathExample1, uranusImg.HoodieLinKathExample2],
+				images: [workImages.HoodieLinKathExample1, workImages.HoodieLinKathExample2],
 				classImg: 'w-full preview',
 				class: 'grid grid-cols-2 w-full gap-1'
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.HoodieLinKathExample3],
+				images: [workImages.HoodieLinKathExample3],
 				classImg: 'w-full mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.HoodieLinKathExample4],
+				images: [workImages.HoodieLinKathExample4],
 				classImg: 'w-full mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
 			})
@@ -306,11 +305,11 @@ export const uranus0004: Project[] = [
 		id: 'uranus-008',
 		name: 'URANUS2324 LOVE&PAIN<br/>HOODIE',
 		date: '',
-		image: uranusImg.HoodieLovePainThumbnail,
+		image: workImages.HoodieLovePainThumbnail,
 		details: 'A Hoodie inspired by a key scene from the movie URANUS 2324.',
 		contents: [
 			defineContent(ImageDetail, {
-				img: uranusImg.HoodieLovePainMain,
+				img: workImages.HoodieLovePainMain,
 				classImg: 'w-[70%] mx-auto preview',
 				detail:
 					'A Hoodie inspired by a key scene from the movie URANUS 2324.<br/><br/>Scope of Work for This Project<br/><br/><ul><ul><li>Garment pattern (Hoodie pattern)</li><li>Photo Retouch</li><li>Hoodie Design</li></ul>',
@@ -321,17 +320,17 @@ export const uranus0004: Project[] = [
 				class: 'mt-4 '
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.HoodieLovePainExample1, uranusImg.HoodieLovePainExample2],
+				images: [workImages.HoodieLovePainExample1, workImages.HoodieLovePainExample2],
 				classImg: 'w-full preview',
 				class: 'grid grid-cols-2 w-full gap-1'
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.HoodieLovePainExample3],
+				images: [workImages.HoodieLovePainExample3],
 				classImg: 'w-full mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
 			}),
 			defineContent(MultipleImage, {
-				images: [uranusImg.HoodieLovePainExample4],
+				images: [workImages.HoodieLovePainExample4],
 				classImg: 'w-full mx-auto preview',
 				class: 'flex flex-col w-full gap-1'
 			})
@@ -360,12 +359,11 @@ export const uranusProject: Project = {
 	date: '05-09-2023',
 	endDate: '04-07-2024',
 	category: 'Merchandise Design',
-	image: uranusImg.UranusPosterThumbnail,
-	tags: [tags.ProductDesign, tags.GraphicDesign],
+	image: workImages.UranusPosterThumbnail,
 	contents: [
 		defineContent(ImageDetail, {
 			class: 'grid grid-cols-2 gap-4',
-			img: uranusImg.UranusPoster,
+			img: workImages.UranusPoster,
 			classImg: 'preview',
 			detail:
 				'โปรเจคหนัง  ยูเรนัส 2324 เป็นภาพยนตร์ไซไฟ–โรแมนติกที่เล่าเรื่องความรัก การเวลา และจักรวาล ผ่านมุมมองอารมณ์และความสัมพันธ์ของตัวละคร<br/><br/>The film project Uranus 2324 is a sci-fi romantic movie that explores love, time, and the universe through the emotional perspectives and relationships of its characters.'
@@ -373,14 +371,14 @@ export const uranusProject: Project = {
 		defineContent(ImageDetail, {
 			class: 'flex gap-4',
 			classImg: 'w-[150px]',
-			img: uranusImg.NetflixLogo,
+			img: workImages.NetflixLogo,
 			detailClass: 'text-center ',
 			detail:
 				'The end credits of the movie Uranus 2324.<br/><span class="text-[#FFCC22]">I was assigned the role of creative designer on this project.</span>'
 		}),
 		defineContent(ImageDetail, {
 			class: 'flex gap-4',
-			img: uranusImg.UranusEndCredit,
+			img: workImages.UranusEndCredit,
 			classImg: 'preview'
 		}),
 		defineContent(SubProject, {

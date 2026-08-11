@@ -1,10 +1,6 @@
 // import { HappyBambyDay, NamYejun, PlaveDebut100 } from '$lib/assets/works';
 import { InstagramIcon, TiktokIcon, XIcon } from '$lib/assets/icons';
-import * as illusImg from '$lib/assets/works/illustration';
-import * as producerAssistantImg from '$lib/assets/works/producer-assistant';
-import * as productDesignImg from '$lib/assets/works/product-design';
-import * as coordinatorImg from '$lib/assets/works/project-coordinator';
-import * as socialImg from '$lib/assets/works/social-media';
+import * as workImages from '$lib/assets/works';
 
 import ImageDetail from '$lib/components/project/image-detail.svelte';
 import MultipleImage from '$lib/components/project/multiple-image.svelte';
@@ -16,7 +12,7 @@ import { tags } from '$lib/constants/tags';
 
 import { defineContent } from '$lib/utils';
 
-import type { Menu, Project, Tag } from '$lib/types';
+import type { Menu, Project } from '$lib/types';
 
 import { codecXOsamu, lateNightXOsamu, osamuGoodBkk } from './osamu';
 import { uranusProject } from './uranus';
@@ -28,15 +24,14 @@ const productDesignProjects: Project[] = [
 		name: 'PAUL Bakery',
 		date: '17-01-2026',
 		category: 'Merchandise Re-drawing',
-		image: productDesignImg.PaulBakeryThumbnail,
-		tags: [tags.GraphicDesign, tags.ProductDesign],
+		image: workImages.PaulBakeryThumbnail,
 		contents: [
 			defineContent(MultipleImage, {
 				images: [
-					productDesignImg.PaulBakeryPhoto1,
-					productDesignImg.PaulBakeryPhoto2,
+					workImages.PaulBakeryPhoto1,
+					workImages.PaulBakeryPhoto2,
 					{
-						src: productDesignImg.PaulBakeryPhoto3,
+						src: workImages.PaulBakeryPhoto3,
 						class: 'col-span-2 preview'
 					}
 				],
@@ -59,12 +54,11 @@ const socialMediaDesignProjects: Project[] = [
 		name: 'PLAVE : YEJUN THAILAND',
 		date: '18-06-2023',
 		category: 'Poster Design',
-		image: socialImg.PlaveYejunThumbnail,
+		image: workImages.PlaveYejunThumbnail,
 		imageStyle: 'background-size: 220%;background-position:top center;',
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
 		contents: [
 			defineContent(ImageDetail, {
-				img: socialImg.PlaveYejun,
+				img: workImages.PlaveYejun,
 				classImg: 'w-full mx-auto preview',
 				detailClass: 'mt-6',
 				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
@@ -85,11 +79,10 @@ const socialMediaDesignProjects: Project[] = [
 		name: 'PLAVE : YEJUN THAILAND',
 		date: '18-06-2023',
 		category: 'Poster Design',
-		image: socialImg.PlaveYejun100Thumbnail,
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		image: workImages.PlaveYejun100Thumbnail,
 		contents: [
 			defineContent(ImageDetail, {
-				img: socialImg.PlaveYejun100,
+				img: workImages.PlaveYejun100,
 				classImg: 'w-full mx-auto preview',
 				detailClass: 'mt-6',
 				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
@@ -110,11 +103,10 @@ const socialMediaDesignProjects: Project[] = [
 		name: 'PLAVE : YEJUN THAILAND',
 		date: '14-07-2023',
 		category: 'Poster Design',
-		image: socialImg.BambyThumbnail,
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		image: workImages.BambyThumbnail,
 		contents: [
 			defineContent(ImageDetail, {
-				img: socialImg.Bamby,
+				img: workImages.Bamby,
 				detailClass: 'mt-6',
 				classImg: 'w-full mx-auto preview',
 				detail: `<p class="flex w-full">100th Day Debut Anniversary Celebration <img src="${XIcon}" alt="x icon" class="w-5 h-5 inline ml-auto"/></p>
@@ -140,18 +132,18 @@ const socialMediaDesignProjects: Project[] = [
 		subName: 'GM Generates Co.,Ltd',
 		date: '25-12-2024',
 		category: 'Social Post Design',
-		image: socialImg.ChirstmasRedHouse2024Thumbnail,
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		image: workImages.ChirstmasRedHouse2024Thumbnail,
+
 		contents: [
 			defineContent(ImageDetail, {
-				img: socialImg.ChirstmasRedHouse2024,
+				img: workImages.ChirstmasRedHouse2024,
 				class: 'text-center',
 				classImg: 'w-full mx-auto preview',
 				detail: `Graphics for social media posting.`,
 				detailClass: 'mt-2'
 			}),
 			defineContent(MultipleImage, {
-				images: [socialImg.ChirstmasRedHouse2024Card1, socialImg.ChirstmasRedHouse2024Card2],
+				images: [workImages.ChirstmasRedHouse2024Card1, workImages.ChirstmasRedHouse2024Card2],
 				class: 'grid grid-cols-2 gap-2 w-2/3',
 				classImg: 'size-50 mx-auto preview',
 				detail: 'Graphics to be shared with private partners.',
@@ -172,11 +164,11 @@ const socialMediaDesignProjects: Project[] = [
 		subName: 'GM Generates Co.,Ltd',
 		date: '01-01-2025',
 		category: 'Social Post Design',
-		image: socialImg.NewYearSnake2025Thumbnail,
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		image: workImages.NewYearSnake2025Thumbnail,
+
 		contents: [
 			defineContent(ImageDetail, {
-				img: socialImg.NewYearSnake2025,
+				img: workImages.NewYearSnake2025,
 				class: 'text-center',
 				classImg: 'w-full mx-auto preview',
 				detail: `Graphics for social media posting.`,
@@ -197,11 +189,11 @@ const socialMediaDesignProjects: Project[] = [
 		subName: 'GM Generates Co.,Ltd',
 		date: '25-12-2025',
 		category: 'Social Post Design',
-		image: socialImg.WeLoveChirstmas2025Thumbnail,
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		image: workImages.WeLoveChirstmas2025Thumbnail,
+
 		contents: [
 			defineContent(ImageDetail, {
-				img: socialImg.WeLoveChirstmas2025,
+				img: workImages.WeLoveChirstmas2025,
 				class: 'text-center',
 				classImg: 'w-full mx-auto preview',
 				detail: `Graphics for social media posting.`
@@ -221,11 +213,11 @@ const socialMediaDesignProjects: Project[] = [
 		subName: 'GM Generates Co.,Ltd',
 		date: '01-01-2025',
 		category: 'Social Post Design',
-		image: socialImg.HorseYearThumbnail2026,
-		tags: [tags.GraphicDesign, tags.SocialMediaDesign],
+		image: workImages.HorseYearThumbnail2026,
+
 		contents: [
 			defineContent(ImageDetail, {
-				img: socialImg.HorseYear2026,
+				img: workImages.HorseYear2026,
 				class: 'text-center',
 				classImg: 'w-full mx-auto preview',
 				detail: `Graphics for social media posting.`
@@ -247,11 +239,11 @@ const IllustrationProjects: Project[] = [
 		name: 'TWIN FLOWER',
 		date: '30-05-2024',
 		category: 'Illustration Design',
-		image: illusImg.TwinFlowerThumbnail,
-		tags: [tags.GraphicDesign, tags.Illustration],
+		image: workImages.TwinFlowerThumbnail,
+
 		contents: [
 			defineContent(ImageDetail, {
-				img: illusImg.TwinFlower,
+				img: workImages.TwinFlower,
 				classImg: 'w-full mx-auto preview',
 				detailClass: 'mt-6',
 				detail: `May 30, 2023 <br/><br/>Twin Flower" is a character design inspired by flowers, using a combination of pink and blue paired with yellow to create an intriguing and captivating color scheme. This design was created to teach how to create flower petals using Adobe Illustrator.`
@@ -261,12 +253,12 @@ const IllustrationProjects: Project[] = [
 				class: 'mt-2'
 			}),
 			defineContent(ImageDetail, {
-				img: illusImg.TwinFlower3Style,
+				img: workImages.TwinFlower3Style,
 				classImg: 'w-full mx-auto preview',
 				class: 'mt-6'
 			}),
 			defineContent(ImageDetail, {
-				img: illusImg.TwinFlowerHowTo,
+				img: workImages.TwinFlowerHowTo,
 				classImg: 'w-full mx-auto preview',
 				detailClass: 'mt-4',
 				detail: `<p class="flex w-full gap-4">Let’s make your own flower.
@@ -282,11 +274,11 @@ const IllustrationProjects: Project[] = [
 		name: 'A NORMAL DAY IN SKY TRAIN',
 		date: 'xx-xx-2024',
 		category: 'Coordinator',
-		image: illusImg.ANormalDayThumbnail,
-		tags: [tags.GraphicDesign, tags.Illustration],
+		image: workImages.ANormalDayThumbnail,
+
 		contents: [
 			defineContent(ImageDetail, {
-				img: illusImg.ANormalDayThumbnail,
+				img: workImages.ANormalDayThumbnail,
 				classImg: 'w-2/3 mx-auto preview',
 				detailClass: 'mt-6',
 				detail: ``
@@ -303,11 +295,10 @@ const projectCoordinatorProjects: Project[] = [
 		name: 'LOOKIN’ X EASE AROUND',
 		date: '03-08-2025',
 		category: 'Coordinator',
-		image: coordinatorImg.LookinXEaseThumbnail,
-		tags: [tags.ProjectCoordinator],
+		image: workImages.LookinXEaseThumbnail,
 		contents: [
 			defineContent(ImageDetail, {
-				img: coordinatorImg.LookinXEaseCover,
+				img: workImages.LookinXEaseCover,
 				classImg: 'w-full mx-auto preview ',
 				detailClass: 'mt-6',
 				detail: `A collaboration project between Thai eyewear brand Lookin’ and Thai artist Ease Around, launched under the collection name “Lookin’ Around.” The project involved the co-development of three eyewear designs bundled with gift sets, distributed through selected LOOKIN’ retail stores. The initiative focused on aligning creative collaboration with business objectives, enhancing customer value, and improving in-store sales performance, complemented by an exclusive pop-up store to elevate customer experience and drive engagement during the launch period.
@@ -324,14 +315,14 @@ const projectCoordinatorProjects: Project[] = [
 			}),
 			defineContent(MultipleImage, {
 				images: [
-					coordinatorImg.LookinXEasePhoto1,
-					coordinatorImg.LookinXEasePhoto2,
-					coordinatorImg.LookinXEasePhoto3,
-					coordinatorImg.LookinXEasePhoto4,
-					coordinatorImg.LookinXEasePhoto5,
-					coordinatorImg.LookinXEasePhoto6,
-					coordinatorImg.LookinXEasePhoto7,
-					coordinatorImg.LookinXEasePhoto8
+					workImages.LookinXEasePhoto1,
+					workImages.LookinXEasePhoto2,
+					workImages.LookinXEasePhoto3,
+					workImages.LookinXEasePhoto4,
+					workImages.LookinXEasePhoto5,
+					workImages.LookinXEasePhoto6,
+					workImages.LookinXEasePhoto7,
+					workImages.LookinXEasePhoto8
 				],
 				classImg: 'preview',
 				class: 'grid grid-cols-2 gap-4',
@@ -350,11 +341,11 @@ const assistantProducerProjects: Project[] = [
 		name: 'ZTYLEZHK Magazine',
 		date: '',
 		category: 'Producer assistance /<br/>Retouch',
-		image: producerAssistantImg.magazineThumbnail,
-		tags: [tags.GraphicDesign, tags.ProductDesign],
+		image: workImages.magazineThumbnail,
+
 		contents: [
 			defineContent(ImageDetail, {
-				img: producerAssistantImg.magazinePhoto1,
+				img: workImages.magazinePhoto1,
 				classImg: 'preview',
 				detail: 'The images that I was assigned to retouch.',
 				detailClass: 'text-center mt-1 opacity-50'
@@ -364,10 +355,10 @@ const assistantProducerProjects: Project[] = [
 			}),
 			defineContent(MultipleImage, {
 				images: [
-					producerAssistantImg.magazinePhoto2,
-					producerAssistantImg.magazinePhoto3,
-					producerAssistantImg.magazinePhoto4,
-					producerAssistantImg.magazinePhoto5
+					workImages.magazinePhoto2,
+					workImages.magazinePhoto3,
+					workImages.magazinePhoto4,
+					workImages.magazinePhoto5
 				],
 				classImg: 'preview',
 				class: 'grid grid-cols-2 gap-4',
@@ -377,9 +368,41 @@ const assistantProducerProjects: Project[] = [
 	}
 ];
 
-const thesisProjects: Project[] = [];
+const jemaiUrl =
+	'https://www.figma.com/proto/Yd6dUessRLsPBb74Xi4gda/JEMAI?node-id=232-1030&p=f&t=yMEeJvQwoYaUsC9e-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2';
 
-export const projects = (tag: Tag): Project[] => {
+const thesisProjects: Project[] = [
+	{
+		id: 'thesis',
+		name: 'JEMAI',
+		date: '',
+		details:
+			'A website for fashion brand Jemai, featuring both Ready-to-Wear collections and NFT-based fashion pieces for enthusiasts of digital fashion and collectible pieces. The website experience was designed to bridge the worlds of physical fashion and digital fashion, creating a seamless connection between the two.',
+		image: workImages.ThesisCover,
+		external: jemaiUrl
+	}
+];
+
+const uxuiProjects: Project[] = [
+	{
+		id: 'uxui-gm-generates-co-ltd',
+		name: 'GM Generates Co.,Ltd',
+		date: '',
+		category: 'Company Website',
+		image: workImages.GMGenerates,
+		external: 'https://www.gmgenerates.com/'
+	},
+	{
+		id: 'thesis-jemai',
+		name: 'THESIS : Jemai',
+		date: '',
+		category: 'Clothing Brand Website',
+		image: workImages.ThesisCover,
+		external: jemaiUrl
+	}
+];
+
+export const projects = (tag: string): Project[] => {
 	switch (tag) {
 		case tags.ProductDesign:
 			return productDesignProjects;
@@ -395,36 +418,11 @@ export const projects = (tag: Tag): Project[] => {
 			return assistantProducerProjects;
 		case tags.Thesis:
 			return thesisProjects;
+		case tags.UXUI:
+			return uxuiProjects;
 	}
 
 	return [];
-};
-
-export const projectCount = (tag: Tag): number => {
-	switch (tag) {
-		case tags.GraphicDesign:
-			return (
-				productDesignProjects.length +
-				socialMediaDesignProjects.length +
-				IllustrationProjects.length
-			);
-		case tags.ProductDesign:
-			return productDesignProjects.length;
-		case tags.SocialMediaDesign:
-			return socialMediaDesignProjects.length;
-		case tags.Illustration:
-			return IllustrationProjects.length;
-		case tags.ProjectCoordinator:
-			return projectCoordinatorProjects.length;
-		case tags.CreativeProducer:
-			return creativeProducerProjects.length;
-		case tags.AssistantProducer:
-			return assistantProducerProjects.length;
-		case tags.Thesis:
-			return thesisProjects.length;
-	}
-
-	return 0;
 };
 
 export const workMenus: Menu[] = [
@@ -450,6 +448,9 @@ export const workMenus: Menu[] = [
 	},
 	{
 		name: tags.AssistantProducer
+	},
+	{
+		name: tags.UXUI
 	},
 	{
 		name: tags.Thesis

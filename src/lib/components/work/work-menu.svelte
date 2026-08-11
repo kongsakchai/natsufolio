@@ -3,7 +3,7 @@
 
 	import { ArrowRight } from '$lib/assets/icons';
 
-	import { projectCount } from '$lib/data';
+	import {  projects } from '$lib/data';
 
 	import { twoDigit } from '$lib/utils';
 
@@ -28,7 +28,7 @@
 		<img src={ArrowRight} alt="arrow right" class="inline-block {isSub ? 'w-3' : 'w-4'}" />
 		{work.name}
 		<span class="font-almarai font-normal text-xs ml-1">
-			({twoDigit(projectCount(work.name))})
+			({twoDigit(projects(work.name).length)})
 		</span>
 	</h3>
 </a>

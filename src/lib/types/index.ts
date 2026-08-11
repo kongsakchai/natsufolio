@@ -1,8 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import type { Component, ComponentProps } from 'svelte';
 
-export type Tag = string;
-
 export interface Experience {
 	year: number;
 	title: string;
@@ -38,16 +36,15 @@ export interface Project {
 	category?: string;
 	details?: string;
 	hastags?: string[];
-	tags?: Tag[];
 	subProjectTitle?: string;
 	subProject?: Project[];
 	contents?: Content<any>[];
+	internal?: string;
+	external?: string;
 }
 
-export type CertificateType = string;
-
 export interface Certificates {
-	type: CertificateType;
+	type: string;
 	title: string;
 	list: {
 		name: string;

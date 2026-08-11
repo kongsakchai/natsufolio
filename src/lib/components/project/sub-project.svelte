@@ -12,7 +12,7 @@
 		disableClick?: boolean;
 		class?: string;
 		title: string;
-		projects: (Project & { link?: string; goto?: boolean })[];
+		projects: Project[];
 	}
 
 	let { class: className, title, projects, disableClick }: Props = $props();
@@ -25,11 +25,16 @@
 		top?: number;
 	}>({});
 
-	const handleOpen = (e: Event, p: Project & { link?: string; goto?: boolean }) => {
+	const handleOpen = (e: Event, p: Project) => {
 		if (disableClick) return;
 
-		if (p.goto && p.link) {
-			goto(p.link);
+		if (p.internal) {
+			goto(p.internal);
+			return;
+		}
+
+		if (p.external) {
+			window.open(p.external, '_blank');
 			return;
 		}
 

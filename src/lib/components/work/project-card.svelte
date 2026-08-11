@@ -42,7 +42,8 @@
 			<p>{@html project.category}</p>
 
 			<a
-				href="/work/{tag}/more-details/{project.id}"
+				href={project.external ?? `/work/${tag}/more-details/${project.id}`}
+				target={project.external ? '_blank' : '_self'}
 				class="more-detail-btn w-4/5 mx-auto p-2 rounded-4xl flex justify-center items-center mt-4"
 			>
 				<p class="md:text-sm">More Details</p>
