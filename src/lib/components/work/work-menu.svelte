@@ -26,7 +26,7 @@
 			'text-sm sm:text-base'}"
 	>
 		<img src={ArrowRight} alt="arrow right" class="inline-block {isSub ? 'w-3' : 'w-4'}" />
-		{work.name}
+		{work.name === "UXUI" ? "UX/UI": work.name}
 		<span class="font-almarai font-normal text-xs ml-1">
 			({twoDigit(projects(work.name).length)})
 		</span>
