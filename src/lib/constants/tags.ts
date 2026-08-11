@@ -1,16 +1,15 @@
-import type { Tag } from '$lib/types';
-
 export const tags = {
-	GraphicDesign: 'Graphic Design' as Tag,
-	ProjectCoordinator: 'Project Coordinator' as Tag,
-	CreativeProducer: 'Creative Producer' as Tag,
-	AssistantProducer: 'Producer Assistant' as Tag,
-	Thesis: 'Thesis' as Tag,
+	GraphicDesign: 'Graphic Design',
+	ProjectCoordinator: 'Project Coordinator',
+	CreativeProducer: 'Creative Producer',
+	AssistantProducer: 'Producer Assistant',
+	Thesis: 'Thesis',
+	UXUI: 'UXUI',
 
-	ProductDesign: 'Product Design' as Tag,
-	SocialMediaDesign: 'Social Media Design' as Tag,
-	PhotoRetouch: 'Photo Retouch' as Tag,
-	Illustration: 'Illustration' as Tag
+	ProductDesign: 'Product Design',
+	SocialMediaDesign: 'Social Media Design',
+	PhotoRetouch: 'Photo Retouch',
+	Illustration: 'Illustration'
 } as const;
 
 export const certificateTypes = {

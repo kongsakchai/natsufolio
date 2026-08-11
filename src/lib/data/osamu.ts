@@ -1,5 +1,5 @@
 // import { HappyBambyDay, NamYejun, PlaveDebut100 } from '$lib/assets/works';
-import * as coordinatorImg from '$lib/assets/works/project-coordinator';
+import * as workImages from '$lib/assets/works';
 
 import ImageDetail from '$lib/components/project/image-detail.svelte';
 import List from '$lib/components/project/list.svelte';
@@ -17,18 +17,18 @@ export const lateNightXOsamu = {
 	name: 'LATE NIGHT DANCE CLUB <br/>X OSAMU GOODS BKK',
 	date: '13-12-2025',
 	category: 'Coordinator',
-	image: coordinatorImg.LateNightXOsamuThumbnail,
+	image: workImages.LateNightXOsamuThumbnail,
 	tags: [tags.ProjectCoordinator],
 	contents: [
 		defineContent(MultipleImage, {
 			images: [
 				{
-					src: coordinatorImg.LateNightXOsamuPhoto1,
+					src: workImages.LateNightXOsamuPhoto1,
 					class: 'col-span-3 preview'
 				},
-				coordinatorImg.LateNightXOsamuPhoto2,
-				coordinatorImg.LateNightXOsamuPhoto3,
-				coordinatorImg.LateNightXOsamuPhoto4
+				workImages.LateNightXOsamuPhoto2,
+				workImages.LateNightXOsamuPhoto3,
+				workImages.LateNightXOsamuPhoto4
 			],
 			class: 'grid grid-cols-3 gap-1 w-2/3',
 			classImg: ' preview',
@@ -72,12 +72,12 @@ export const codecXOsamu = {
 	name: 'CODEC CREATION X<br/> OSAMU GOODS BKK',
 	date: 'xx-xx-2026',
 	category: 'Coordinator',
-	image: coordinatorImg.CodecCreatorThumbnail,
+	image: workImages.CodecCreatorThumbnail,
 	imageStyle: 'background-size: 100%;background-position: center 80%;',
 	tags: [tags.ProjectCoordinator],
 	contents: [
 		defineContent(ImageDetail, {
-			img: coordinatorImg.CodecXOsamuThumbnail,
+			img: workImages.CodecXOsamuThumbnail,
 			classImg: 'w-full mx-auto preview',
 			detailClass: 'mt-6',
 			detail: `Codec Creation has partnered with GM Generates to develop and expand products under the OSAMU GOODS brand for the Thai market, with an official launch and product release planned for early 2026.
@@ -96,10 +96,10 @@ export const codecXOsamu = {
 		}),
 		defineContent(MultipleImage, {
 			images: [
-				coordinatorImg.CodecXOsamuPhoto1,
-				coordinatorImg.CodecXOsamuPhoto2,
-				coordinatorImg.CodecXOsamuPhoto3,
-				coordinatorImg.CodecXOsamuPhoto4
+				workImages.CodecXOsamuPhoto1,
+				workImages.CodecXOsamuPhoto2,
+				workImages.CodecXOsamuPhoto3,
+				workImages.CodecXOsamuPhoto4
 			],
 			class: 'grid grid-cols-2 gap-2 mt-8',
 			classImg: 'preview'
@@ -113,11 +113,11 @@ export const osamuGoodBkk = {
 	subNameCard: 'SONY CREATIVE PRODUCTS',
 	date: '01-01-2024',
 	category: 'Coordinator',
-	image: coordinatorImg.OsamuGoodBBKThumbnail,
+	image: workImages.OsamuGoodBBKThumbnail,
 	tags: [tags.ProjectCoordinator],
 	contents: [
 		defineContent(ImageDetail, {
-			img: coordinatorImg.OsamuGoodBBKCover,
+			img: workImages.OsamuGoodBBKCover,
 			classImg: 'w-2/3 mx-auto preview',
 			detailClass: 'mt-6',
 			detail: `Osamu Goods is a character brand under Sony Music.
@@ -143,13 +143,13 @@ I was assigned to serve as the key point of coordination between Sony Creative P
 			projects: [
 				{
 					...lateNightXOsamu,
-					image: coordinatorImg.LateNightXOsamuPhoto1,
+					image: workImages.LateNightXOsamuPhoto1,
 					imageStyle: 'object-fit: cover;',
 					details: 'LATE NIGHT DANCE CLUB × OSAMU GOODS BKK<br/>”DANCE SAVES THE DAY“ Collection'
 				},
 				{
 					...codecXOsamu,
-					image: coordinatorImg.CodecXOsamuThumbnail,
+					image: workImages.CodecXOsamuThumbnail,
 					imageStyle: 'object-fit: cover;scale:150%; object-position: center 60%;',
 					details:
 						'Codec Creation has partnered with GM Generates to develop and expand products under the OSAMU GOODS brand for the Thai market.'
