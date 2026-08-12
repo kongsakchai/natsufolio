@@ -162,7 +162,7 @@ const socialMediaDesignProjects: Project[] = [
 		id: '2025-newyear-post',
 		name: '2025 : NEWYEAR POST',
 		subName: 'GM Generates Co.,Ltd',
-		date: '01-01-2025',
+		date: '01-01-2024',
 		category: 'Social Post Design',
 		image: workImages.NewYearSnake2025Thumbnail,
 
@@ -267,24 +267,24 @@ const IllustrationProjects: Project[] = [
 				</p>`
 			})
 		]
-	},
-
-	{
-		id: 'a-normal-day-in-sky-train',
-		name: 'A NORMAL DAY IN SKY TRAIN',
-		date: 'xx-xx-2024',
-		category: 'Coordinator',
-		image: workImages.ANormalDayThumbnail,
-
-		contents: [
-			defineContent(ImageDetail, {
-				img: workImages.ANormalDayThumbnail,
-				classImg: 'w-2/3 mx-auto preview',
-				detailClass: 'mt-6',
-				detail: ``
-			})
-		]
 	}
+
+	// {
+	// 	id: 'a-normal-day-in-sky-train',
+	// 	name: 'A NORMAL DAY IN SKY TRAIN',
+	// 	date: 'xx-xx-2024',
+	// 	category: 'Coordinator',
+	// 	image: workImages.ANormalDayThumbnail,
+
+	// 	contents: [
+	// 		defineContent(ImageDetail, {
+	// 			img: workImages.ANormalDayThumbnail,
+	// 			classImg: 'w-2/3 mx-auto preview',
+	// 			detailClass: 'mt-6',
+	// 			detail: ``
+	// 		})
+	// 	]
+	// }
 ];
 
 const creativeProducerProjects: Project[] = [uranusProject];

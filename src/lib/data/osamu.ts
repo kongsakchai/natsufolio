@@ -70,7 +70,7 @@ export const lateNightXOsamu = {
 export const codecXOsamu = {
 	id: 'codec-creation',
 	name: 'CODEC CREATION X<br/> OSAMU GOODS BKK',
-	date: 'xx-xx-2026',
+	date: '2026',
 	category: 'Coordinator',
 	image: workImages.CodecCreatorThumbnail,
 	imageStyle: 'background-size: 100%;background-position: center 80%;',
