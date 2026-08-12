@@ -36,7 +36,7 @@
 		</h5>
 
 		{#if project.details}
-			<p class="text-[10px] my-auto w-full overflow-hidden">
+			<p class="sm:text-[10px] text-[8px] my-auto w-full overflow-hidden">
 				{@html project.details}
 			</p>
 		{/if}

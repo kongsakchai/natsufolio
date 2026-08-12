@@ -1,5 +1,5 @@
-import { projects } from '$lib/data';
+import { projects, resolveName } from '$lib/data';
 
 export const load = async ({ params }) => {
-	return { title: params.tag === "UXUI" ? "UX/UI":params.tag, projects: projects(params.tag) };
+	return { title: resolveName(params.tag), projects: projects(params.tag) };
 };

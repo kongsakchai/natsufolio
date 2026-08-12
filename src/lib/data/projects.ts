@@ -456,3 +456,8 @@ export const workMenus: Menu[] = [
 		name: tags.Thesis
 	}
 ];
+
+export const resolveName = (str: string) => {
+	if (str === tags.UXUI) return 'UX/UI';
+	return str;
+};

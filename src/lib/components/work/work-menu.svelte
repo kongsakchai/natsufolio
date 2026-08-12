@@ -3,7 +3,7 @@
 
 	import { ArrowRight } from '$lib/assets/icons';
 
-	import {  projects } from '$lib/data';
+	import { projects, resolveName } from '$lib/data';
 
 	import { twoDigit } from '$lib/utils';
 
@@ -26,9 +26,13 @@
 			'text-sm sm:text-base'}"
 	>
 		<img src={ArrowRight} alt="arrow right" class="inline-block {isSub ? 'w-3' : 'w-4'}" />
-		{work.name === "UXUI" ? "UX/UI": work.name}
+		{resolveName(work.name)}
 		<span class="font-almarai font-normal text-xs ml-1">
-			({twoDigit(projects(work.name).length)})
+			{#if work.submenu}
+				({twoDigit(work.submenu.reduce((prev, p) => prev + projects(p.name).length, 0))})
+			{:else}
+				({twoDigit(projects(work.name).length)})
+			{/if}
 		</span>
 	</h3>
 </a>
